@@ -1,0 +1,1375 @@
+{
+  "meta": {
+    "generated": "2026-08-04 22:59:57Z",
+    "image": "growtopia_dumped.exe",
+    "image_base": 5368709120,
+    "sha256": "b5e17f6c7a314b9e8ebf989e2c8dd79ab3a5272296f455b1a6c4a55be02f1dd7",
+    "functions_in_pdata": 79521,
+    "text": "0x00001000-0x01E99E58",
+    "game_version": "v5.53",
+    "game_build": "0035202150",
+    "game_released": "2026-07-30 10:57:34 UTC",
+    "binding_tables": 39,
+    "binding_methods": 296,
+    "verified": 63,
+    "check": 1,
+    "unresolved": 0
+  },
+  "offsets": {
+    "SendPacket": "0x00CBD020",
+    "SendPacketRaw": "0x00CBD140",
+    "ProcessTankUpdatePacket": "0x00BC9480",
+    "VariantListSerializeFromMem": "0x012FC360",
+    "PacketTypeDispatcher": "0x00A91A50",
+    "PacketLengthValidator": "0x00CBA0B0",
+    "TrackPacketSender": "0x00BFE7E0",
+    "ENetHostConnectSetup": "0x00A91630",
+    "PlayerItems_AddItem": "0x00CC1F20",
+    "PlayerItems_HaveRoomForItem": "0x00CC3040",
+    "PlayerItems_RemoveItem": "0x00CC47C0",
+    "InventoryIllegalItemPurge": "0x00CC4910",
+    "ItemsDatLoader": "0x00CD8C20",
+    "ItemValidator": "0x00CD86C0",
+    "ItemHashCheck": "0x00CAA660",
+    "ItemSurfaceRender": "0x00AC3110",
+    "ChooseVisual": "0x00CF3E30",
+    "World_Load": "0x014CEA80",
+    "WorldVersionCheck": "0x00BC9480",
+    "TileExtraParser": "0x00CEA570",
+    "WhiteDoorLookup": "0x014CE2A0",
+    "TilesheetLoader": "0x00AB1E20",
+    "BgItemMapValidator": "0x00CD9460",
+    "NetAvatar_OnAvatarBePaintBalled": "0x00B754F0",
+    "PunchHackDetector": "0x00B79FF0",
+    "PunchNoTileHandler": "0x00A2FFE0",
+    "HarvestInteraction": "0x00A9A760",
+    "CameraManager": "0x00AAE270",
+    "DialogBuilder": "0x00D6F150",
+    "BannerDialogBuilder": "0x00DEAC00",
+    "EnableAllButtonsEntity": "0x01252290",
+    "Controller_PushController": "0x00E006D0",
+    "Controller_PopController": "0x00E004B0",
+    "Controller_PushChildController": "0x0110CEA0",
+    "Controller_OnActivate": "0x00E39C70",
+    "Controller_Deactivate": "0x00E398B0",
+    "Controller_Release": "0x00A04880",
+    "UIController_OnActivate": "0x01161320",
+    "UIController_OnDeactivate": "0x01161910",
+    "UIController_RemoveScreenView": "0x01161B90",
+    "ParticleEmitter_GetPaintballColor": "0x00E88CF0",
+    "RTFont_GetColorFromString": "0x00DD7DA0",
+    "ResourceManager_GetSurfaceResource": "0x012C3A30",
+    "VideoModeManager_SetVideoMode": "0x00E29F50",
+    "VideoModeManager_SetFullscreen": "0x00E29860",
+    "VideoModeManager_AddVideoMode": "0x00E27190",
+    "VideoModeManager_GetCustomVideoModes": "0x00E27750",
+    "VideoModeManager_OnWMSize": "0x00E29930",
+    "IAPManager_LoadCurrenciesConfig": "0x01217B60",
+    "IAPManager_ctor": "0x01223C90",
+    "App_Kill": "0x00A03830",
+    "StoreBuyPacketPath": "0x00DE6E70",
+    "TileCoordinateHandler": "0x00A2E590",
+    "LogDisplayEntityBuilder": "0x01255E80",
+    "LoginPacketBuilder": "0x00E3BE40",
+    "TileActionBuilder": "0x00B7C380",
+    "DialogButtonBuilder": "0x0116FC70",
+    "NetAvatarSpawnHandler": "0x00BC4310",
+    "GameUpdatePacketSerializer": "0x00A93BA0",
+    "NetAvatarNetIDEmitter": "0x00BC1790",
+    "IAPPurchaseValidation": "0x00D94F10",
+    "OnVariantDispatcher": "0x00BB8910",
+    "PunchAction": "0x00E573B0",
+    "GetApp": "0x00A00390"
+  },
+  "detail": {
+    "SendPacket": {
+      "rva": 13357088,
+      "cat": "net",
+      "anchor": "Bad peer",
+      "note": "SendPacket(int type, std::string* text, ENetPeer* peer) - prepends 4-byte NetMessageType",
+      "status": "unique",
+      "size": 183,
+      "sites": [
+        "0xCBD0B1"
+      ],
+      "verified": true
+    },
+    "SendPacketRaw": {
+      "rva": 13357376,
+      "cat": "net",
+      "anchor": "Huge Packet Size %d",
+      "note": "SendPacketRaw(int type, void* data, int len, ENetPeer* peer, ...) - GameUpdatePacket sender",
+      "status": "unique",
+      "size": 418,
+      "sites": [
+        "0xCBD17D"
+      ],
+      "verified": true
+    },
+    "ProcessTankUpdatePacket": {
+      "rva": 12358784,
+      "cat": "net",
+      "anchor": "Error reading function packet, ignoring",
+      "note": "incoming PACKET_* dispatcher",
+      "status": "unique",
+      "size": 17868,
+      "sites": [
+        "0xBCA982"
+      ],
+      "verified": true
+    },
+    "VariantListSerializeFromMem": {
+      "rva": 19907424,
+      "cat": "net",
+      "anchor": "unknown var type",
+      "note": "VariantList::SerializeFromMem",
+      "status": "unique",
+      "size": 860,
+      "sites": [
+        "0x12FC660"
+      ],
+      "verified": true
+    },
+    "PacketTypeDispatcher": {
+      "rva": 11082320,
+      "cat": "net",
+      "anchor": "Got unknown packet type: %d",
+      "note": "",
+      "status": "unique",
+      "size": 1392,
+      "sites": [
+        "0xA91F11"
+      ],
+      "verified": true
+    },
+    "PacketLengthValidator": {
+      "rva": 13344944,
+      "cat": "net",
+      "anchor": "Bad packet length, ignoring message",
+      "note": "",
+      "status": "unique",
+      "size": 41,
+      "sites": [
+        "0xCBA0BB"
+      ],
+      "verified": true
+    },
+    "TrackPacketSender": {
+      "rva": 12576736,
+      "cat": "net",
+      "anchor": "Bad Track Packet , eventName not defined",
+      "note": "",
+      "status": "unique",
+      "size": 3880,
+      "sites": [
+        "0xBFF3E4"
+      ],
+      "verified": true
+    },
+    "ENetHostConnectSetup": {
+      "rva": 11081264,
+      "cat": "net",
+      "anchor": "No available peers for initiating an ENet connection.",
+      "note": "",
+      "status": "unique",
+      "size": 470,
+      "sites": [
+        "0xA9175F"
+      ],
+      "verified": true
+    },
+    "PlayerItems_AddItem": {
+      "rva": 13377312,
+      "cat": "inventory",
+      "anchor": "PlayerItems::AddItem() nullptr == pItemInfo itemID=%d",
+      "note": "",
+      "status": "unique",
+      "size": 315,
+      "sites": [
+        "0xCC1F78"
+      ],
+      "verified": true
+    },
+    "PlayerItems_HaveRoomForItem": {
+      "rva": 13381696,
+      "cat": "inventory",
+      "anchor": "PlayerItems::HaveRoomForItem() can not be.",
+      "note": "",
+      "status": "ambiguous(2)",
+      "size": 214,
+      "owners": [
+        "0xCC3040",
+        "0xCC3120"
+      ],
+      "verified": true
+    },
+    "PlayerItems_RemoveItem": {
+      "rva": 13387712,
+      "cat": "inventory",
+      "anchor": "Error, can't remove all %d items of type %d from inventory",
+      "note": "",
+      "status": "unique",
+      "size": 324,
+      "sites": [
+        "0xCC4842"
+      ],
+      "verified": true
+    },
+    "InventoryIllegalItemPurge": {
+      "rva": 13388048,
+      "cat": "inventory",
+      "anchor": "[Removing Illegal Item] [Glitch] %d for player",
+      "note": "",
+      "status": "unique",
+      "size": 1256,
+      "sites": [
+        "0xCC4BD4"
+      ],
+      "verified": true
+    },
+    "ItemsDatLoader": {
+      "rva": 13470752,
+      "cat": "inventory",
+      "anchor": "Bad itemID %d in %s, skipping",
+      "note": "",
+      "status": "unique",
+      "size": 2065,
+      "sites": [
+        "0xCD8D2C"
+      ],
+      "verified": true
+    },
+    "ItemValidator": {
+      "rva": 13469376,
+      "cat": "inventory",
+      "anchor": "Illegal item %d in %s",
+      "note": "",
+      "status": "unique",
+      "size": 1019,
+      "sites": [
+        "0xCD8805",
+        "0xCD885D"
+      ],
+      "verified": true
+    },
+    "ItemHashCheck": {
+      "rva": 13280864,
+      "cat": "inventory",
+      "anchor": "Warning: No hash found for item %d",
+      "note": "",
+      "status": "unique",
+      "size": 4293,
+      "sites": [
+        "0xCAAFF0"
+      ],
+      "verified": true
+    },
+    "ItemSurfaceRender": {
+      "rva": 11284752,
+      "cat": "inventory",
+      "anchor": "ERROR: Surface for item %d not loaded!",
+      "note": "",
+      "status": "unique",
+      "size": 40115,
+      "sites": [
+        "0xAC80E4"
+      ],
+      "verified": true
+    },
+    "ChooseVisual": {
+      "rva": 13581872,
+      "cat": "inventory",
+      "anchor": "ChooseVisual: ItemId not found: %d",
+      "note": "",
+      "status": "unique",
+      "size": 620,
+      "sites": [
+        "0xCF3F4A"
+      ],
+      "verified": true
+    },
+    "World_Load": {
+      "rva": 21817984,
+      "cat": "world",
+      "anchor": "World::Load: Version %d. f: %d, Name: %s",
+      "note": "",
+      "status": "unique",
+      "size": 1173,
+      "sites": [
+        "0x14CEBD9"
+      ],
+      "verified": true
+    },
+    "WorldVersionCheck": {
+      "rva": 12358784,
+      "cat": "world",
+      "anchor": "ERROR: Wrong world version: %d, dataSize %d",
+      "note": "",
+      "status": "unique",
+      "size": 17868,
+      "sites": [
+        "0xBCBCE2"
+      ],
+      "verified": true
+    },
+    "TileExtraParser": {
+      "rva": 13542768,
+      "cat": "world",
+      "anchor": "Bad type of %d detected in tileextra. WorldName: %s",
+      "note": "",
+      "status": "unique",
+      "size": 23652,
+      "sites": [
+        "0xCEA7D9"
+      ],
+      "verified": true
+    },
+    "WhiteDoorLookup": {
+      "rva": 21815968,
+      "cat": "world",
+      "anchor": "White door missing from map %s",
+      "note": "",
+      "status": "unique",
+      "size": 754,
+      "sites": [
+        "0x14CE4E5"
+      ],
+      "verified": true
+    },
+    "TilesheetLoader": {
+      "rva": 11214368,
+      "cat": "world",
+      "anchor": "Error, tile(%d) haven't texture file",
+      "note": "",
+      "status": "unique",
+      "size": 832,
+      "sites": [
+        "0xAB1E88"
+      ],
+      "verified": true
+    },
+    "BgItemMapValidator": {
+      "rva": 13472864,
+      "cat": "world",
+      "anchor": "Removing illegal bg item %d from map %s",
+      "note": "",
+      "status": "unique",
+      "size": 435,
+      "sites": [
+        "0xCD95EB"
+      ],
+      "verified": true
+    },
+    "NetAvatar_OnAvatarBePaintBalled": {
+      "rva": 12014832,
+      "cat": "player",
+      "anchor": "NetAvatar::OnAvatarBePaintBalled sourceNetID is invalid=%d",
+      "note": "",
+      "status": "unique",
+      "size": 582,
+      "sites": [
+        "0xB75561"
+      ],
+      "verified": true
+    },
+    "PunchHackDetector": {
+      "rva": 12034032,
+      "cat": "anticheat",
+      "anchor": "Punch hack detected!",
+      "note": "",
+      "status": "unique",
+      "size": 3167,
+      "sites": [
+        "0xB7A8E3"
+      ],
+      "verified": true
+    },
+    "PunchNoTileHandler": {
+      "rva": 10682336,
+      "cat": "combat",
+      "anchor": "a punch was sent with no tile!",
+      "note": "",
+      "status": "unique",
+      "size": 72964,
+      "sites": [
+        "0xA41982"
+      ],
+      "verified": true
+    },
+    "HarvestInteraction": {
+      "rva": 11118432,
+      "cat": "combat",
+      "anchor": "You can harvest it by punching!",
+      "note": "",
+      "status": "unique",
+      "size": 3894,
+      "sites": [
+        "0xA9B26A"
+      ],
+      "verified": true
+    },
+    "CameraManager": {
+      "rva": 11199088,
+      "cat": "camera",
+      "anchor": "warning: No camera was active",
+      "note": "",
+      "status": "unique",
+      "size": 375,
+      "sites": [
+        "0xAAE2A9"
+      ],
+      "verified": true
+    },
+    "DialogBuilder": {
+      "rva": 14086480,
+      "cat": "ui",
+      "anchor": "Error with add_searchable_item_list parms",
+      "note": "",
+      "status": "unique",
+      "size": 30966,
+      "sites": [
+        "0xD703A6"
+      ],
+      "verified": true
+    },
+    "BannerDialogBuilder": {
+      "rva": 14593024,
+      "cat": "ui",
+      "anchor": "Error with add_banner parms",
+      "note": "",
+      "status": "unique",
+      "size": 12770,
+      "sites": [
+        "0xDEC398"
+      ],
+      "verified": true
+    },
+    "EnableAllButtonsEntity": {
+      "rva": 19210896,
+      "cat": "ui",
+      "anchor": "EnableAllButtonsEntity() nullptr == pEnt",
+      "note": "",
+      "status": "unique",
+      "size": 1526,
+      "sites": [
+        "0x12522D2"
+      ],
+      "verified": true
+    },
+    "Controller_PushController": {
+      "rva": 14681808,
+      "cat": "ui",
+      "anchor": "Controller::PushController",
+      "note": "",
+      "status": "unique",
+      "size": 721,
+      "sites": [
+        "0xE0075D"
+      ],
+      "verified": true
+    },
+    "Controller_PopController": {
+      "rva": 14681264,
+      "cat": "ui",
+      "anchor": "Controller::PopController",
+      "note": "",
+      "status": "unique",
+      "size": 544,
+      "sites": [
+        "0xE00536"
+      ],
+      "verified": true
+    },
+    "Controller_PushChildController": {
+      "rva": 17878688,
+      "cat": "ui",
+      "anchor": "Controller::PushChildController",
+      "note": "",
+      "status": "unique",
+      "size": 690,
+      "sites": [
+        "0x110CF2D"
+      ],
+      "verified": true
+    },
+    "Controller_OnActivate": {
+      "rva": 14916720,
+      "cat": "ui",
+      "anchor": "Controller::OnActivate",
+      "note": "",
+      "status": "ambiguous(2)",
+      "size": 475,
+      "owners": [
+        "0xE39C70",
+        "0x1161320"
+      ],
+      "verified": true
+    },
+    "Controller_Deactivate": {
+      "rva": 14915760,
+      "cat": "ui",
+      "anchor": "Controller::Deactivate",
+      "note": "",
+      "status": "unique",
+      "size": 638,
+      "sites": [
+        "0xE39957"
+      ],
+      "verified": true
+    },
+    "Controller_Release": {
+      "rva": 10504320,
+      "cat": "ui",
+      "anchor": "Controller::Release",
+      "note": "",
+      "status": "unique",
+      "size": 489,
+      "sites": [
+        "0xA0490D"
+      ],
+      "verified": true
+    },
+    "UIController_OnActivate": {
+      "rva": 18223904,
+      "cat": "ui",
+      "anchor": "UIController::OnActivate",
+      "note": "",
+      "status": "unique",
+      "size": 1512,
+      "sites": [
+        "0x1161495"
+      ],
+      "verified": true
+    },
+    "UIController_OnDeactivate": {
+      "rva": 18225424,
+      "cat": "ui",
+      "anchor": "UIController::OnDeactivate",
+      "note": "",
+      "status": "unique",
+      "size": 622,
+      "sites": [
+        "0x116199D"
+      ],
+      "verified": true
+    },
+    "UIController_RemoveScreenView": {
+      "rva": 18226064,
+      "cat": "ui",
+      "anchor": "UIController::RemoveScreenView",
+      "note": "",
+      "status": "unique",
+      "size": 1139,
+      "sites": [
+        "0x1161C95"
+      ],
+      "verified": true
+    },
+    "ParticleEmitter_GetPaintballColor": {
+      "rva": 15240432,
+      "cat": "fx",
+      "anchor": "ParticleEmitter::GetPaintballColor() un-defined color",
+      "note": "",
+      "status": "unique",
+      "size": 260,
+      "sites": [
+        "0xE88DA2"
+      ],
+      "verified": true
+    },
+    "RTFont_GetColorFromString": {
+      "rva": 14515616,
+      "cat": "fx",
+      "anchor": "RTFont::GetColorFromString> Bad code",
+      "note": "",
+      "status": "unique",
+      "size": 117,
+      "sites": [
+        "0xDD7DB3"
+      ],
+      "verified": true
+    },
+    "ResourceManager_GetSurfaceResource": {
+      "rva": 19675696,
+      "cat": "fx",
+      "anchor": "ResourceManager::GetSurfaceResource: Unable to load %s",
+      "note": "",
+      "status": "ambiguous(2)",
+      "size": 781,
+      "owners": [
+        "0x12C3A30",
+        "0x12C3D40"
+      ],
+      "verified": true
+    },
+    "VideoModeManager_SetVideoMode": {
+      "rva": 14851920,
+      "cat": "gfx",
+      "anchor": "VideoModeManager::SetVideoMode",
+      "note": "",
+      "status": "ambiguous(2)",
+      "size": 384,
+      "owners": [
+        "0xE29F50",
+        "0xE2A1C0"
+      ],
+      "verified": true
+    },
+    "VideoModeManager_SetFullscreen": {
+      "rva": 14850144,
+      "cat": "gfx",
+      "anchor": "VideoModeManager::SetFullscreenVideoMode",
+      "note": "",
+      "status": "ambiguous(3)",
+      "size": 141,
+      "owners": [
+        "0xE29860",
+        "0xE2A0D0",
+        "0xE2A220"
+      ],
+      "verified": true
+    },
+    "VideoModeManager_AddVideoMode": {
+      "rva": 14840208,
+      "cat": "gfx",
+      "anchor": "VideoModeManager::AddVideoMode",
+      "note": "self-naming anchor: AddVideoMode logs its own name once; a 5478-byte caller logs it 3x",
+      "status": "picked-smallest(2)",
+      "size": 264,
+      "owners": [
+        "0xE27190",
+        "0xE28020"
+      ],
+      "verified": true
+    },
+    "VideoModeManager_GetCustomVideoModes": {
+      "rva": 14841680,
+      "cat": "gfx",
+      "anchor": "VideoModeManager::GetCustomVideoModes",
+      "note": "",
+      "status": "unique",
+      "size": 436,
+      "sites": [
+        "0xE2779D"
+      ],
+      "verified": true
+    },
+    "VideoModeManager_OnWMSize": {
+      "rva": 14850352,
+      "cat": "gfx",
+      "anchor": "VideoModeManager::OnWMSize",
+      "note": "",
+      "status": "unique",
+      "size": 479,
+      "sites": [
+        "0xE299F4",
+        "0xE29A77"
+      ],
+      "verified": true
+    },
+    "IAPManager_LoadCurrenciesConfig": {
+      "rva": 18971488,
+      "cat": "economy",
+      "anchor": "IAPManager::LoadCurrenciesConfig() text.empty",
+      "note": "",
+      "status": "unique",
+      "size": 1603,
+      "sites": [
+        "0x1217C6E"
+      ],
+      "verified": true
+    },
+    "IAPManager_ctor": {
+      "rva": 19020944,
+      "cat": "economy",
+      "anchor": "IAPManager::IAPManager() iapText.empty",
+      "note": "",
+      "status": "unique",
+      "size": 510,
+      "sites": [
+        "0x1223DBB"
+      ],
+      "verified": true
+    },
+    "App_Kill": {
+      "rva": 10500144,
+      "cat": "app",
+      "anchor": "Don't call App::Kill() again.",
+      "note": "",
+      "status": "unique",
+      "size": 454,
+      "sites": [
+        "0xA03848"
+      ],
+      "verified": true
+    },
+    "StoreBuyPacketPath": {
+      "rva": 14577264,
+      "cat": "econ",
+      "anchor": "OnStoreBuyConfirm",
+      "note": "",
+      "status": "unique",
+      "size": 8562,
+      "sites": [
+        "0xDE820C",
+        "0xDE8525",
+        "0xDE87C0",
+        "0xDE89E0"
+      ],
+      "verified": true
+    },
+    "TileCoordinateHandler": {
+      "rva": 10675600,
+      "cat": "world",
+      "anchor": "tileX == %d, tileY == %d",
+      "note": "",
+      "status": "unique",
+      "size": 228,
+      "sites": [
+        "0xA2E5B2"
+      ],
+      "verified": true
+    },
+    "LogDisplayEntityBuilder": {
+      "rva": 19226240,
+      "cat": "ui",
+      "anchor": "LogDisplayEntity",
+      "note": "NOT LogToConsole: the sole owner of this string also refs GenericDialog/GameMenu/PauseMenu, i.e. the UI-entity builder. The logger is not separable by this anchor.",
+      "status": "unique",
+      "size": 2351,
+      "sites": [
+        "0x125611D"
+      ],
+      "verified": true
+    },
+    "LoginPacketBuilder": {
+      "rva": 14925376,
+      "cat": "net",
+      "anchor": "tankIDName| + requestedName| + rid|",
+      "note": "",
+      "status": "unique",
+      "size": 14277,
+      "verified": true
+    },
+    "TileActionBuilder": {
+      "rva": 12043136,
+      "cat": "net",
+      "anchor": "tileY|",
+      "note": "",
+      "status": "unique",
+      "size": 2305,
+      "verified": true
+    },
+    "DialogButtonBuilder": {
+      "rva": 18283632,
+      "cat": "net",
+      "anchor": "button|",
+      "note": "",
+      "status": "unique",
+      "size": 3790,
+      "verified": true
+    },
+    "NetAvatarSpawnHandler": {
+      "rva": 12337936,
+      "cat": "player",
+      "anchor": "netID| + mstate| + smstate|",
+      "note": "",
+      "status": "unique",
+      "size": 3660,
+      "verified": true
+    },
+    "GameUpdatePacketSerializer": {
+      "rva": 11090848,
+      "cat": "net",
+      "anchor": "GameUpdatePacket data: ",
+      "note": "",
+      "status": "unique",
+      "size": 185,
+      "verified": true
+    },
+    "NetAvatarNetIDEmitter": {
+      "rva": 12326800,
+      "cat": "player",
+      "anchor": "netID|",
+      "note": "",
+      "status": "picked-smallest(2)",
+      "size": 248,
+      "owners": [
+        "0xBC1790",
+        "0xBC4310"
+      ],
+      "verified": true
+    },
+    "IAPPurchaseValidation": {
+      "rva": 14241552,
+      "cat": "econ",
+      "anchor": "action|houston_validation_done + currency| + purchaseState|",
+      "note": "",
+      "status": "unique",
+      "size": 7344,
+      "verified": true
+    },
+    "OnVariantDispatcher": {
+      "rva": 12290320,
+      "cat": "ui",
+      "anchor": "OnZoomCamera + OnPinchMod + OnActivateMenusRequest + OnStoreRequest",
+      "note": "",
+      "status": "unique",
+      "size": 21440,
+      "verified": true
+    },
+    "PunchAction": {
+      "rva": 15037360,
+      "cat": "combat",
+      "anchor": "Punch! + audio/punch_organic.wav",
+      "note": "",
+      "status": "unique",
+      "size": 6996,
+      "verified": true
+    },
+    "GetApp": {
+      "rva": 10486672,
+      "cat": "app",
+      "anchor": "mov rax,[rip];ret pattern",
+      "note": "leaf without unwind data; not a .pdata entry",
+      "status": "pattern+callcount",
+      "callers": 2454,
+      "global_rva": "0x02580C28",
+      "size": 8,
+      "verified": false
+    }
+  },
+  "bindings": [
+    {
+      "rva": "0x02011900",
+      "count": 10,
+      "methods": {
+        "_G": "0x01655B40",
+        "package": "0x01660F00",
+        "coroutine": "0x016561B0",
+        "table": "0x01657120",
+        "io": "0x01658930",
+        "os": "0x01659520",
+        "string": "0x0165D4A0",
+        "math": "0x0165EC60",
+        "utf8": "0x0165DE00",
+        "debug": "0x016600A0"
+      }
+    },
+    {
+      "rva": "0x020125A0",
+      "count": 23,
+      "methods": {
+        "assert": "0x01654AD0",
+        "collectgarbage": "0x01655480",
+        "dofile": "0x01654A40",
+        "error": "0x01655190",
+        "getmetatable": "0x01655210",
+        "ipairs": "0x01655800",
+        "loadfile": "0x01655850",
+        "load": "0x01654940",
+        "next": "0x01655700",
+        "pairs": "0x01655760",
+        "pcall": "0x01654C70",
+        "print": "0x01654E00",
+        "warn": "0x01654EF0",
+        "rawequal": "0x01655320",
+        "rawlen": "0x01655370",
+        "rawget": "0x016553D0",
+        "rawset": "0x01655420",
+        "select": "0x01654BB0",
+        "setmetatable": "0x01655270",
+        "tonumber": "0x01654FA0",
+        "tostring": "0x01654DD0",
+        "type": "0x016556A0",
+        "xpcall": "0x01654D10"
+      }
+    },
+    {
+      "rva": "0x020129D0",
+      "count": 8,
+      "methods": {
+        "create": "0x01655C70",
+        "resume": "0x01655BC0",
+        "running": "0x01655E50",
+        "status": "0x01655D70",
+        "wrap": "0x01655CD0",
+        "yield": "0x01655D40",
+        "isyieldable": "0x01655DE0",
+        "close": "0x01655E80"
+      }
+    },
+    {
+      "rva": "0x02012BD0",
+      "count": 7,
+      "methods": {
+        "concat": "0x01656760",
+        "insert": "0x01656200",
+        "pack": "0x01656990",
+        "unpack": "0x01656A40",
+        "remove": "0x01656390",
+        "move": "0x01656510",
+        "sort": "0x01656B30"
+      }
+    },
+    {
+      "rva": "0x02012D60",
+      "count": 11,
+      "methods": {
+        "close": "0x016579C0",
+        "flush": "0x01657770",
+        "input": "0x01657170",
+        "lines": "0x016572E0",
+        "open": "0x01657AB0",
+        "output": "0x01657200",
+        "popen": "0x01657BF0",
+        "read": "0x01657400",
+        "tmpfile": "0x01657CD0",
+        "type": "0x01657880",
+        "write": "0x016574D0"
+      }
+    },
+    {
+      "rva": "0x02012E20",
+      "count": 7,
+      "methods": {
+        "read": "0x01657470",
+        "write": "0x01657540",
+        "lines": "0x01657290",
+        "flush": "0x01657800",
+        "seek": "0x016575B0",
+        "close": "0x01657950",
+        "setvbuf": "0x016576A0"
+      }
+    },
+    {
+      "rva": "0x02012EB0",
+      "count": 3,
+      "methods": {
+        "__gc": "0x01657A50",
+        "__close": "0x01657A50",
+        "__tostring": "0x016578F0"
+      }
+    },
+    {
+      "rva": "0x02013220",
+      "count": 11,
+      "methods": {
+        "clock": "0x01659290",
+        "date": "0x01658B40",
+        "difftime": "0x01658F50",
+        "execute": "0x01659090",
+        "exit": "0x01659010",
+        "getenv": "0x01659250",
+        "remove": "0x01659100",
+        "rename": "0x01659160",
+        "setlocale": "0x01658FA0",
+        "time": "0x01658DC0",
+        "tmpname": "0x016591E0"
+      }
+    },
+    {
+      "rva": "0x020134B0",
+      "count": 3,
+      "methods": {
+        "byte": "0x01659A40",
+        "char": "0x01659B60",
+        "dump": "0x01659C40"
+      }
+    },
+    {
+      "rva": "0x020134F0",
+      "count": 5,
+      "methods": {
+        "format": "0x0165A170",
+        "gmatch": "0x01659E10",
+        "gsub": "0x01659F20",
+        "len": "0x01659570",
+        "lower": "0x01659730"
+      }
+    },
+    {
+      "rva": "0x02013550",
+      "count": 7,
+      "methods": {
+        "rep": "0x016598B0",
+        "reverse": "0x01659690",
+        "sub": "0x016595A0",
+        "upper": "0x016597F0",
+        "pack": "0x0165A9B0",
+        "packsize": "0x0165B080",
+        "unpack": "0x0165B220"
+      }
+    },
+    {
+      "rva": "0x02013BA0",
+      "count": 5,
+      "methods": {
+        "offset": "0x0165DA10",
+        "codepoint": "0x0165D6E0",
+        "char": "0x0165D8F0",
+        "len": "0x0165D570",
+        "codes": "0x0165DB90"
+      }
+    },
+    {
+      "rva": "0x02013CC0",
+      "count": 21,
+      "methods": {
+        "abs": "0x0165DE80",
+        "acos": "0x0165DFB0",
+        "asin": "0x0165DF80",
+        "atan": "0x0165DFE0",
+        "ceil": "0x0165E120",
+        "cos": "0x0165DF20",
+        "deg": "0x0165E4F0",
+        "exp": "0x0165E4C0",
+        "tointeger": "0x0165E040",
+        "floor": "0x0165E0A0",
+        "fmod": "0x0165E1A0",
+        "ult": "0x0165E3B0",
+        "log": "0x0165E400",
+        "max": "0x0165E610",
+        "min": "0x0165E570",
+        "modf": "0x0165E2A0",
+        "rad": "0x0165E530",
+        "sin": "0x0165DEF0",
+        "sqrt": "0x0165E370",
+        "tan": "0x0165DF50",
+        "type": "0x0165E6B0"
+      }
+    },
+    {
+      "rva": "0x02013F40",
+      "count": 17,
+      "methods": {
+        "debug": "0x0165FD00",
+        "getuservalue": "0x0165EE60",
+        "gethook": "0x0165FB80",
+        "getinfo": "0x0165EF60",
+        "getlocal": "0x0165F3F0",
+        "getregistry": "0x0165EDA0",
+        "getmetatable": "0x0165EDC0",
+        "getupvalue": "0x0165F6E0",
+        "upvaluejoin": "0x0165F870",
+        "upvalueid": "0x0165F7F0",
+        "setuservalue": "0x0165EEE0",
+        "sethook": "0x0165F990",
+        "setlocal": "0x0165F570",
+        "setmetatable": "0x0165EE00",
+        "setupvalue": "0x0165F760",
+        "traceback": "0x0165FEF0",
+        "setcstacklimit": "0x0165FFC0"
+      }
+    },
+    {
+      "rva": "0x024D09E0",
+      "count": 3,
+      "methods": {
+        "CreateContext": "0x016292C0",
+        "LoadFontFace": "0x016293E0",
+        "RegisterTag": "0x01629520"
+      }
+    },
+    {
+      "rva": "0x024D0A20",
+      "count": 3,
+      "methods": {
+        "contexts": "0x01629620",
+        "key_identifier": "0x01629660",
+        "key_modifier": "0x016296A0"
+      }
+    },
+    {
+      "rva": "0x024D0A60",
+      "count": 5,
+      "methods": {
+        "red": "0x0162B3B0",
+        "green": "0x0162B400",
+        "blue": "0x0162B450",
+        "alpha": "0x0162B4A0",
+        "rgba": "0x0162B4F0"
+      }
+    },
+    {
+      "rva": "0x024D0AC0",
+      "count": 5,
+      "methods": {
+        "red": "0x0162B570",
+        "green": "0x0162B5D0",
+        "blue": "0x0162B630",
+        "alpha": "0x0162B690",
+        "rgba": "0x0162B6F0"
+      }
+    },
+    {
+      "rva": "0x024D0B20",
+      "count": 5,
+      "methods": {
+        "red": "0x0162BDC0",
+        "green": "0x0162BE10",
+        "blue": "0x0162BE60",
+        "alpha": "0x0162BEB0",
+        "rgba": "0x0162BF00"
+      }
+    },
+    {
+      "rva": "0x024D0B80",
+      "count": 5,
+      "methods": {
+        "red": "0x0162BF90",
+        "green": "0x0162C000",
+        "blue": "0x0162C070",
+        "alpha": "0x0162C0E0",
+        "rgba": "0x0162C150"
+      }
+    },
+    {
+      "rva": "0x024D0BE0",
+      "count": 17,
+      "methods": {
+        "AddEventListener": "0x0162CAA0",
+        "CreateDocument": "0x0162CFB0",
+        "LoadDocument": "0x0162D0C0",
+        "Render": "0x0162D1B0",
+        "UnloadAllDocuments": "0x0162D1E0",
+        "UnloadDocument": "0x0162D200",
+        "Update": "0x0162D240",
+        "OpenDataModel": "0x0162C650",
+        "ProcessMouseMove": "0x0162C690",
+        "ProcessMouseButtonDown": "0x0162C710",
+        "ProcessMouseButtonUp": "0x0162C770",
+        "ProcessMouseWheel": "0x0162C7D0",
+        "ProcessMouseLeave": "0x0162C840",
+        "IsMouseInteracting": "0x0162C870",
+        "ProcessKeyDown": "0x0162C8A0",
+        "ProcessKeyUp": "0x0162C900",
+        "ProcessTextInput": "0x0162C960"
+      }
+    },
+    {
+      "rva": "0x024D0D00",
+      "count": 7,
+      "methods": {
+        "dimensions": "0x0162D270",
+        "documents": "0x0162D2E0",
+        "dp_ratio": "0x0162D350",
+        "focus_element": "0x0162D390",
+        "hover_element": "0x0162D3F0",
+        "name": "0x0162D450",
+        "root_element": "0x0162D4B0"
+      }
+    },
+    {
+      "rva": "0x024D0DD0",
+      "count": 7,
+      "methods": {
+        "PullToFront": "0x0162E180",
+        "PushToBack": "0x0162E1A0",
+        "Show": "0x0162E1C0",
+        "Hide": "0x0162E240",
+        "Close": "0x0162E260",
+        "CreateElement": "0x0162E280",
+        "CreateTextNode": "0x0162E3F0"
+      }
+    },
+    {
+      "rva": "0x024D0EA0",
+      "count": 22,
+      "methods": {
+        "AddEventListener": "0x0162EDD0",
+        "AppendChild": "0x0162F030",
+        "Blur": "0x0162F130",
+        "Click": "0x0162F150",
+        "DispatchEvent": "0x0162F170",
+        "Focus": "0x0162F6C0",
+        "GetAttribute": "0x0162F6E0",
+        "GetElementById": "0x0162F7D0",
+        "GetElementsByTagName": "0x0162F8C0",
+        "QuerySelector": "0x0162FBD0",
+        "QuerySelectorAll": "0x0162FCC0",
+        "Matches": "0x0162FFD0",
+        "HasAttribute": "0x016300A0",
+        "HasChildNodes": "0x01630170",
+        "InsertBefore": "0x016301A0",
+        "IsClassSet": "0x016302C0",
+        "RemoveAttribute": "0x01630390",
+        "RemoveChild": "0x01630450",
+        "ReplaceChild": "0x016304C0",
+        "ScrollIntoView": "0x016305F0",
+        "SetAttribute": "0x01630620",
+        "SetClass": "0x01630790"
+      }
+    },
+    {
+      "rva": "0x024D1010",
+      "count": 26,
+      "methods": {
+        "attributes": "0x01630880",
+        "child_nodes": "0x016308F0",
+        "class_name": "0x01630960",
+        "client_left": "0x01630A20",
+        "client_height": "0x01630A80",
+        "client_top": "0x01630AE0",
+        "client_width": "0x01630B40",
+        "first_child": "0x01630BA0",
+        "id": "0x01630C00",
+        "inner_rml": "0x01630C60",
+        "last_child": "0x01630D10",
+        "next_sibling": "0x01630D70",
+        "offset_height": "0x01630DD0",
+        "offset_left": "0x01630E30",
+        "offset_parent": "0x01630E90",
+        "offset_top": "0x01630EF0",
+        "offset_width": "0x01630F50",
+        "owner_document": "0x01630FB0",
+        "parent_node": "0x01631010",
+        "previous_sibling": "0x01631070",
+        "scroll_height": "0x016310D0",
+        "scroll_left": "0x01631130",
+        "scroll_top": "0x01631190",
+        "scroll_width": "0x016311F0",
+        "style": "0x01631250",
+        "tag_name": "0x016312C0"
+      }
+    },
+    {
+      "rva": "0x024D11C0",
+      "count": 5,
+      "methods": {
+        "class_name": "0x01631320",
+        "id": "0x01631410",
+        "inner_rml": "0x01631500",
+        "scroll_left": "0x01631600",
+        "scroll_top": "0x01631670"
+      }
+    },
+    {
+      "rva": "0x024D12F0",
+      "count": 4,
+      "methods": {
+        "current_element": "0x01633620",
+        "type": "0x01633680",
+        "target_element": "0x01633860",
+        "parameters": "0x016338C0"
+      }
+    },
+    {
+      "rva": "0x024D1340",
+      "count": 3,
+      "methods": {
+        "DotProduct": "0x01634650",
+        "Normalise": "0x016346C0",
+        "Rotate": "0x01634770"
+      }
+    },
+    {
+      "rva": "0x024D1380",
+      "count": 3,
+      "methods": {
+        "x": "0x01634840",
+        "y": "0x01634890",
+        "magnitude": "0x016348E0"
+      }
+    },
+    {
+      "rva": "0x024D13F0",
+      "count": 3,
+      "methods": {
+        "x": "0x01635140",
+        "y": "0x01635190",
+        "magnitude": "0x016351E0"
+      }
+    },
+    {
+      "rva": "0x024D1480",
+      "count": 3,
+      "methods": {
+        "disabled": "0x01635D10",
+        "name": "0x01635D60",
+        "value": "0x01635E10"
+      }
+    },
+    {
+      "rva": "0x024D14C0",
+      "count": 3,
+      "methods": {
+        "disabled": "0x01635ED0",
+        "name": "0x01635F40",
+        "value": "0x01636030"
+      }
+    },
+    {
+      "rva": "0x024D1500",
+      "count": 3,
+      "methods": {
+        "Select": "0x01636480",
+        "SetSelection": "0x016364A0",
+        "GetSelection": "0x016364F0"
+      }
+    },
+    {
+      "rva": "0x024D1540",
+      "count": 6,
+      "methods": {
+        "checked": "0x016365D0",
+        "maxlength": "0x016366C0",
+        "size": "0x016367C0",
+        "max": "0x016368B0",
+        "min": "0x016369A0",
+        "step": "0x01636A90"
+      }
+    },
+    {
+      "rva": "0x024D15B0",
+      "count": 6,
+      "methods": {
+        "checked": "0x01636B80",
+        "maxlength": "0x01636CE0",
+        "size": "0x01636DE0",
+        "max": "0x01636ED0",
+        "min": "0x01636FD0",
+        "step": "0x016370D0"
+      }
+    },
+    {
+      "rva": "0x024D1620",
+      "count": 3,
+      "methods": {
+        "Add": "0x016376B0",
+        "Remove": "0x01637860",
+        "RemoveAll": "0x016379B0"
+      }
+    },
+    {
+      "rva": "0x024D16B0",
+      "count": 3,
+      "methods": {
+        "Select": "0x01637F10",
+        "SetSelection": "0x01637F30",
+        "GetSelection": "0x01637F80"
+      }
+    },
+    {
+      "rva": "0x024D16F0",
+      "count": 4,
+      "methods": {
+        "cols": "0x01638060",
+        "maxlength": "0x016380B0",
+        "rows": "0x01638100",
+        "wordwrap": "0x01638150"
+      }
+    },
+    {
+      "rva": "0x024D1740",
+      "count": 4,
+      "methods": {
+        "cols": "0x016381A0",
+        "maxlength": "0x01638200",
+        "rows": "0x01638260",
+        "wordwrap": "0x016382C0"
+      }
+    }
+  ],
+  "missing_required": []
+}
