@@ -1,5 +1,5 @@
-// Growtopia x64 offsets - generated 2026-08-04 22:59:57Z
-// image base 0x140000000  build hash b5e17f6c7a314b9e
+// Growtopia x64 offsets - generated 2026-08-05 01:38:36Z
+// image base 0x140000000  build hash 48626ccc3dd2a653
 #pragma once
 namespace gt {
     constexpr uintptr_t kSendPacket = 0x00CBD020; // SendPacket(int type, std::string* text, ENetPeer* peer) - pr
@@ -56,6 +56,48 @@ namespace gt {
     constexpr uintptr_t kStoreBuyPacketPath = 0x00DE6E70; // 
     constexpr uintptr_t kTileCoordinateHandler = 0x00A2E590; // 
     constexpr uintptr_t kLogDisplayEntityBuilder = 0x01255E80; // NOT LogToConsole: the sole owner of this string also refs Ge
+    constexpr uintptr_t kItemRendererXmlLoader = 0x01048E40; // parses GameData/ItemRenderers/*.xml: ItemRenderer/StateMachi
+    constexpr uintptr_t kBattlePetConfigLoader = 0x00C4D280; // 
+    constexpr uintptr_t kOwlsOfAthenaPets_RenderPet = 0x007F52A0; // 
+    constexpr uintptr_t kFlying2Pets_RenderPet = 0x0096B170; // 
+    constexpr uintptr_t kScepter_RenderPet = 0x0071E060; // 
+    constexpr uintptr_t kOwlsOfAthenaPets_OnRespawned = 0x007E03B0; // 
+    constexpr uintptr_t kFlying2Pets_OnRespawned = 0x00955D30; // 
+    constexpr uintptr_t kFactionIconLoader = 0x00B6FB50; // 
+    constexpr uintptr_t kPlayerProgression = 0x0171B210; // 
+    constexpr uintptr_t kTextOverlayActionHandler = 0x00BC5E10; // msg|/file|/imageFile|/delayMS| overlay+audio handler
+    constexpr uintptr_t kInventoryTabUI = 0x01130030; // growid|/tabblocks|/tabseeds|/taball| inventory tabs
+    constexpr uintptr_t kCaptchaInputDialog = 0x00D7E5A0; // 
+    constexpr uintptr_t kAuthClient_Login = 0x01730540; // 
+    constexpr uintptr_t kWorldTileMap = 0x00CFB6B0; // the tile-map container: dimensions + tile count
+    constexpr uintptr_t kTileLookupGuard = 0x00A459A0; // tile lookup / punch target resolution
+    constexpr uintptr_t kTilesheetPageLoader = 0x00D80950; // tile sheet texture loader
+    constexpr uintptr_t kWorldValidation = 0x01177310; // world validation pass
+    constexpr uintptr_t kWeaponDamageTierText = 0x00C87A00; // weapon damage tier description
+    constexpr uintptr_t kGrowtorialButton = 0x00D33B10; // 
+    constexpr uintptr_t kWorldLockText = 0x00B81200; // 
+    constexpr uintptr_t kSeedTreeItemPath = 0x00D5EFC0; // 
+    constexpr uintptr_t kTileDefinitionsLoader = 0x00CA5BD0; // 
+    constexpr uintptr_t kWeatherEffectText = 0x00C7F150; // 
+    constexpr uintptr_t kItemEffectVariantDispatcher = 0x00B89DF0; // second On* dispatcher (43 handlers): item/cosmetic effect va
+    constexpr uintptr_t kOnDeathEquipTagHandler = 0x0104F1C0; // also OnEquipTag; death + equip-tag handling
+    constexpr uintptr_t kOnDisconnectedHandler = 0x00BBEF80; // 
+    constexpr uintptr_t kOnErrorFinishHandler = 0x00AF0E70; // also OnFinish
+    constexpr uintptr_t kOnOverMoveHandler = 0x0122E9C0; // also OnOverEnd; hover/drag move
+    constexpr uintptr_t kOnEventHandler = 0x010E78D0; // 
+    constexpr uintptr_t kOnRenderHandler = 0x012A2B90; // 
+    constexpr uintptr_t kOnFakeScrollToEntity = 0x01294BC0; // 
+    constexpr uintptr_t kOnDeleteHandler = 0x017865C0; // 
+    constexpr uintptr_t kOnButtonSelectedHandler = 0x00D4E9C0; // 
+    constexpr uintptr_t kTradeHandler = 0x00DFAE30; // 
+    constexpr uintptr_t kTradeOtherPlayerGuard = 0x00DF96F0; // 
+    constexpr uintptr_t kStateMachineTransitions = 0x010B1990; // item-renderer state-machine transitions
+    constexpr uintptr_t kAnimCurveKeyFrameParser = 0x01084AA0; // animation curve/keyframe parser
+    constexpr uintptr_t kSpriteAnimStateParser = 0x0108BA40; // sprite animation: playOnState/isLoop
+    constexpr uintptr_t kAnimTimeParser = 0x01086590; // 
+    constexpr uintptr_t kParticleEmitterParser = 0x00E88CF0; // particle emitter definitions
+    constexpr uintptr_t kRendererConditionParser = 0x010B3C50; // state-machine <Condition> evaluation
+    constexpr uintptr_t kSpriteRenderParser = 0x0095B8F0; // 
     constexpr uintptr_t kLoginPacketBuilder = 0x00E3BE40; // 
     constexpr uintptr_t kTileActionBuilder = 0x00B7C380; // 
     constexpr uintptr_t kDialogButtonBuilder = 0x0116FC70; // 
@@ -66,6 +108,9 @@ namespace gt {
     constexpr uintptr_t kOnVariantDispatcher = 0x00BB8910; // 
     constexpr uintptr_t kPunchAction = 0x00E573B0; // 
     constexpr uintptr_t kGetApp = 0x00A00390; // leaf without unwind data; not a .pdata entry
+    constexpr uintptr_t kGetClient = 0x00A91610; // kAppClientOffset = 0xB10 (derived)
+    constexpr uintptr_t kGetPacketProcessor = 0x00BB3650; // kAppPacketProcessorOffset = 0x1258 (derived)
+    constexpr uintptr_t kGetLocalAvatar = 0x00BB3820; // kPacketProcessorLocalAvatarOffset = 0x1D0 (derived)
 
     struct Binding { const char* name; unsigned int rva; };
     struct BindingTable { unsigned int rva; const Binding* rows; int count; };

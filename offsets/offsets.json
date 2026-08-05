@@ -1,19 +1,24 @@
 {
   "meta": {
-    "generated": "2026-08-04 22:59:57Z",
+    "generated": "2026-08-05 01:38:36Z",
     "image": "growtopia_dumped.exe",
     "image_base": 5368709120,
-    "sha256": "b5e17f6c7a314b9e8ebf989e2c8dd79ab3a5272296f455b1a6c4a55be02f1dd7",
+    "sha256": "48626ccc3dd2a6535756e8d9628b0570335b1cfc5b89e15c62e8aab71d59562a",
     "functions_in_pdata": 79521,
     "text": "0x00001000-0x01E99E58",
     "game_version": "v5.53",
     "game_build": "0035202150",
     "game_released": "2026-07-30 10:57:34 UTC",
+    "derived_offsets": {
+      "kAppClientOffset": "0xB10",
+      "kAppPacketProcessorOffset": "0x1258",
+      "kPacketProcessorLocalAvatarOffset": "0x1D0"
+    },
     "binding_tables": 39,
     "binding_methods": 296,
-    "verified": 63,
-    "check": 1,
-    "unresolved": 0
+    "verified": 107,
+    "check": 2,
+    "unresolved": 1
   },
   "offsets": {
     "SendPacket": "0x00CBD020",
@@ -70,6 +75,49 @@
     "StoreBuyPacketPath": "0x00DE6E70",
     "TileCoordinateHandler": "0x00A2E590",
     "LogDisplayEntityBuilder": "0x01255E80",
+    "ItemRendererXmlLoader": "0x01048E40",
+    "BattlePetConfigLoader": "0x00C4D280",
+    "OwlsOfAthenaPets_RenderPet": "0x007F52A0",
+    "Flying2Pets_RenderPet": "0x0096B170",
+    "Scepter_RenderPet": "0x0071E060",
+    "OwlsOfAthenaPets_OnRespawned": "0x007E03B0",
+    "Flying2Pets_OnRespawned": "0x00955D30",
+    "FactionIconLoader": "0x00B6FB50",
+    "PlayerProgression": "0x0171B210",
+    "TextOverlayActionHandler": "0x00BC5E10",
+    "InventoryTabUI": "0x01130030",
+    "CaptchaInputDialog": "0x00D7E5A0",
+    "AuthClient_Login": "0x01730540",
+    "WorldTileMap": "0x00CFB6B0",
+    "TileLookupGuard": "0x00A459A0",
+    "TilesheetPageLoader": "0x00D80950",
+    "WorldValidation": "0x01177310",
+    "WeaponDamageTierText": "0x00C87A00",
+    "GrowtorialButton": "0x00D33B10",
+    "WorldLockText": "0x00B81200",
+    "SeedTreeItemPath": "0x00D5EFC0",
+    "TileDefinitionsLoader": "0x00CA5BD0",
+    "WeatherEffectText": "0x00C7F150",
+    "ItemEffectVariantDispatcher": "0x00B89DF0",
+    "OnDeathEquipTagHandler": "0x0104F1C0",
+    "OnDisconnectedHandler": "0x00BBEF80",
+    "OnErrorFinishHandler": "0x00AF0E70",
+    "OnOverMoveHandler": "0x0122E9C0",
+    "OnEventHandler": "0x010E78D0",
+    "OnRenderHandler": "0x012A2B90",
+    "OnFakeScrollToEntity": "0x01294BC0",
+    "OnDeleteHandler": "0x017865C0",
+    "OnButtonSelectedHandler": "0x00D4E9C0",
+    "TradeHandler": "0x00DFAE30",
+    "TradeOtherPlayerGuard": "0x00DF96F0",
+    "PartyMemberHandler": null,
+    "StateMachineTransitions": "0x010B1990",
+    "AnimCurveKeyFrameParser": "0x01084AA0",
+    "SpriteAnimStateParser": "0x0108BA40",
+    "AnimTimeParser": "0x01086590",
+    "ParticleEmitterParser": "0x00E88CF0",
+    "RendererConditionParser": "0x010B3C50",
+    "SpriteRenderParser": "0x0095B8F0",
     "LoginPacketBuilder": "0x00E3BE40",
     "TileActionBuilder": "0x00B7C380",
     "DialogButtonBuilder": "0x0116FC70",
@@ -79,7 +127,10 @@
     "IAPPurchaseValidation": "0x00D94F10",
     "OnVariantDispatcher": "0x00BB8910",
     "PunchAction": "0x00E573B0",
-    "GetApp": "0x00A00390"
+    "GetApp": "0x00A00390",
+    "GetClient": "0x00A91610",
+    "GetPacketProcessor": "0x00BB3650",
+    "GetLocalAvatar": "0x00BB3820"
   },
   "detail": {
     "SendPacket": {
@@ -742,6 +793,560 @@
       ],
       "verified": true
     },
+    "ItemRendererXmlLoader": {
+      "rva": 17075776,
+      "cat": "physics",
+      "anchor": "PhysicsBody %s wasn't loaded correct.",
+      "note": "parses GameData/ItemRenderers/*.xml: ItemRenderer/StateMachines/StateMachine/ParticleSystem/textureSize + PhysicsBody defs",
+      "status": "unique",
+      "size": 9899,
+      "sites": [
+        "0x10494A6"
+      ],
+      "verified": true
+    },
+    "BattlePetConfigLoader": {
+      "rva": 12898944,
+      "cat": "pets",
+      "anchor": "Can't load BattlePet info config: %s, error: %s, offset: %d",
+      "note": "",
+      "status": "unique",
+      "size": 989,
+      "sites": [
+        "0xC4D582"
+      ],
+      "verified": true
+    },
+    "OwlsOfAthenaPets_RenderPet": {
+      "rva": 8344224,
+      "cat": "pets",
+      "anchor": "OwlsOfAthenaPetsLogics::RenderPet",
+      "note": "",
+      "status": "unique",
+      "size": 2339,
+      "sites": [
+        "0x7F52E3",
+        "0x7F532B",
+        "0x7F5370"
+      ],
+      "verified": true
+    },
+    "Flying2Pets_RenderPet": {
+      "rva": 9875824,
+      "cat": "pets",
+      "anchor": "Flying2PetsLogics::RenderPet",
+      "note": "",
+      "status": "unique",
+      "size": 1959,
+      "sites": [
+        "0x96B1B4",
+        "0x96B1FD",
+        "0x96B242"
+      ],
+      "verified": true
+    },
+    "Scepter_RenderPet": {
+      "rva": 7463008,
+      "cat": "pets",
+      "anchor": "ScepterOfTheHonorGuardLogics::RenderPet",
+      "note": "",
+      "status": "unique",
+      "size": 866,
+      "sites": [
+        "0x71E0A2",
+        "0x71E0ED",
+        "0x71E133"
+      ],
+      "verified": true
+    },
+    "OwlsOfAthenaPets_OnRespawned": {
+      "rva": 8258480,
+      "cat": "pets",
+      "anchor": "OwlsOfAthenaPetsLogics::OnRespawned",
+      "note": "",
+      "status": "unique",
+      "size": 146,
+      "sites": [
+        "0x7E03E3"
+      ],
+      "verified": true
+    },
+    "Flying2Pets_OnRespawned": {
+      "rva": 9788720,
+      "cat": "pets",
+      "anchor": "Flying2PetsLogics::OnRespawned",
+      "note": "",
+      "status": "unique",
+      "size": 146,
+      "sites": [
+        "0x955D63"
+      ],
+      "verified": true
+    },
+    "FactionIconLoader": {
+      "rva": 11991888,
+      "cat": "player",
+      "anchor": "Error loading Faction icons",
+      "note": "",
+      "status": "unique",
+      "size": 13239,
+      "sites": [
+        "0xB7211A"
+      ],
+      "verified": true
+    },
+    "PlayerProgression": {
+      "rva": 24228368,
+      "cat": "player",
+      "anchor": "player.progression.%s",
+      "note": "",
+      "status": "unique",
+      "size": 1056,
+      "sites": [
+        "0x171B535"
+      ],
+      "verified": true
+    },
+    "TextOverlayActionHandler": {
+      "rva": 12344848,
+      "cat": "ui",
+      "anchor": "audioFile|",
+      "note": "msg|/file|/imageFile|/delayMS| overlay+audio handler",
+      "status": "unique",
+      "size": 3712,
+      "sites": [
+        "0xBC6491"
+      ],
+      "verified": true
+    },
+    "InventoryTabUI": {
+      "rva": 18022448,
+      "cat": "ui",
+      "anchor": "tabclothes|",
+      "note": "growid|/tabblocks|/tabseeds|/taball| inventory tabs",
+      "status": "unique",
+      "size": 3392,
+      "sites": [
+        "0x11305F0"
+      ],
+      "verified": true
+    },
+    "CaptchaInputDialog": {
+      "rva": 14149024,
+      "cat": "ui",
+      "anchor": "|CaptchaID|",
+      "note": "",
+      "status": "unique",
+      "size": 7496,
+      "sites": [
+        "0xD7F0D1"
+      ],
+      "verified": true
+    },
+    "AuthClient_Login": {
+      "rva": 24315200,
+      "cat": "net",
+      "anchor": "AuthenticationClient::login with PlayerCredentials",
+      "note": "",
+      "status": "unique",
+      "size": 6320,
+      "sites": [
+        "0x173059F"
+      ],
+      "verified": true
+    },
+    "WorldTileMap": {
+      "rva": 13612720,
+      "cat": "world",
+      "anchor": "WorldTileMap: size: %d, %d; count: %d",
+      "note": "the tile-map container: dimensions + tile count",
+      "status": "unique",
+      "size": 1213,
+      "sites": [
+        "0xCFB78C"
+      ],
+      "verified": true
+    },
+    "TileLookupGuard": {
+      "rva": 10770848,
+      "cat": "world",
+      "anchor": "Error, no tile",
+      "note": "tile lookup / punch target resolution",
+      "status": "unique",
+      "size": 1184,
+      "sites": [
+        "0xA45E27"
+      ],
+      "verified": true
+    },
+    "TilesheetPageLoader": {
+      "rva": 14158160,
+      "cat": "world",
+      "anchor": "Error loading tiles_page2.rttex",
+      "note": "tile sheet texture loader",
+      "status": "unique",
+      "size": 1057,
+      "sites": [
+        "0xD80A70"
+      ],
+      "verified": true
+    },
+    "WorldValidation": {
+      "rva": 18314000,
+      "cat": "world",
+      "anchor": "Validing World Now %s",
+      "note": "world validation pass",
+      "status": "unique",
+      "size": 616,
+      "sites": [
+        "0x1177352"
+      ],
+      "verified": true
+    },
+    "WeaponDamageTierText": {
+      "rva": 13138432,
+      "cat": "combat",
+      "anchor": "Increases the damage of all Tier 1 Weapons.<CR> `210%``",
+      "note": "weapon damage tier description",
+      "status": "unique",
+      "size": 710,
+      "sites": [
+        "0xC87BC0"
+      ],
+      "verified": true
+    },
+    "GrowtorialButton": {
+      "rva": 13843216,
+      "cat": "ui",
+      "anchor": "Error with add_commnty_growtorial_bttn parms",
+      "note": "",
+      "status": "unique",
+      "size": 4370,
+      "sites": [
+        "0xD33DCD"
+      ],
+      "verified": true
+    },
+    "WorldLockText": {
+      "rva": 12063232,
+      "cat": "world",
+      "anchor": " per World Lock",
+      "note": "",
+      "status": "unique",
+      "size": 13171,
+      "sites": [
+        "0xB8165A",
+        "0xB8411B"
+      ],
+      "verified": true
+    },
+    "SeedTreeItemPath": {
+      "rva": 14020544,
+      "cat": "world",
+      "anchor": "itemIDseed2tree_itemAmount",
+      "note": "",
+      "status": "unique",
+      "size": 11101,
+      "sites": [
+        "0xD5F109"
+      ],
+      "verified": true
+    },
+    "TileDefinitionsLoader": {
+      "rva": 13261776,
+      "cat": "world",
+      "anchor": "Please wait, loading tile definitions...",
+      "note": "",
+      "status": "unique",
+      "size": 15673,
+      "sites": [
+        "0xCA5D3A"
+      ],
+      "verified": true
+    },
+    "WeatherEffectText": {
+      "rva": 13103440,
+      "cat": "world",
+      "anchor": "Replaces any other active Weather Effect.",
+      "note": "",
+      "status": "unique",
+      "size": 3273,
+      "sites": [
+        "0xC7F9AB"
+      ],
+      "verified": true
+    },
+    "ItemEffectVariantDispatcher": {
+      "rva": 12099056,
+      "cat": "ui",
+      "anchor": "OnBalloonBunnyUpdate",
+      "note": "second On* dispatcher (43 handlers): item/cosmetic effect variants - OnAddRemoveItemTag, OnBannerBandolier, OnBillboardChange, OnCernuousMask, OnDisguiseChanged, OnHitVFX, ...",
+      "status": "unique",
+      "size": 11776,
+      "sites": [
+        "0xB8BC11"
+      ],
+      "verified": true
+    },
+    "OnDeathEquipTagHandler": {
+      "rva": 17101248,
+      "cat": "combat",
+      "anchor": "OnDeath",
+      "note": "also OnEquipTag; death + equip-tag handling",
+      "status": "unique",
+      "size": 8620,
+      "sites": [
+        "0x10509B2",
+        "0x1050A09"
+      ],
+      "verified": true
+    },
+    "OnDisconnectedHandler": {
+      "rva": 12316544,
+      "cat": "net",
+      "anchor": "OnDisconnected",
+      "note": "",
+      "status": "unique",
+      "size": 54,
+      "sites": [
+        "0xBBEF93"
+      ],
+      "verified": true
+    },
+    "OnErrorFinishHandler": {
+      "rva": 11472496,
+      "cat": "net",
+      "anchor": "OnError",
+      "note": "also OnFinish",
+      "status": "unique",
+      "size": 3511,
+      "sites": [
+        "0xAF1360"
+      ],
+      "verified": true
+    },
+    "OnOverMoveHandler": {
+      "rva": 19065280,
+      "cat": "ui",
+      "anchor": "OnOverMove",
+      "note": "also OnOverEnd; hover/drag move",
+      "status": "unique",
+      "size": 5273,
+      "sites": [
+        "0x122F8E3"
+      ],
+      "verified": true
+    },
+    "OnEventHandler": {
+      "rva": 17725648,
+      "cat": "ui",
+      "anchor": "OnEvent",
+      "note": "",
+      "status": "unique",
+      "size": 3202,
+      "sites": [
+        "0x10E8483"
+      ],
+      "verified": true
+    },
+    "OnRenderHandler": {
+      "rva": 19540880,
+      "cat": "fx",
+      "anchor": "OnRender",
+      "note": "",
+      "status": "picked-smallest(4)",
+      "size": 4477,
+      "owners": [
+        "0x1275FD0",
+        "0x127EEE0",
+        "0x1282E50",
+        "0x12A2B90"
+      ],
+      "verified": true
+    },
+    "OnFakeScrollToEntity": {
+      "rva": 19483584,
+      "cat": "ui",
+      "anchor": "OnFakeScrollToEntity",
+      "note": "",
+      "status": "unique",
+      "size": 4626,
+      "sites": [
+        "0x1295B07"
+      ],
+      "verified": true
+    },
+    "OnDeleteHandler": {
+      "rva": 24667584,
+      "cat": "ui",
+      "anchor": "OnDelete",
+      "note": "",
+      "status": "unique",
+      "size": 1273,
+      "sites": [
+        "0x17867B4"
+      ],
+      "verified": true
+    },
+    "OnButtonSelectedHandler": {
+      "rva": 13953472,
+      "cat": "ui",
+      "anchor": "OnButtonSelected",
+      "note": "",
+      "status": "picked-smallest(9)",
+      "size": 7045,
+      "owners": [
+        "0xD304E0",
+        "0xD4E9C0",
+        "0xDC0BD0",
+        "0xDCA9F0",
+        "0xDCFCC0",
+        "0xDDADB0",
+        "0x10F3ED0",
+        "0x113E800",
+        "0x114EFE0"
+      ],
+      "verified": true
+    },
+    "TradeHandler": {
+      "rva": 14659120,
+      "cat": "trade",
+      "anchor": "CancelTrade",
+      "note": "",
+      "status": "unique",
+      "size": 2294,
+      "sites": [
+        "0xDFAF0D"
+      ],
+      "verified": true
+    },
+    "TradeOtherPlayerGuard": {
+      "rva": 14653168,
+      "cat": "trade",
+      "anchor": "other player doesn't exist!",
+      "note": "",
+      "status": "unique",
+      "size": 4432,
+      "sites": [
+        "0xDF9DFF"
+      ],
+      "verified": true
+    },
+    "PartyMemberHandler": {
+      "rva": null,
+      "cat": "social",
+      "anchor": "partyMember1",
+      "note": "",
+      "status": "no-xref",
+      "verified": false
+    },
+    "StateMachineTransitions": {
+      "rva": 17504656,
+      "cat": "fx",
+      "anchor": "Transitions",
+      "note": "item-renderer state-machine transitions",
+      "status": "unique",
+      "size": 2749,
+      "sites": [
+        "0x10B21D8"
+      ],
+      "verified": true
+    },
+    "AnimCurveKeyFrameParser": {
+      "rva": 17320608,
+      "cat": "fx",
+      "anchor": "KeyFrame",
+      "note": "animation curve/keyframe parser",
+      "status": "picked-smallest(7)",
+      "size": 1507,
+      "owners": [
+        "0x1072900",
+        "0x1084AA0",
+        "0x1085090",
+        "0x1085700",
+        "0x1085DC0",
+        "0x1087530",
+        "0x1093980"
+      ],
+      "verified": true
+    },
+    "SpriteAnimStateParser": {
+      "rva": 17349184,
+      "cat": "fx",
+      "anchor": "playOnState",
+      "note": "sprite animation: playOnState/isLoop",
+      "status": "unique",
+      "size": 1419,
+      "sites": [
+        "0x108BD99"
+      ],
+      "verified": true
+    },
+    "AnimTimeParser": {
+      "rva": 17327504,
+      "cat": "fx",
+      "anchor": "animTime",
+      "note": "",
+      "status": "picked-smallest(11)",
+      "size": 508,
+      "owners": [
+        "0x1048E40",
+        "0x1084AA0",
+        "0x1085090",
+        "0x1085700",
+        "0x1085DC0",
+        "0x1086590",
+        "0x1086790",
+        "0x1086A30",
+        "0x1086D30",
+        "0x10871C0",
+        "0x1087530"
+      ],
+      "verified": true
+    },
+    "ParticleEmitterParser": {
+      "rva": 15240432,
+      "cat": "fx",
+      "anchor": "Emitter",
+      "note": "particle emitter definitions",
+      "status": "picked-smallest(2)",
+      "size": 260,
+      "owners": [
+        "0xE88CF0",
+        "0x108E600"
+      ],
+      "verified": true
+    },
+    "RendererConditionParser": {
+      "rva": 17513552,
+      "cat": "fx",
+      "anchor": "Condition",
+      "note": "state-machine <Condition> evaluation",
+      "status": "picked-smallest(5)",
+      "size": 806,
+      "owners": [
+        "0xC3F020",
+        "0x1014040",
+        "0x10AAC40",
+        "0x10B3C50",
+        "0x16B9190"
+      ],
+      "verified": true
+    },
+    "SpriteRenderParser": {
+      "rva": 9812208,
+      "cat": "fx",
+      "anchor": "SpriteRender",
+      "note": "",
+      "status": "picked-smallest(3)",
+      "size": 344,
+      "owners": [
+        "0x87D790",
+        "0x890400",
+        "0x95B8F0"
+      ],
+      "verified": true
+    },
     "LoginPacketBuilder": {
       "rva": 14925376,
       "cat": "net",
@@ -836,6 +1441,36 @@
       "callers": 2454,
       "global_rva": "0x02580C28",
       "size": 8,
+      "verified": false
+    },
+    "GetClient": {
+      "rva": 11081232,
+      "cat": "app",
+      "anchor": "singleton accessor chain from GetApp",
+      "note": "kAppClientOffset = 0xB10 (derived)",
+      "status": "pattern+callcount",
+      "size": null,
+      "callers": 14,
+      "verified": true
+    },
+    "GetPacketProcessor": {
+      "rva": 12269136,
+      "cat": "app",
+      "anchor": "singleton accessor chain from GetApp",
+      "note": "kAppPacketProcessorOffset = 0x1258 (derived)",
+      "status": "pattern+callcount",
+      "size": null,
+      "callers": 2043,
+      "verified": true
+    },
+    "GetLocalAvatar": {
+      "rva": 12269600,
+      "cat": "app",
+      "anchor": "singleton accessor chain from GetApp",
+      "note": "kPacketProcessorLocalAvatarOffset = 0x1D0 (derived)",
+      "status": "pattern+callcount",
+      "size": null,
+      "callers": 583,
       "verified": false
     }
   },

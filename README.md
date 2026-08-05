@@ -12,16 +12,17 @@
 |---|---|
 | image base | `0x140000000` |
 | `.text` | `0x00001000-0x01E99E58` |
-| SHA-256 | `b5e17f6c7a314b9e8ebf989e2c8dd79ab3a5272296f455b1a6c4a55be02f1dd7` |
+| SHA-256 | `48626ccc3dd2a6535756e8d9628b0570335b1cfc5b89e15c62e8aab71d59562a` |
 | functions in `.pdata` | 79521 |
-| generated | 2026-08-04 22:59:57Z |
+| generated | 2026-08-05 01:38:36Z |
 
 | Status | Count | Meaning |
 | ------ | ----: | ------- |
-| VERIFIED | 359 | Address is a `.pdata` function start in the executable `.text` segment |
-| CHECK | 1 | Resolved but did not satisfy every check |
+| VERIFIED | 403 | Address is a `.pdata` function start in the executable `.text` segment |
+| CHECK | 2 | Resolved but did not satisfy every check |
+| UNRESOLVED | 1 | No single owner found for the anchor |
 
-**Total functions/methods documented:** `360`
+**Total functions/methods documented:** `405`
 
 ---
 
@@ -32,16 +33,29 @@
 | anticheat | `PunchHackDetector` | `0x00B79FF0` | 3167 | VERIFIED | `Punch hack detected!` |
 | app | `GetApp` | `0x00A00390` | 8 | CHECK | `mov rax,[rip];ret pattern` |
 | app | `App_Kill` | `0x00A03830` | 454 | VERIFIED | `Don't call App::Kill() again.` |
+| app | `GetClient` | `0x00A91610` | - | VERIFIED | `singleton accessor chain from GetApp` |
+| app | `GetPacketProcessor` | `0x00BB3650` | - | VERIFIED | `singleton accessor chain from GetApp` |
+| app | `GetLocalAvatar` | `0x00BB3820` | - | CHECK | `singleton accessor chain from GetApp` |
 | camera | `CameraManager` | `0x00AAE270` | 375 | VERIFIED | `warning: No camera was active` |
 | combat | `PunchNoTileHandler` | `0x00A2FFE0` | 72964 | VERIFIED | `a punch was sent with no tile!` |
 | combat | `HarvestInteraction` | `0x00A9A760` | 3894 | VERIFIED | `You can harvest it by punching!` |
+| combat | `WeaponDamageTierText` | `0x00C87A00` | 710 | VERIFIED | `Increases the damage of all Tier 1 Weapons.<CR> `210%``` |
 | combat | `PunchAction` | `0x00E573B0` | 6996 | VERIFIED | `Punch! + audio/punch_organic.wav` |
+| combat | `OnDeathEquipTagHandler` | `0x0104F1C0` | 8620 | VERIFIED | `OnDeath` |
 | econ | `IAPPurchaseValidation` | `0x00D94F10` | 7344 | VERIFIED | `action\|houston_validation_done + currency\| + purchaseState\|` |
 | econ | `StoreBuyPacketPath` | `0x00DE6E70` | 8562 | VERIFIED | `OnStoreBuyConfirm` |
 | economy | `IAPManager_LoadCurrenciesConfig` | `0x01217B60` | 1603 | VERIFIED | `IAPManager::LoadCurrenciesConfig() text.empty` |
 | economy | `IAPManager_ctor` | `0x01223C90` | 510 | VERIFIED | `IAPManager::IAPManager() iapText.empty` |
+| fx | `SpriteRenderParser` | `0x0095B8F0` | 344 | VERIFIED | `SpriteRender` |
 | fx | `RTFont_GetColorFromString` | `0x00DD7DA0` | 117 | VERIFIED | `RTFont::GetColorFromString> Bad code` |
 | fx | `ParticleEmitter_GetPaintballColor` | `0x00E88CF0` | 260 | VERIFIED | `ParticleEmitter::GetPaintballColor() un-defined color` |
+| fx | `ParticleEmitterParser` | `0x00E88CF0` | 260 | VERIFIED | `Emitter` |
+| fx | `AnimCurveKeyFrameParser` | `0x01084AA0` | 1507 | VERIFIED | `KeyFrame` |
+| fx | `AnimTimeParser` | `0x01086590` | 508 | VERIFIED | `animTime` |
+| fx | `SpriteAnimStateParser` | `0x0108BA40` | 1419 | VERIFIED | `playOnState` |
+| fx | `StateMachineTransitions` | `0x010B1990` | 2749 | VERIFIED | `Transitions` |
+| fx | `RendererConditionParser` | `0x010B3C50` | 806 | VERIFIED | `Condition` |
+| fx | `OnRenderHandler` | `0x012A2B90` | 4477 | VERIFIED | `OnRender` |
 | fx | `ResourceManager_GetSurfaceResource` | `0x012C3A30` | 781 | VERIFIED | `ResourceManager::GetSurfaceResource: Unable to load %s` |
 | gfx | `VideoModeManager_AddVideoMode` | `0x00E27190` | 264 | VERIFIED | `VideoModeManager::AddVideoMode` |
 | gfx | `VideoModeManager_GetCustomVideoModes` | `0x00E27750` | 436 | VERIFIED | `VideoModeManager::GetCustomVideoModes` |
@@ -60,7 +74,9 @@
 | net | `ENetHostConnectSetup` | `0x00A91630` | 470 | VERIFIED | `No available peers for initiating an ENet connection.` |
 | net | `PacketTypeDispatcher` | `0x00A91A50` | 1392 | VERIFIED | `Got unknown packet type: %d` |
 | net | `GameUpdatePacketSerializer` | `0x00A93BA0` | 185 | VERIFIED | `GameUpdatePacket data: ` |
+| net | `OnErrorFinishHandler` | `0x00AF0E70` | 3511 | VERIFIED | `OnError` |
 | net | `TileActionBuilder` | `0x00B7C380` | 2305 | VERIFIED | `tileY\|` |
+| net | `OnDisconnectedHandler` | `0x00BBEF80` | 54 | VERIFIED | `OnDisconnected` |
 | net | `ProcessTankUpdatePacket` | `0x00BC9480` | 17868 | VERIFIED | `Error reading function packet, ignoring` |
 | net | `TrackPacketSender` | `0x00BFE7E0` | 3880 | VERIFIED | `Bad Track Packet , eventName not defined` |
 | net | `PacketLengthValidator` | `0x00CBA0B0` | 41 | VERIFIED | `Bad packet length, ignoring message` |
@@ -69,28 +85,58 @@
 | net | `LoginPacketBuilder` | `0x00E3BE40` | 14277 | VERIFIED | `tankIDName\| + requestedName\| + rid\|` |
 | net | `DialogButtonBuilder` | `0x0116FC70` | 3790 | VERIFIED | `button\|` |
 | net | `VariantListSerializeFromMem` | `0x012FC360` | 860 | VERIFIED | `unknown var type` |
+| net | `AuthClient_Login` | `0x01730540` | 6320 | VERIFIED | `AuthenticationClient::login with PlayerCredentials` |
+| pets | `Scepter_RenderPet` | `0x0071E060` | 866 | VERIFIED | `ScepterOfTheHonorGuardLogics::RenderPet` |
+| pets | `OwlsOfAthenaPets_OnRespawned` | `0x007E03B0` | 146 | VERIFIED | `OwlsOfAthenaPetsLogics::OnRespawned` |
+| pets | `OwlsOfAthenaPets_RenderPet` | `0x007F52A0` | 2339 | VERIFIED | `OwlsOfAthenaPetsLogics::RenderPet` |
+| pets | `Flying2Pets_OnRespawned` | `0x00955D30` | 146 | VERIFIED | `Flying2PetsLogics::OnRespawned` |
+| pets | `Flying2Pets_RenderPet` | `0x0096B170` | 1959 | VERIFIED | `Flying2PetsLogics::RenderPet` |
+| pets | `BattlePetConfigLoader` | `0x00C4D280` | 989 | VERIFIED | `Can't load BattlePet info config: %s, error: %s, offset: %d` |
+| physics | `ItemRendererXmlLoader` | `0x01048E40` | 9899 | VERIFIED | `PhysicsBody %s wasn't loaded correct.` |
+| player | `FactionIconLoader` | `0x00B6FB50` | 13239 | VERIFIED | `Error loading Faction icons` |
 | player | `NetAvatar_OnAvatarBePaintBalled` | `0x00B754F0` | 582 | VERIFIED | `NetAvatar::OnAvatarBePaintBalled sourceNetID is invalid=%d` |
 | player | `NetAvatarNetIDEmitter` | `0x00BC1790` | 248 | VERIFIED | `netID\|` |
 | player | `NetAvatarSpawnHandler` | `0x00BC4310` | 3660 | VERIFIED | `netID\| + mstate\| + smstate\|` |
+| player | `PlayerProgression` | `0x0171B210` | 1056 | VERIFIED | `player.progression.%s` |
+| trade | `TradeOtherPlayerGuard` | `0x00DF96F0` | 4432 | VERIFIED | `other player doesn't exist!` |
+| trade | `TradeHandler` | `0x00DFAE30` | 2294 | VERIFIED | `CancelTrade` |
 | ui | `Controller_Release` | `0x00A04880` | 489 | VERIFIED | `Controller::Release` |
+| ui | `ItemEffectVariantDispatcher` | `0x00B89DF0` | 11776 | VERIFIED | `OnBalloonBunnyUpdate` |
 | ui | `OnVariantDispatcher` | `0x00BB8910` | 21440 | VERIFIED | `OnZoomCamera + OnPinchMod + OnActivateMenusRequest + OnStoreRequest` |
+| ui | `TextOverlayActionHandler` | `0x00BC5E10` | 3712 | VERIFIED | `audioFile\|` |
+| ui | `GrowtorialButton` | `0x00D33B10` | 4370 | VERIFIED | `Error with add_commnty_growtorial_bttn parms` |
+| ui | `OnButtonSelectedHandler` | `0x00D4E9C0` | 7045 | VERIFIED | `OnButtonSelected` |
 | ui | `DialogBuilder` | `0x00D6F150` | 30966 | VERIFIED | `Error with add_searchable_item_list parms` |
+| ui | `CaptchaInputDialog` | `0x00D7E5A0` | 7496 | VERIFIED | `\|CaptchaID\|` |
 | ui | `BannerDialogBuilder` | `0x00DEAC00` | 12770 | VERIFIED | `Error with add_banner parms` |
 | ui | `Controller_PopController` | `0x00E004B0` | 544 | VERIFIED | `Controller::PopController` |
 | ui | `Controller_PushController` | `0x00E006D0` | 721 | VERIFIED | `Controller::PushController` |
 | ui | `Controller_Deactivate` | `0x00E398B0` | 638 | VERIFIED | `Controller::Deactivate` |
 | ui | `Controller_OnActivate` | `0x00E39C70` | 475 | VERIFIED | `Controller::OnActivate` |
+| ui | `OnEventHandler` | `0x010E78D0` | 3202 | VERIFIED | `OnEvent` |
 | ui | `Controller_PushChildController` | `0x0110CEA0` | 690 | VERIFIED | `Controller::PushChildController` |
+| ui | `InventoryTabUI` | `0x01130030` | 3392 | VERIFIED | `tabclothes\|` |
 | ui | `UIController_OnActivate` | `0x01161320` | 1512 | VERIFIED | `UIController::OnActivate` |
 | ui | `UIController_OnDeactivate` | `0x01161910` | 622 | VERIFIED | `UIController::OnDeactivate` |
 | ui | `UIController_RemoveScreenView` | `0x01161B90` | 1139 | VERIFIED | `UIController::RemoveScreenView` |
+| ui | `OnOverMoveHandler` | `0x0122E9C0` | 5273 | VERIFIED | `OnOverMove` |
 | ui | `EnableAllButtonsEntity` | `0x01252290` | 1526 | VERIFIED | `EnableAllButtonsEntity() nullptr == pEnt` |
 | ui | `LogDisplayEntityBuilder` | `0x01255E80` | 2351 | VERIFIED | `LogDisplayEntity` |
+| ui | `OnFakeScrollToEntity` | `0x01294BC0` | 4626 | VERIFIED | `OnFakeScrollToEntity` |
+| ui | `OnDeleteHandler` | `0x017865C0` | 1273 | VERIFIED | `OnDelete` |
 | world | `TileCoordinateHandler` | `0x00A2E590` | 228 | VERIFIED | `tileX == %d, tileY == %d` |
+| world | `TileLookupGuard` | `0x00A459A0` | 1184 | VERIFIED | `Error, no tile` |
 | world | `TilesheetLoader` | `0x00AB1E20` | 832 | VERIFIED | `Error, tile(%d) haven't texture file` |
+| world | `WorldLockText` | `0x00B81200` | 13171 | VERIFIED | ` per World Lock` |
 | world | `WorldVersionCheck` | `0x00BC9480` | 17868 | VERIFIED | `ERROR: Wrong world version: %d, dataSize %d` |
+| world | `WeatherEffectText` | `0x00C7F150` | 3273 | VERIFIED | `Replaces any other active Weather Effect.` |
+| world | `TileDefinitionsLoader` | `0x00CA5BD0` | 15673 | VERIFIED | `Please wait, loading tile definitions...` |
 | world | `BgItemMapValidator` | `0x00CD9460` | 435 | VERIFIED | `Removing illegal bg item %d from map %s` |
 | world | `TileExtraParser` | `0x00CEA570` | 23652 | VERIFIED | `Bad type of %d detected in tileextra. WorldName: %s` |
+| world | `WorldTileMap` | `0x00CFB6B0` | 1213 | VERIFIED | `WorldTileMap: size: %d, %d; count: %d` |
+| world | `SeedTreeItemPath` | `0x00D5EFC0` | 11101 | VERIFIED | `itemIDseed2tree_itemAmount` |
+| world | `TilesheetPageLoader` | `0x00D80950` | 1057 | VERIFIED | `Error loading tiles_page2.rttex` |
+| world | `WorldValidation` | `0x01177310` | 616 | VERIFIED | `Validing World Now %s` |
 | world | `WhiteDoorLookup` | `0x014CE2A0` | 754 | VERIFIED | `White door missing from map %s` |
 | world | `World_Load` | `0x014CEA80` | 1173 | VERIFIED | `World::Load: Version %d. f: %d, Name: %s` |
 

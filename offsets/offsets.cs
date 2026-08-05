@@ -1,4 +1,4 @@
-// Growtopia x64 offsets - generated 2026-08-04 22:59:57Z
+// Growtopia x64 offsets - generated 2026-08-05 01:38:36Z
 public static class Offsets {
     public const Int64 SendPacket = 0xCBD020; // SendPacket(int type, std::string* text, ENetPeer* peer) - pr
     public const Int64 SendPacketRaw = 0xCBD140; // SendPacketRaw(int type, void* data, int len, ENetPeer* peer,
@@ -54,6 +54,48 @@ public static class Offsets {
     public const Int64 StoreBuyPacketPath = 0xDE6E70; // 
     public const Int64 TileCoordinateHandler = 0xA2E590; // 
     public const Int64 LogDisplayEntityBuilder = 0x1255E80; // NOT LogToConsole: the sole owner of this string also refs Ge
+    public const Int64 ItemRendererXmlLoader = 0x1048E40; // parses GameData/ItemRenderers/*.xml: ItemRenderer/StateMachi
+    public const Int64 BattlePetConfigLoader = 0xC4D280; // 
+    public const Int64 OwlsOfAthenaPets_RenderPet = 0x7F52A0; // 
+    public const Int64 Flying2Pets_RenderPet = 0x96B170; // 
+    public const Int64 Scepter_RenderPet = 0x71E060; // 
+    public const Int64 OwlsOfAthenaPets_OnRespawned = 0x7E03B0; // 
+    public const Int64 Flying2Pets_OnRespawned = 0x955D30; // 
+    public const Int64 FactionIconLoader = 0xB6FB50; // 
+    public const Int64 PlayerProgression = 0x171B210; // 
+    public const Int64 TextOverlayActionHandler = 0xBC5E10; // msg|/file|/imageFile|/delayMS| overlay+audio handler
+    public const Int64 InventoryTabUI = 0x1130030; // growid|/tabblocks|/tabseeds|/taball| inventory tabs
+    public const Int64 CaptchaInputDialog = 0xD7E5A0; // 
+    public const Int64 AuthClient_Login = 0x1730540; // 
+    public const Int64 WorldTileMap = 0xCFB6B0; // the tile-map container: dimensions + tile count
+    public const Int64 TileLookupGuard = 0xA459A0; // tile lookup / punch target resolution
+    public const Int64 TilesheetPageLoader = 0xD80950; // tile sheet texture loader
+    public const Int64 WorldValidation = 0x1177310; // world validation pass
+    public const Int64 WeaponDamageTierText = 0xC87A00; // weapon damage tier description
+    public const Int64 GrowtorialButton = 0xD33B10; // 
+    public const Int64 WorldLockText = 0xB81200; // 
+    public const Int64 SeedTreeItemPath = 0xD5EFC0; // 
+    public const Int64 TileDefinitionsLoader = 0xCA5BD0; // 
+    public const Int64 WeatherEffectText = 0xC7F150; // 
+    public const Int64 ItemEffectVariantDispatcher = 0xB89DF0; // second On* dispatcher (43 handlers): item/cosmetic effect va
+    public const Int64 OnDeathEquipTagHandler = 0x104F1C0; // also OnEquipTag; death + equip-tag handling
+    public const Int64 OnDisconnectedHandler = 0xBBEF80; // 
+    public const Int64 OnErrorFinishHandler = 0xAF0E70; // also OnFinish
+    public const Int64 OnOverMoveHandler = 0x122E9C0; // also OnOverEnd; hover/drag move
+    public const Int64 OnEventHandler = 0x10E78D0; // 
+    public const Int64 OnRenderHandler = 0x12A2B90; // 
+    public const Int64 OnFakeScrollToEntity = 0x1294BC0; // 
+    public const Int64 OnDeleteHandler = 0x17865C0; // 
+    public const Int64 OnButtonSelectedHandler = 0xD4E9C0; // 
+    public const Int64 TradeHandler = 0xDFAE30; // 
+    public const Int64 TradeOtherPlayerGuard = 0xDF96F0; // 
+    public const Int64 StateMachineTransitions = 0x10B1990; // item-renderer state-machine transitions
+    public const Int64 AnimCurveKeyFrameParser = 0x1084AA0; // animation curve/keyframe parser
+    public const Int64 SpriteAnimStateParser = 0x108BA40; // sprite animation: playOnState/isLoop
+    public const Int64 AnimTimeParser = 0x1086590; // 
+    public const Int64 ParticleEmitterParser = 0xE88CF0; // particle emitter definitions
+    public const Int64 RendererConditionParser = 0x10B3C50; // state-machine <Condition> evaluation
+    public const Int64 SpriteRenderParser = 0x95B8F0; // 
     public const Int64 LoginPacketBuilder = 0xE3BE40; // 
     public const Int64 TileActionBuilder = 0xB7C380; // 
     public const Int64 DialogButtonBuilder = 0x116FC70; // 
@@ -64,6 +106,9 @@ public static class Offsets {
     public const Int64 OnVariantDispatcher = 0xBB8910; // 
     public const Int64 PunchAction = 0xE573B0; // 
     public const Int64 GetApp = 0xA00390; // leaf without unwind data; not a .pdata entry
+    public const Int64 GetClient = 0xA91610; // kAppClientOffset = 0xB10 (derived)
+    public const Int64 GetPacketProcessor = 0xBB3650; // kAppPacketProcessorOffset = 0x1258 (derived)
+    public const Int64 GetLocalAvatar = 0xBB3820; // kPacketProcessorLocalAvatarOffset = 0x1D0 (derived)
     public static readonly (uint Table, string Name, uint Rva)[] Bindings = {
         (0x02011900, "_G", 0x01655B40),
         (0x02011900, "package", 0x01660F00),
