@@ -1,4 +1,4 @@
-// Growtopia x64 offsets - generated 2026-08-05 08:15:04Z
+// Growtopia x64 offsets - generated 2026-08-06 08:14:07Z
 public static class Offsets {
     public const Int64 SendPacket = 0xCBD020; // SendPacket(int type, std::string* text, ENetPeer* peer) - pr
     public const Int64 SendPacketRaw = 0xCBD140; // SendPacketRaw(int type, void* data, int len, ENetPeer* peer,
