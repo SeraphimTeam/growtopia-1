@@ -4,7 +4,7 @@
 
 | Version | Build Number | Updated (UTC) |
 |---|---:|---|
-| v5.53 | `0035202150` | 2026-07-30 10:57:34 UTC |
+| v5.53 | `0260820262` | 2026-07-30 10:57:34 UTC |
 
 **Image**
 
@@ -12,9 +12,9 @@
 |---|---|
 | image base | `0x140000000` |
 | `.text` | `0x00001000-0x01E99E58` |
-| SHA-256 | `c859ef2c5f47df638650fba132ddbfd886cce07cea2f0618000fefdbd200e008` |
+| SHA-256 | `7d21fef231d592c10796800792c4d7a0b25988bd43b2ac95119017dd2f1373da` |
 | functions in `.pdata` | 79521 |
-| generated | 2026-08-07 06:59:43Z |
+| generated | 2026-08-08 06:33:43Z |
 
 | Status | Count | Meaning |
 | ------ | ----: | ------- |

@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated": "2026-08-07 06:59:43Z",
+    "generated": "2026-08-08 06:33:43Z",
     "image": "growtopia_dumped.exe",
     "image_base": 5368709120,
-    "sha256": "c859ef2c5f47df638650fba132ddbfd886cce07cea2f0618000fefdbd200e008",
+    "sha256": "7d21fef231d592c10796800792c4d7a0b25988bd43b2ac95119017dd2f1373da",
     "functions_in_pdata": 79521,
     "text": "0x00001000-0x01E99E58",
     "game_version": "v5.53",
-    "game_build": "0035202150",
+    "game_build": "0260820262",
     "game_released": "2026-07-30 10:57:34 UTC",
     "derived_offsets": {
       "kAppClientOffset": "0xB10",
