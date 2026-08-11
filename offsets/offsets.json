@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated": "2026-08-10 07:07:50Z",
-    "image": "growtopia_dumped.exe",
+    "generated": "2026-08-11 02:20:19Z",
+    "image": "Growtopia.runtime-dump.exe",
     "image_base": 5368709120,
-    "sha256": "9405beb68bded73ede83c1c52e073004ce93467d51b9e61c9d664cdde8a83af9",
+    "sha256": "fdc6db298516b568ef55276f15b18ae50e1e88d85e91a1ee8243054ba2e3881f",
     "functions_in_pdata": 79521,
     "text": "0x00001000-0x01E99E58",
     "game_version": "v5.53",
@@ -14,11 +14,31 @@
       "kAppPacketProcessorOffset": "0x1258",
       "kPacketProcessorLocalAvatarOffset": "0x1D0"
     },
+    "consts_array": {
+      "rva": "0x025969A0",
+      "entries": 13,
+      "decoded": [
+        400.0,
+        5000.0,
+        1000.0,
+        100.0,
+        48.0,
+        1200.0002,
+        -450.0,
+        0.15,
+        300.0,
+        800.0,
+        800.0,
+        500.0,
+        400.0
+      ],
+      "encoding": "entry = [A,0,B,C]; value = 2A-B = B-C"
+    },
     "binding_tables": 39,
     "binding_methods": 296,
-    "verified": 107,
-    "check": 2,
-    "unresolved": 1
+    "verified": 108,
+    "check": 3,
+    "unresolved": 0
   },
   "offsets": {
     "SendPacket": "0x00CBD020",
@@ -110,7 +130,7 @@
     "OnButtonSelectedHandler": "0x00D4E9C0",
     "TradeHandler": "0x00DFAE30",
     "TradeOtherPlayerGuard": "0x00DF96F0",
-    "PartyMemberHandler": null,
+    "PartyMemberHandler": "0x00DBFEB0",
     "StateMachineTransitions": "0x010B1990",
     "AnimCurveKeyFrameParser": "0x01084AA0",
     "SpriteAnimStateParser": "0x0108BA40",
@@ -130,7 +150,8 @@
     "GetApp": "0x00A00390",
     "GetClient": "0x00A91610",
     "GetPacketProcessor": "0x00BB3650",
-    "GetLocalAvatar": "0x00BB3820"
+    "GetLocalAvatar": "0x00BB3820",
+    "ConstsArray": "0x025969A0"
   },
   "detail": {
     "SendPacket": {
@@ -1233,12 +1254,18 @@
       "verified": true
     },
     "PartyMemberHandler": {
-      "rva": null,
+      "rva": 14417584,
       "cat": "social",
       "anchor": "partyMember1",
       "note": "",
-      "status": "no-xref",
-      "verified": false
+      "status": "picked-smallest(3)",
+      "size": 646,
+      "owners": [
+        "0xDBE940",
+        "0xDBF550",
+        "0xDBFEB0"
+      ],
+      "verified": true
     },
     "StateMachineTransitions": {
       "rva": 17504656,
@@ -1471,6 +1498,15 @@
       "status": "pattern+callcount",
       "size": null,
       "callers": 583,
+      "verified": false
+    },
+    "ConstsArray": {
+      "rva": 39414176,
+      "cat": "physics",
+      "anchor": "structural: 2A-B == B-C over [A,0,B,C]",
+      "note": "entry = [A,0,B,C]; value = 2A-B = B-C",
+      "status": "structural(2A-B==B-C)",
+      "size": 208,
       "verified": false
     }
   },
