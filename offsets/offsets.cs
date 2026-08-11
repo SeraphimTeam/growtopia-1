@@ -1,4 +1,4 @@
-// Growtopia x64 offsets - generated 2026-08-11 02:20:19Z
+// Growtopia x64 offsets - generated 2026-08-11 02:44:06Z
 public static class Offsets {
     public const Int64 SendPacket = 0xCBD020; // SendPacket(int type, std::string* text, ENetPeer* peer) - pr
     public const Int64 SendPacketRaw = 0xCBD140; // SendPacketRaw(int type, void* data, int len, ENetPeer* peer,
@@ -89,7 +89,6 @@ public static class Offsets {
     public const Int64 OnButtonSelectedHandler = 0xD4E9C0; // 
     public const Int64 TradeHandler = 0xDFAE30; // 
     public const Int64 TradeOtherPlayerGuard = 0xDF96F0; // 
-    public const Int64 PartyMemberHandler = 0xDBFEB0; // 
     public const Int64 StateMachineTransitions = 0x10B1990; // item-renderer state-machine transitions
     public const Int64 AnimCurveKeyFrameParser = 0x1084AA0; // animation curve/keyframe parser
     public const Int64 SpriteAnimStateParser = 0x108BA40; // sprite animation: playOnState/isLoop
@@ -110,7 +109,6 @@ public static class Offsets {
     public const Int64 GetClient = 0xA91610; // kAppClientOffset = 0xB10 (derived)
     public const Int64 GetPacketProcessor = 0xBB3650; // kAppPacketProcessorOffset = 0x1258 (derived)
     public const Int64 GetLocalAvatar = 0xBB3820; // kPacketProcessorLocalAvatarOffset = 0x1D0 (derived)
-    public const Int64 ConstsArray = 0x25969A0; // entry = [A,0,B,C]; value = 2A-B = B-C
     public static readonly (uint Table, string Name, uint Rva)[] Bindings = {
         (0x02011900, "_G", 0x01655B40),
         (0x02011900, "package", 0x01660F00),
