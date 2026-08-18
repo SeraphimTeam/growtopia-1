@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated": "2026-08-16 06:21:55Z",
+    "generated": "2026-08-18 06:24:24Z",
     "image": "growtopia_dumped.exe",
     "image_base": 5368709120,
-    "sha256": "64ced683b55120556e27ac3c5c8c8c347e6725745aa406384a835a05311bbdf5",
+    "sha256": "d7c5d5cea595657e8c84aa926b3f67944e6ee9bc8c768b43bfcc4992cf9c7c6e",
     "functions_in_pdata": 79521,
     "text": "0x00001000-0x01E99E58",
     "game_version": "v5.53",
@@ -16,7 +16,7 @@
     },
     "consts_array": {
       "rva": "0x025969A0",
-      "entries": 21,
+      "entries": 13,
       "decoded": [
         400.0,
         5000.0,
@@ -25,20 +25,12 @@
         48.0,
         1200.0,
         -450.0,
-        0.1494,
+        0.1504,
         300.0,
         800.0,
         800.0,
         500.0,
-        400.0,
-        0.2999,
-        0.2998,
-        0.75,
-        1000.0,
-        330.0,
-        3000.0,
-        0.1997,
-        15000.0
+        400.0
       ],
       "encoding": "entry = [A,0,B,C]; value = 2A-B = B-C"
     },
@@ -1514,7 +1506,7 @@
       "anchor": "structural: 2A-B == B-C over [A,0,B,C]",
       "note": "entry = [A,0,B,C]; value = 2A-B = B-C",
       "status": "structural(2A-B==B-C)",
-      "size": 336,
+      "size": 208,
       "verified": false
     }
   },
