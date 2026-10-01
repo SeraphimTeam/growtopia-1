@@ -12,9 +12,9 @@
 |---|---|
 | image base | `0x140000000` |
 | `.text` | `0x00001000-0x01E30408` |
-| SHA-256 | `bc12ca38514a86ad29c0a48cf9607376e93fb2f8f5dc171ac201b814d61c794b` |
+| SHA-256 | `d56a3f4e7201357177961f951801770c70c2ccfb00d9d07fafca82fd3334acb2` |
 | functions in `.pdata` | 80018 |
-| generated | 2026-09-30 11:32:40Z |
+| generated | 2026-10-01 12:00:51Z |
 
 | Status | Count | Meaning |
 | ------ | ----: | ------- |
