@@ -1,5 +1,5 @@
-// Growtopia x64 offsets - generated 2026-10-02 11:31:57Z
-// image base 0x140000000  build hash 332e43cd7521e6fe
+// Growtopia x64 offsets - generated 2026-10-03 10:47:44Z
+// image base 0x140000000  build hash b2b4731a1a24ca61
 #pragma once
 namespace gt {
     constexpr uintptr_t kSendPacket = 0x00C47300; // SendPacket(int type, std::string* text, ENetPeer* peer) - pr
@@ -91,7 +91,6 @@ namespace gt {
     constexpr uintptr_t kOnButtonSelectedHandler = 0x00D12EF0; // 
     constexpr uintptr_t kTradeHandler = 0x00D87C00; // 
     constexpr uintptr_t kTradeOtherPlayerGuard = 0x00D864C0; // 
-    constexpr uintptr_t kPartyMemberHandler = 0x00D4E6C0; // 
     constexpr uintptr_t kStateMachineTransitions = 0x010357B0; // item-renderer state-machine transitions
     constexpr uintptr_t kAnimCurveKeyFrameParser = 0x01011710; // animation curve/keyframe parser
     constexpr uintptr_t kSpriteAnimStateParser = 0x010186B0; // sprite animation: playOnState/isLoop
@@ -112,7 +111,6 @@ namespace gt {
     constexpr uintptr_t kGetClient = 0x00A16690; // kAppClientOffset = 0xB10 (derived)
     constexpr uintptr_t kGetPacketProcessor = 0x00B2DE10; // kAppPacketProcessorOffset = 0x1258 (derived)
     constexpr uintptr_t kGetLocalAvatar = 0x00B2DFE0; // kPacketProcessorLocalAvatarOffset = 0x1D0 (derived)
-    constexpr uintptr_t kConstsArray = 0x0253BE90; // entry = [A,0,B,C]; value = 2A-B = B-C
 
     struct Binding { const char* name; unsigned int rva; };
     struct BindingTable { unsigned int rva; const Binding* rows; int count; };
