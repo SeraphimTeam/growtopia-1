@@ -1,410 +1,407 @@
-// Growtopia x64 offsets - generated 2026-10-05 12:56:11Z
+// Growtopia x64 offsets - generated 2026-10-08 12:26:10Z
 public static class Offsets {
-    public const Int64 SendPacket = 0xC47300; // SendPacket(int type, std::string* text, ENetPeer* peer) - pr
-    public const Int64 SendPacketRaw = 0xC47420; // SendPacketRaw(int type, void* data, int len, ENetPeer* peer,
-    public const Int64 ProcessTankUpdatePacket = 0xB43C90; // incoming PACKET_* dispatcher
-    public const Int64 VariantListSerializeFromMem = 0x128D930; // VariantList::SerializeFromMem
-    public const Int64 PacketTypeDispatcher = 0xA16AD0; // 
-    public const Int64 PacketLengthValidator = 0xC44390; // 
-    public const Int64 TrackPacketSender = 0xB78EE0; // 
-    public const Int64 ENetHostConnectSetup = 0xA166B0; // 
-    public const Int64 PlayerItems_AddItem = 0xC4C200; // 
-    public const Int64 PlayerItems_HaveRoomForItem = 0xC4D390; // 
-    public const Int64 PlayerItems_RemoveItem = 0xC4EB10; // 
-    public const Int64 InventoryIllegalItemPurge = 0xC4EC60; // 
-    public const Int64 ItemsDatLoader = 0xC63120; // 
-    public const Int64 ItemValidator = 0xC62BC0; // 
-    public const Int64 ItemHashCheck = 0xC34940; // 
-    public const Int64 ItemSurfaceRender = 0xA47F80; // 
-    public const Int64 ChooseVisual = 0xC83580; // 
-    public const Int64 World_Load = 0x145FFE0; // 
-    public const Int64 WorldVersionCheck = 0xB43C90; // 
-    public const Int64 TileExtraParser = 0xC74A50; // 
-    public const Int64 WhiteDoorLookup = 0x145F7E0; // 
-    public const Int64 TilesheetLoader = 0xA371C0; // 
-    public const Int64 BgItemMapValidator = 0xC63960; // 
-    public const Int64 NetAvatar_OnAvatarBePaintBalled = 0xAEFB90; // 
-    public const Int64 PunchHackDetector = 0xAF4690; // 
-    public const Int64 PunchNoTileHandler = 0x9B4FF0; // 
-    public const Int64 HarvestInteraction = 0xA1F7C0; // 
-    public const Int64 CameraManager = 0xA335F0; // 
-    public const Int64 DialogBuilder = 0xCFDDF0; // 
-    public const Int64 BannerDialogBuilder = 0xD77D80; // 
-    public const Int64 EnableAllButtonsEntity = 0x11E3A10; // 
-    public const Int64 Controller_PushController = 0xD8D4A0; // 
-    public const Int64 Controller_PopController = 0xD8D280; // 
-    public const Int64 Controller_PushChildController = 0x10924B0; // 
-    public const Int64 Controller_OnActivate = 0xDC88D0; // 
-    public const Int64 Controller_Deactivate = 0xDC8510; // 
-    public const Int64 Controller_Release = 0x989880; // 
-    public const Int64 UIController_OnActivate = 0x10E6760; // 
-    public const Int64 UIController_OnDeactivate = 0x10E6D50; // 
-    public const Int64 UIController_RemoveScreenView = 0x10E6FD0; // 
-    public const Int64 ParticleEmitter_GetPaintballColor = 0xE17C60; // 
-    public const Int64 RTFont_GetColorFromString = 0xD65360; // 
-    public const Int64 ResourceManager_GetSurfaceResource = 0x12551F0; // 
-    public const Int64 VideoModeManager_SetVideoMode = 0xDB7D30; // 
-    public const Int64 VideoModeManager_SetFullscreen = 0xDB7640; // 
-    public const Int64 VideoModeManager_AddVideoMode = 0xDB4F70; // self-naming anchor: AddVideoMode logs its own name once; a 5
-    public const Int64 VideoModeManager_GetCustomVideoModes = 0xDB5530; // 
-    public const Int64 VideoModeManager_OnWMSize = 0xDB7710; // 
-    public const Int64 IAPManager_LoadCurrenciesConfig = 0x11A92E0; // 
-    public const Int64 IAPManager_ctor = 0x11B5410; // 
-    public const Int64 App_Kill = 0x988820; // 
-    public const Int64 StoreBuyPacketPath = 0xD74050; // 
-    public const Int64 TileCoordinateHandler = 0x9B35A0; // 
-    public const Int64 LogDisplayEntityBuilder = 0x11E7600; // NOT LogToConsole: the sole owner of this string also refs Ge
-    public const Int64 ItemRendererXmlLoader = 0xFD54F0; // parses GameData/ItemRenderers/*.xml: ItemRenderer/StateMachi
-    public const Int64 BattlePetConfigLoader = 0xBCF3A0; // 
-    public const Int64 OwlsOfAthenaPets_RenderPet = 0x77A160; // 
-    public const Int64 Flying2Pets_RenderPet = 0x8F0040; // 
-    public const Int64 Scepter_RenderPet = 0x6A2790; // 
-    public const Int64 OwlsOfAthenaPets_OnRespawned = 0x765250; // 
-    public const Int64 Flying2Pets_OnRespawned = 0x8DAC50; // 
-    public const Int64 FactionIconLoader = 0xAEA1D0; // 
-    public const Int64 PlayerProgression = 0x16ACDA0; // 
-    public const Int64 TextOverlayActionHandler = 0xB405E0; // msg|/file|/imageFile|/delayMS| overlay+audio handler
-    public const Int64 InventoryTabUI = 0x10B54A0; // growid|/tabblocks|/tabseeds|/taball| inventory tabs
-    public const Int64 CaptchaInputDialog = 0xD0D240; // 
-    public const Int64 AuthClient_Login = 0x16C20D0; // 
-    public const Int64 WorldTileMap = 0xC8AE20; // the tile-map container: dimensions + tile count
-    public const Int64 TileLookupGuard = 0x9CA9B0; // tile lookup / punch target resolution
-    public const Int64 TilesheetPageLoader = 0xD0F5F0; // tile sheet texture loader
-    public const Int64 WorldValidation = 0x10FCD20; // world validation pass
-    public const Int64 WeaponDamageTierText = 0xC11CE0; // weapon damage tier description
-    public const Int64 GrowtorialButton = 0xCC2FB0; // 
-    public const Int64 WorldLockText = 0xAFBA00; // 
-    public const Int64 SeedTreeItemPath = 0xCEDC30; // 
-    public const Int64 TileDefinitionsLoader = 0xC2FEB0; // 
-    public const Int64 WeatherEffectText = 0xC09430; // 
-    public const Int64 ItemEffectVariantDispatcher = 0xB04610; // second On* dispatcher (43 handlers): item/cosmetic effect va
-    public const Int64 OnDeathEquipTagHandler = 0xFDBE60; // also OnEquipTag; death + equip-tag handling
-    public const Int64 OnDisconnectedHandler = 0xB39740; // 
-    public const Int64 OnErrorFinishHandler = 0xA75CD0; // also OnFinish
-    public const Int64 OnOverMoveHandler = 0x11C0140; // also OnOverEnd; hover/drag move
-    public const Int64 OnEventHandler = 0x106CF80; // 
-    public const Int64 OnRenderHandler = 0x1234350; // 
-    public const Int64 OnFakeScrollToEntity = 0x1226380; // 
-    public const Int64 OnDeleteHandler = 0x1718150; // 
-    public const Int64 OnButtonSelectedHandler = 0xD12EF0; // 
-    public const Int64 TradeHandler = 0xD87C00; // 
-    public const Int64 TradeOtherPlayerGuard = 0xD864C0; // 
-    public const Int64 StateMachineTransitions = 0x10357B0; // item-renderer state-machine transitions
-    public const Int64 AnimCurveKeyFrameParser = 0x1011710; // animation curve/keyframe parser
-    public const Int64 SpriteAnimStateParser = 0x10186B0; // sprite animation: playOnState/isLoop
-    public const Int64 AnimTimeParser = 0x1013200; // 
-    public const Int64 ParticleEmitterParser = 0xE17C60; // particle emitter definitions
-    public const Int64 RendererConditionParser = 0x1037BF0; // state-machine <Condition> evaluation
-    public const Int64 SpriteRenderParser = 0x8E0810; // 
-    public const Int64 LoginPacketBuilder = 0xDCAC10; // 
-    public const Int64 TileActionBuilder = 0xAF6B00; // 
-    public const Int64 DialogButtonBuilder = 0x10F5680; // 
-    public const Int64 NetAvatarSpawnHandler = 0xB3EAD0; // 
-    public const Int64 GameUpdatePacketSerializer = 0xA18C00; // 
-    public const Int64 NetAvatarNetIDEmitter = 0xB3BF50; // 
-    public const Int64 IAPPurchaseValidation = 0xD23720; // 
-    public const Int64 OnVariantDispatcher = 0xB330D0; // 
-    public const Int64 PunchAction = 0xDE6120; // 
-    public const Int64 GetApp = 0x985380; // leaf without unwind data; not a .pdata entry
-    public const Int64 GetClient = 0xA16690; // kAppClientOffset = 0xB10 (derived)
-    public const Int64 GetPacketProcessor = 0xB2DE10; // kAppPacketProcessorOffset = 0x1258 (derived)
-    public const Int64 GetLocalAvatar = 0xB2DFE0; // kPacketProcessorLocalAvatarOffset = 0x1D0 (derived)
+    public const Int64 SendPacket = 0xC3C8A0; // SendPacket(int type, std::string* text, ENetPeer* peer) - pr
+    public const Int64 SendPacketRaw = 0xC3C9C0; // SendPacketRaw(int type, void* data, int len, ENetPeer* peer,
+    public const Int64 ProcessTankUpdatePacket = 0xB374D0; // incoming PACKET_* dispatcher
+    public const Int64 VariantListSerializeFromMem = 0x1276810; // VariantList::SerializeFromMem
+    public const Int64 PacketTypeDispatcher = 0xA092C0; // 
+    public const Int64 PacketLengthValidator = 0xC39930; // 
+    public const Int64 TrackPacketSender = 0xB6C8F0; // 
+    public const Int64 ENetHostConnectSetup = 0xA08EA0; // 
+    public const Int64 PlayerItems_AddItem = 0xC41800; // 
+    public const Int64 PlayerItems_HaveRoomForItem = 0xC42990; // 
+    public const Int64 PlayerItems_RemoveItem = 0xC44110; // 
+    public const Int64 InventoryIllegalItemPurge = 0xC44260; // 
+    public const Int64 ItemsDatLoader = 0xC58720; // 
+    public const Int64 ItemValidator = 0xC581C0; // 
+    public const Int64 ItemHashCheck = 0xC29E50; // 
+    public const Int64 ItemSurfaceRender = 0xA3A770; // 
+    public const Int64 ChooseVisual = 0xC78B80; // 
+    public const Int64 World_Load = 0x1435AC0; // 
+    public const Int64 WorldVersionCheck = 0xB374D0; // 
+    public const Int64 TileExtraParser = 0xC6A050; // 
+    public const Int64 WhiteDoorLookup = 0x14352C0; // 
+    public const Int64 TilesheetLoader = 0xA299B0; // 
+    public const Int64 BgItemMapValidator = 0xC58F60; // 
+    public const Int64 NetAvatar_OnAvatarBePaintBalled = 0xAE23D0; // 
+    public const Int64 PunchHackDetector = 0xAE6ED0; // 
+    public const Int64 PunchNoTileHandler = 0x9A7730; // 
+    public const Int64 HarvestInteraction = 0xA11FB0; // 
+    public const Int64 CameraManager = 0xA25DE0; // 
+    public const Int64 DialogBuilder = 0xCF31F0; // 
+    public const Int64 BannerDialogBuilder = 0xD6E700; // 
+    public const Int64 EnableAllButtonsEntity = 0x11CFBE0; // 
+    public const Int64 Controller_PushController = 0xD83330; // 
+    public const Int64 Controller_PopController = 0xD83110; // 
+    public const Int64 Controller_PushChildController = 0x107B820; // 
+    public const Int64 Controller_OnActivate = 0xDBE760; // 
+    public const Int64 Controller_Deactivate = 0xDBE3A0; // 
+    public const Int64 Controller_Release = 0x97CDD0; // 
+    public const Int64 UIController_OnActivate = 0x10D0820; // 
+    public const Int64 UIController_OnDeactivate = 0x10D0E10; // 
+    public const Int64 UIController_RemoveScreenView = 0x10D1090; // 
+    public const Int64 ParticleEmitter_GetPaintballColor = 0xE0D8E0; // 
+    public const Int64 RTFont_GetColorFromString = 0xD5BFD0; // 
+    public const Int64 ResourceManager_GetSurfaceResource = 0x123D8C0; // 
+    public const Int64 VideoModeManager_SetVideoMode = 0xDADBC0; // 
+    public const Int64 VideoModeManager_SetFullscreen = 0xDAD4D0; // 
+    public const Int64 VideoModeManager_AddVideoMode = 0xDAAE00; // self-naming anchor: AddVideoMode logs its own name once; a 5
+    public const Int64 VideoModeManager_GetCustomVideoModes = 0xDAB3C0; // 
+    public const Int64 VideoModeManager_OnWMSize = 0xDAD5A0; // 
+    public const Int64 IAPManager_LoadCurrenciesConfig = 0x11952D0; // 
+    public const Int64 IAPManager_ctor = 0x11A15F0; // 
+    public const Int64 App_Kill = 0x97BD10; // 
+    public const Int64 StoreBuyPacketPath = 0xD6A4E0; // 
+    public const Int64 TileCoordinateHandler = 0x9A5CE0; // 
+    public const Int64 LogDisplayEntityBuilder = 0x11D37D0; // NOT LogToConsole: the sole owner of this string also refs Ge
+    public const Int64 ItemRendererXmlLoader = 0xFC22D0; // parses GameData/ItemRenderers/*.xml: ItemRenderer/StateMachi
+    public const Int64 BattlePetConfigLoader = 0xBC4380; // 
+    public const Int64 OwlsOfAthenaPets_RenderPet = 0x76E0B0; // 
+    public const Int64 Flying2Pets_RenderPet = 0x8E3FB0; // 
+    public const Int64 Scepter_RenderPet = 0x6966E0; // 
+    public const Int64 OwlsOfAthenaPets_OnRespawned = 0x7591A0; // 
+    public const Int64 Flying2Pets_OnRespawned = 0x8CEBC0; // 
+    public const Int64 FactionIconLoader = 0xADCA10; // 
+    public const Int64 TextOverlayActionHandler = 0xB33E20; // msg|/file|/imageFile|/delayMS| overlay+audio handler
+    public const Int64 InventoryTabUI = 0x109EF50; // growid|/tabblocks|/tabseeds|/taball| inventory tabs
+    public const Int64 CaptchaInputDialog = 0xD02640; // 
+    public const Int64 WorldTileMap = 0xC80420; // the tile-map container: dimensions + tile count
+    public const Int64 TileLookupGuard = 0x9BD0F0; // tile lookup / punch target resolution
+    public const Int64 TilesheetPageLoader = 0xD049F0; // tile sheet texture loader
+    public const Int64 WorldValidation = 0x10E72C0; // world validation pass
+    public const Int64 WeaponDamageTierText = 0xC06CC0; // weapon damage tier description
+    public const Int64 GrowtorialButton = 0xCB85B0; // 
+    public const Int64 WorldLockText = 0xAEE240; // 
+    public const Int64 SeedTreeItemPath = 0xCE3030; // 
+    public const Int64 TileDefinitionsLoader = 0xC25320; // 
+    public const Int64 WeatherEffectText = 0xBFE410; // 
+    public const Int64 ItemEffectVariantDispatcher = 0xAF6E50; // second On* dispatcher (43 handlers): item/cosmetic effect va
+    public const Int64 OnDeathEquipTagHandler = 0xFC8C40; // also OnEquipTag; death + equip-tag handling
+    public const Int64 OnDisconnectedHandler = 0xB2CB90; // 
+    public const Int64 OnErrorFinishHandler = 0xA684C0; // also OnFinish
+    public const Int64 OnOverMoveHandler = 0x11AC310; // also OnOverEnd; hover/drag move
+    public const Int64 OnEventHandler = 0x1059DC0; // 
+    public const Int64 OnRenderHandler = 0x121CA20; // 
+    public const Int64 OnFakeScrollToEntity = 0x120EA50; // 
+    public const Int64 OnButtonSelectedHandler = 0xD55A90; // 
+    public const Int64 TradeHandler = 0xD7DA90; // 
+    public const Int64 TradeOtherPlayerGuard = 0xD7C350; // 
+    public const Int64 StateMachineTransitions = 0x1022590; // item-renderer state-machine transitions
+    public const Int64 AnimCurveKeyFrameParser = 0xFFE4F0; // animation curve/keyframe parser
+    public const Int64 SpriteAnimStateParser = 0x1005490; // sprite animation: playOnState/isLoop
+    public const Int64 AnimTimeParser = 0xFFFFE0; // 
+    public const Int64 ParticleEmitterParser = 0xE0D8E0; // particle emitter definitions
+    public const Int64 RendererConditionParser = 0x10249D0; // state-machine <Condition> evaluation
+    public const Int64 SpriteRenderParser = 0x8D4780; // 
+    public const Int64 LoginPacketBuilder = 0xDC0AA0; // 
+    public const Int64 TileActionBuilder = 0xAE9340; // 
+    public const Int64 DialogButtonBuilder = 0x10DFC10; // 
+    public const Int64 NetAvatarSpawnHandler = 0xB32310; // 
+    public const Int64 GameUpdatePacketSerializer = 0xA0B3F0; // 
+    public const Int64 NetAvatarNetIDEmitter = 0xB2F3A0; // 
+    public const Int64 IAPPurchaseValidation = 0xD18AC0; // 
+    public const Int64 OnVariantDispatcher = 0xB26520; // 
+    public const Int64 PunchAction = 0xDDBDF0; // 
+    public const Int64 GetApp = 0x978910; // leaf without unwind data; not a .pdata entry
+    public const Int64 GetClient = 0xA08E80; // kAppClientOffset = 0xAD0 (derived)
+    public const Int64 GetPacketProcessor = 0xB210D0; // kAppPacketProcessorOffset = 0x1218 (derived)
+    public const Int64 GetLocalAvatar = 0xB21430; // kPacketProcessorLocalAvatarOffset = 0x1D0 (derived)
     public static readonly (uint Table, string Name, uint Rva)[] Bindings = {
-        (0x01FADC80, "_G", 0x015E76F0),
-        (0x01FADC80, "package", 0x015F2AB0),
-        (0x01FADC80, "coroutine", 0x015E7D60),
-        (0x01FADC80, "table", 0x015E8CD0),
-        (0x01FADC80, "io", 0x015EA4E0),
-        (0x01FADC80, "os", 0x015EB0D0),
-        (0x01FADC80, "string", 0x015EF050),
-        (0x01FADC80, "math", 0x015F0810),
-        (0x01FADC80, "utf8", 0x015EF9B0),
-        (0x01FADC80, "debug", 0x015F1C50),
-        (0x01FAE920, "assert", 0x015E6680),
-        (0x01FAE920, "collectgarbage", 0x015E7030),
-        (0x01FAE920, "dofile", 0x015E65F0),
-        (0x01FAE920, "error", 0x015E6D40),
-        (0x01FAE920, "getmetatable", 0x015E6DC0),
-        (0x01FAE920, "ipairs", 0x015E73B0),
-        (0x01FAE920, "loadfile", 0x015E7400),
-        (0x01FAE920, "load", 0x015E64F0),
-        (0x01FAE920, "next", 0x015E72B0),
-        (0x01FAE920, "pairs", 0x015E7310),
-        (0x01FAE920, "pcall", 0x015E6820),
-        (0x01FAE920, "print", 0x015E69B0),
-        (0x01FAE920, "warn", 0x015E6AA0),
-        (0x01FAE920, "rawequal", 0x015E6ED0),
-        (0x01FAE920, "rawlen", 0x015E6F20),
-        (0x01FAE920, "rawget", 0x015E6F80),
-        (0x01FAE920, "rawset", 0x015E6FD0),
-        (0x01FAE920, "select", 0x015E6760),
-        (0x01FAE920, "setmetatable", 0x015E6E20),
-        (0x01FAE920, "tonumber", 0x015E6B50),
-        (0x01FAE920, "tostring", 0x015E6980),
-        (0x01FAE920, "type", 0x015E7250),
-        (0x01FAE920, "xpcall", 0x015E68C0),
-        (0x01FAED50, "create", 0x015E7820),
-        (0x01FAED50, "resume", 0x015E7770),
-        (0x01FAED50, "running", 0x015E7A00),
-        (0x01FAED50, "status", 0x015E7920),
-        (0x01FAED50, "wrap", 0x015E7880),
-        (0x01FAED50, "yield", 0x015E78F0),
-        (0x01FAED50, "isyieldable", 0x015E7990),
-        (0x01FAED50, "close", 0x015E7A30),
-        (0x01FAEF50, "concat", 0x015E8310),
-        (0x01FAEF50, "insert", 0x015E7DB0),
-        (0x01FAEF50, "pack", 0x015E8540),
-        (0x01FAEF50, "unpack", 0x015E85F0),
-        (0x01FAEF50, "remove", 0x015E7F40),
-        (0x01FAEF50, "move", 0x015E80C0),
-        (0x01FAEF50, "sort", 0x015E86E0),
-        (0x01FAF0E0, "close", 0x015E9570),
-        (0x01FAF0E0, "flush", 0x015E9320),
-        (0x01FAF0E0, "input", 0x015E8D20),
-        (0x01FAF0E0, "lines", 0x015E8E90),
-        (0x01FAF0E0, "open", 0x015E9660),
-        (0x01FAF0E0, "output", 0x015E8DB0),
-        (0x01FAF0E0, "popen", 0x015E97A0),
-        (0x01FAF0E0, "read", 0x015E8FB0),
-        (0x01FAF0E0, "tmpfile", 0x015E9880),
-        (0x01FAF0E0, "type", 0x015E9430),
-        (0x01FAF0E0, "write", 0x015E9080),
-        (0x01FAF1A0, "read", 0x015E9020),
-        (0x01FAF1A0, "write", 0x015E90F0),
-        (0x01FAF1A0, "lines", 0x015E8E40),
-        (0x01FAF1A0, "flush", 0x015E93B0),
-        (0x01FAF1A0, "seek", 0x015E9160),
-        (0x01FAF1A0, "close", 0x015E9500),
-        (0x01FAF1A0, "setvbuf", 0x015E9250),
-        (0x01FAF230, "__gc", 0x015E9600),
-        (0x01FAF230, "__close", 0x015E9600),
-        (0x01FAF230, "__tostring", 0x015E94A0),
-        (0x01FAF5A0, "clock", 0x015EAE40),
-        (0x01FAF5A0, "date", 0x015EA6F0),
-        (0x01FAF5A0, "difftime", 0x015EAB00),
-        (0x01FAF5A0, "execute", 0x015EAC40),
-        (0x01FAF5A0, "exit", 0x015EABC0),
-        (0x01FAF5A0, "getenv", 0x015EAE00),
-        (0x01FAF5A0, "remove", 0x015EACB0),
-        (0x01FAF5A0, "rename", 0x015EAD10),
-        (0x01FAF5A0, "setlocale", 0x015EAB50),
-        (0x01FAF5A0, "time", 0x015EA970),
-        (0x01FAF5A0, "tmpname", 0x015EAD90),
-        (0x01FAF830, "byte", 0x015EB5F0),
-        (0x01FAF830, "char", 0x015EB710),
-        (0x01FAF830, "dump", 0x015EB7F0),
-        (0x01FAF870, "format", 0x015EBD20),
-        (0x01FAF870, "gmatch", 0x015EB9C0),
-        (0x01FAF870, "gsub", 0x015EBAD0),
-        (0x01FAF870, "len", 0x015EB120),
-        (0x01FAF870, "lower", 0x015EB2E0),
-        (0x01FAF8D0, "rep", 0x015EB460),
-        (0x01FAF8D0, "reverse", 0x015EB240),
-        (0x01FAF8D0, "sub", 0x015EB150),
-        (0x01FAF8D0, "upper", 0x015EB3A0),
-        (0x01FAF8D0, "pack", 0x015EC560),
-        (0x01FAF8D0, "packsize", 0x015ECC30),
-        (0x01FAF8D0, "unpack", 0x015ECDD0),
-        (0x01FAFF20, "offset", 0x015EF5C0),
-        (0x01FAFF20, "codepoint", 0x015EF290),
-        (0x01FAFF20, "char", 0x015EF4A0),
-        (0x01FAFF20, "len", 0x015EF120),
-        (0x01FAFF20, "codes", 0x015EF740),
-        (0x01FB0040, "abs", 0x015EFA30),
-        (0x01FB0040, "acos", 0x015EFB60),
-        (0x01FB0040, "asin", 0x015EFB30),
-        (0x01FB0040, "atan", 0x015EFB90),
-        (0x01FB0040, "ceil", 0x015EFCD0),
-        (0x01FB0040, "cos", 0x015EFAD0),
-        (0x01FB0040, "deg", 0x015F00A0),
-        (0x01FB0040, "exp", 0x015F0070),
-        (0x01FB0040, "tointeger", 0x015EFBF0),
-        (0x01FB0040, "floor", 0x015EFC50),
-        (0x01FB0040, "fmod", 0x015EFD50),
-        (0x01FB0040, "ult", 0x015EFF60),
-        (0x01FB0040, "log", 0x015EFFB0),
-        (0x01FB0040, "max", 0x015F01C0),
-        (0x01FB0040, "min", 0x015F0120),
-        (0x01FB0040, "modf", 0x015EFE50),
-        (0x01FB0040, "rad", 0x015F00E0),
-        (0x01FB0040, "sin", 0x015EFAA0),
-        (0x01FB0040, "sqrt", 0x015EFF20),
-        (0x01FB0040, "tan", 0x015EFB00),
-        (0x01FB0040, "type", 0x015F0260),
-        (0x01FB02C0, "debug", 0x015F18B0),
-        (0x01FB02C0, "getuservalue", 0x015F0A10),
-        (0x01FB02C0, "gethook", 0x015F1730),
-        (0x01FB02C0, "getinfo", 0x015F0B10),
-        (0x01FB02C0, "getlocal", 0x015F0FA0),
-        (0x01FB02C0, "getregistry", 0x015F0950),
-        (0x01FB02C0, "getmetatable", 0x015F0970),
-        (0x01FB02C0, "getupvalue", 0x015F1290),
-        (0x01FB02C0, "upvaluejoin", 0x015F1420),
-        (0x01FB02C0, "upvalueid", 0x015F13A0),
-        (0x01FB02C0, "setuservalue", 0x015F0A90),
-        (0x01FB02C0, "sethook", 0x015F1540),
-        (0x01FB02C0, "setlocal", 0x015F1120),
-        (0x01FB02C0, "setmetatable", 0x015F09B0),
-        (0x01FB02C0, "setupvalue", 0x015F1310),
-        (0x01FB02C0, "traceback", 0x015F1AA0),
-        (0x01FB02C0, "setcstacklimit", 0x015F1B70),
-        (0x024749E0, "CreateContext", 0x015BAE70),
-        (0x024749E0, "LoadFontFace", 0x015BAF90),
-        (0x024749E0, "RegisterTag", 0x015BB0D0),
-        (0x02474A20, "contexts", 0x015BB1D0),
-        (0x02474A20, "key_identifier", 0x015BB210),
-        (0x02474A20, "key_modifier", 0x015BB250),
-        (0x02474A60, "red", 0x015BCF60),
-        (0x02474A60, "green", 0x015BCFB0),
-        (0x02474A60, "blue", 0x015BD000),
-        (0x02474A60, "alpha", 0x015BD050),
-        (0x02474A60, "rgba", 0x015BD0A0),
-        (0x02474AC0, "red", 0x015BD120),
-        (0x02474AC0, "green", 0x015BD180),
-        (0x02474AC0, "blue", 0x015BD1E0),
-        (0x02474AC0, "alpha", 0x015BD240),
-        (0x02474AC0, "rgba", 0x015BD2A0),
-        (0x02474B20, "red", 0x015BD970),
-        (0x02474B20, "green", 0x015BD9C0),
-        (0x02474B20, "blue", 0x015BDA10),
-        (0x02474B20, "alpha", 0x015BDA60),
-        (0x02474B20, "rgba", 0x015BDAB0),
-        (0x02474B80, "red", 0x015BDB40),
-        (0x02474B80, "green", 0x015BDBB0),
-        (0x02474B80, "blue", 0x015BDC20),
-        (0x02474B80, "alpha", 0x015BDC90),
-        (0x02474B80, "rgba", 0x015BDD00),
-        (0x02474BE0, "AddEventListener", 0x015BE650),
-        (0x02474BE0, "CreateDocument", 0x015BEB60),
-        (0x02474BE0, "LoadDocument", 0x015BEC70),
-        (0x02474BE0, "Render", 0x015BED60),
-        (0x02474BE0, "UnloadAllDocuments", 0x015BED90),
-        (0x02474BE0, "UnloadDocument", 0x015BEDB0),
-        (0x02474BE0, "Update", 0x015BEDF0),
-        (0x02474BE0, "OpenDataModel", 0x015BE200),
-        (0x02474BE0, "ProcessMouseMove", 0x015BE240),
-        (0x02474BE0, "ProcessMouseButtonDown", 0x015BE2C0),
-        (0x02474BE0, "ProcessMouseButtonUp", 0x015BE320),
-        (0x02474BE0, "ProcessMouseWheel", 0x015BE380),
-        (0x02474BE0, "ProcessMouseLeave", 0x015BE3F0),
-        (0x02474BE0, "IsMouseInteracting", 0x015BE420),
-        (0x02474BE0, "ProcessKeyDown", 0x015BE450),
-        (0x02474BE0, "ProcessKeyUp", 0x015BE4B0),
-        (0x02474BE0, "ProcessTextInput", 0x015BE510),
-        (0x02474D00, "dimensions", 0x015BEE20),
-        (0x02474D00, "documents", 0x015BEE90),
-        (0x02474D00, "dp_ratio", 0x015BEF00),
-        (0x02474D00, "focus_element", 0x015BEF40),
-        (0x02474D00, "hover_element", 0x015BEFA0),
-        (0x02474D00, "name", 0x015BF000),
-        (0x02474D00, "root_element", 0x015BF060),
-        (0x02474DD0, "PullToFront", 0x015BFD30),
-        (0x02474DD0, "PushToBack", 0x015BFD50),
-        (0x02474DD0, "Show", 0x015BFD70),
-        (0x02474DD0, "Hide", 0x015BFDF0),
-        (0x02474DD0, "Close", 0x015BFE10),
-        (0x02474DD0, "CreateElement", 0x015BFE30),
-        (0x02474DD0, "CreateTextNode", 0x015BFFA0),
-        (0x02474EA0, "AddEventListener", 0x015C0980),
-        (0x02474EA0, "AppendChild", 0x015C0BE0),
-        (0x02474EA0, "Blur", 0x015C0CE0),
-        (0x02474EA0, "Click", 0x015C0D00),
-        (0x02474EA0, "DispatchEvent", 0x015C0D20),
-        (0x02474EA0, "Focus", 0x015C1270),
-        (0x02474EA0, "GetAttribute", 0x015C1290),
-        (0x02474EA0, "GetElementById", 0x015C1380),
-        (0x02474EA0, "GetElementsByTagName", 0x015C1470),
-        (0x02474EA0, "QuerySelector", 0x015C1780),
-        (0x02474EA0, "QuerySelectorAll", 0x015C1870),
-        (0x02474EA0, "Matches", 0x015C1B80),
-        (0x02474EA0, "HasAttribute", 0x015C1C50),
-        (0x02474EA0, "HasChildNodes", 0x015C1D20),
-        (0x02474EA0, "InsertBefore", 0x015C1D50),
-        (0x02474EA0, "IsClassSet", 0x015C1E70),
-        (0x02474EA0, "RemoveAttribute", 0x015C1F40),
-        (0x02474EA0, "RemoveChild", 0x015C2000),
-        (0x02474EA0, "ReplaceChild", 0x015C2070),
-        (0x02474EA0, "ScrollIntoView", 0x015C21A0),
-        (0x02474EA0, "SetAttribute", 0x015C21D0),
-        (0x02474EA0, "SetClass", 0x015C2340),
-        (0x02475010, "attributes", 0x015C2430),
-        (0x02475010, "child_nodes", 0x015C24A0),
-        (0x02475010, "class_name", 0x015C2510),
-        (0x02475010, "client_left", 0x015C25D0),
-        (0x02475010, "client_height", 0x015C2630),
-        (0x02475010, "client_top", 0x015C2690),
-        (0x02475010, "client_width", 0x015C26F0),
-        (0x02475010, "first_child", 0x015C2750),
-        (0x02475010, "id", 0x015C27B0),
-        (0x02475010, "inner_rml", 0x015C2810),
-        (0x02475010, "last_child", 0x015C28C0),
-        (0x02475010, "next_sibling", 0x015C2920),
-        (0x02475010, "offset_height", 0x015C2980),
-        (0x02475010, "offset_left", 0x015C29E0),
-        (0x02475010, "offset_parent", 0x015C2A40),
-        (0x02475010, "offset_top", 0x015C2AA0),
-        (0x02475010, "offset_width", 0x015C2B00),
-        (0x02475010, "owner_document", 0x015C2B60),
-        (0x02475010, "parent_node", 0x015C2BC0),
-        (0x02475010, "previous_sibling", 0x015C2C20),
-        (0x02475010, "scroll_height", 0x015C2C80),
-        (0x02475010, "scroll_left", 0x015C2CE0),
-        (0x02475010, "scroll_top", 0x015C2D40),
-        (0x02475010, "scroll_width", 0x015C2DA0),
-        (0x02475010, "style", 0x015C2E00),
-        (0x02475010, "tag_name", 0x015C2E70),
-        (0x024751C0, "class_name", 0x015C2ED0),
-        (0x024751C0, "id", 0x015C2FC0),
-        (0x024751C0, "inner_rml", 0x015C30B0),
-        (0x024751C0, "scroll_left", 0x015C31B0),
-        (0x024751C0, "scroll_top", 0x015C3220),
-        (0x024752F0, "current_element", 0x015C51D0),
-        (0x024752F0, "type", 0x015C5230),
-        (0x024752F0, "target_element", 0x015C5410),
-        (0x024752F0, "parameters", 0x015C5470),
-        (0x02475340, "DotProduct", 0x015C6200),
-        (0x02475340, "Normalise", 0x015C6270),
-        (0x02475340, "Rotate", 0x015C6320),
-        (0x02475380, "x", 0x015C63F0),
-        (0x02475380, "y", 0x015C6440),
-        (0x02475380, "magnitude", 0x015C6490),
-        (0x024753F0, "x", 0x015C6CF0),
-        (0x024753F0, "y", 0x015C6D40),
-        (0x024753F0, "magnitude", 0x015C6D90),
-        (0x02475480, "disabled", 0x015C78C0),
-        (0x02475480, "name", 0x015C7910),
-        (0x02475480, "value", 0x015C79C0),
-        (0x024754C0, "disabled", 0x015C7A80),
-        (0x024754C0, "name", 0x015C7AF0),
-        (0x024754C0, "value", 0x015C7BE0),
-        (0x02475500, "Select", 0x015C8030),
-        (0x02475500, "SetSelection", 0x015C8050),
-        (0x02475500, "GetSelection", 0x015C80A0),
-        (0x02475540, "checked", 0x015C8180),
-        (0x02475540, "maxlength", 0x015C8270),
-        (0x02475540, "size", 0x015C8370),
-        (0x02475540, "max", 0x015C8460),
-        (0x02475540, "min", 0x015C8550),
-        (0x02475540, "step", 0x015C8640),
-        (0x024755B0, "checked", 0x015C8730),
-        (0x024755B0, "maxlength", 0x015C8890),
-        (0x024755B0, "size", 0x015C8990),
-        (0x024755B0, "max", 0x015C8A80),
-        (0x024755B0, "min", 0x015C8B80),
-        (0x024755B0, "step", 0x015C8C80),
-        (0x02475620, "Add", 0x015C9260),
-        (0x02475620, "Remove", 0x015C9410),
-        (0x02475620, "RemoveAll", 0x015C9560),
-        (0x024756B0, "Select", 0x015C9AC0),
-        (0x024756B0, "SetSelection", 0x015C9AE0),
-        (0x024756B0, "GetSelection", 0x015C9B30),
-        (0x024756F0, "cols", 0x015C9C10),
-        (0x024756F0, "maxlength", 0x015C9C60),
-        (0x024756F0, "rows", 0x015C9CB0),
-        (0x024756F0, "wordwrap", 0x015C9D00),
-        (0x02475740, "cols", 0x015C9D50),
-        (0x02475740, "maxlength", 0x015C9DB0),
-        (0x02475740, "rows", 0x015C9E10),
-        (0x02475740, "wordwrap", 0x015C9E70),
+        (0x01D9D680, "_G", 0x015BCED0),
+        (0x01D9D680, "package", 0x015C8290),
+        (0x01D9D680, "coroutine", 0x015BD540),
+        (0x01D9D680, "table", 0x015BE4B0),
+        (0x01D9D680, "io", 0x015BFCC0),
+        (0x01D9D680, "os", 0x015C08B0),
+        (0x01D9D680, "string", 0x015C4830),
+        (0x01D9D680, "math", 0x015C5FF0),
+        (0x01D9D680, "utf8", 0x015C5190),
+        (0x01D9D680, "debug", 0x015C7430),
+        (0x01D9E320, "assert", 0x015BBE60),
+        (0x01D9E320, "collectgarbage", 0x015BC810),
+        (0x01D9E320, "dofile", 0x015BBDD0),
+        (0x01D9E320, "error", 0x015BC520),
+        (0x01D9E320, "getmetatable", 0x015BC5A0),
+        (0x01D9E320, "ipairs", 0x015BCB90),
+        (0x01D9E320, "loadfile", 0x015BCBE0),
+        (0x01D9E320, "load", 0x015BBCD0),
+        (0x01D9E320, "next", 0x015BCA90),
+        (0x01D9E320, "pairs", 0x015BCAF0),
+        (0x01D9E320, "pcall", 0x015BC000),
+        (0x01D9E320, "print", 0x015BC190),
+        (0x01D9E320, "warn", 0x015BC280),
+        (0x01D9E320, "rawequal", 0x015BC6B0),
+        (0x01D9E320, "rawlen", 0x015BC700),
+        (0x01D9E320, "rawget", 0x015BC760),
+        (0x01D9E320, "rawset", 0x015BC7B0),
+        (0x01D9E320, "select", 0x015BBF40),
+        (0x01D9E320, "setmetatable", 0x015BC600),
+        (0x01D9E320, "tonumber", 0x015BC330),
+        (0x01D9E320, "tostring", 0x015BC160),
+        (0x01D9E320, "type", 0x015BCA30),
+        (0x01D9E320, "xpcall", 0x015BC0A0),
+        (0x01D9E750, "create", 0x015BD000),
+        (0x01D9E750, "resume", 0x015BCF50),
+        (0x01D9E750, "running", 0x015BD1E0),
+        (0x01D9E750, "status", 0x015BD100),
+        (0x01D9E750, "wrap", 0x015BD060),
+        (0x01D9E750, "yield", 0x015BD0D0),
+        (0x01D9E750, "isyieldable", 0x015BD170),
+        (0x01D9E750, "close", 0x015BD210),
+        (0x01D9E950, "concat", 0x015BDAF0),
+        (0x01D9E950, "insert", 0x015BD590),
+        (0x01D9E950, "pack", 0x015BDD20),
+        (0x01D9E950, "unpack", 0x015BDDD0),
+        (0x01D9E950, "remove", 0x015BD720),
+        (0x01D9E950, "move", 0x015BD8A0),
+        (0x01D9E950, "sort", 0x015BDEC0),
+        (0x01D9EAE0, "close", 0x015BED50),
+        (0x01D9EAE0, "flush", 0x015BEB00),
+        (0x01D9EAE0, "input", 0x015BE500),
+        (0x01D9EAE0, "lines", 0x015BE670),
+        (0x01D9EAE0, "open", 0x015BEE40),
+        (0x01D9EAE0, "output", 0x015BE590),
+        (0x01D9EAE0, "popen", 0x015BEF80),
+        (0x01D9EAE0, "read", 0x015BE790),
+        (0x01D9EAE0, "tmpfile", 0x015BF060),
+        (0x01D9EAE0, "type", 0x015BEC10),
+        (0x01D9EAE0, "write", 0x015BE860),
+        (0x01D9EBA0, "read", 0x015BE800),
+        (0x01D9EBA0, "write", 0x015BE8D0),
+        (0x01D9EBA0, "lines", 0x015BE620),
+        (0x01D9EBA0, "flush", 0x015BEB90),
+        (0x01D9EBA0, "seek", 0x015BE940),
+        (0x01D9EBA0, "close", 0x015BECE0),
+        (0x01D9EBA0, "setvbuf", 0x015BEA30),
+        (0x01D9EC30, "__gc", 0x015BEDE0),
+        (0x01D9EC30, "__close", 0x015BEDE0),
+        (0x01D9EC30, "__tostring", 0x015BEC80),
+        (0x01D9EFA0, "clock", 0x015C0620),
+        (0x01D9EFA0, "date", 0x015BFED0),
+        (0x01D9EFA0, "difftime", 0x015C02E0),
+        (0x01D9EFA0, "execute", 0x015C0420),
+        (0x01D9EFA0, "exit", 0x015C03A0),
+        (0x01D9EFA0, "getenv", 0x015C05E0),
+        (0x01D9EFA0, "remove", 0x015C0490),
+        (0x01D9EFA0, "rename", 0x015C04F0),
+        (0x01D9EFA0, "setlocale", 0x015C0330),
+        (0x01D9EFA0, "time", 0x015C0150),
+        (0x01D9EFA0, "tmpname", 0x015C0570),
+        (0x01D9F230, "byte", 0x015C0DD0),
+        (0x01D9F230, "char", 0x015C0EF0),
+        (0x01D9F230, "dump", 0x015C0FD0),
+        (0x01D9F270, "format", 0x015C1500),
+        (0x01D9F270, "gmatch", 0x015C11A0),
+        (0x01D9F270, "gsub", 0x015C12B0),
+        (0x01D9F270, "len", 0x015C0900),
+        (0x01D9F270, "lower", 0x015C0AC0),
+        (0x01D9F2D0, "rep", 0x015C0C40),
+        (0x01D9F2D0, "reverse", 0x015C0A20),
+        (0x01D9F2D0, "sub", 0x015C0930),
+        (0x01D9F2D0, "upper", 0x015C0B80),
+        (0x01D9F2D0, "pack", 0x015C1D40),
+        (0x01D9F2D0, "packsize", 0x015C2410),
+        (0x01D9F2D0, "unpack", 0x015C25B0),
+        (0x01D9F920, "offset", 0x015C4DA0),
+        (0x01D9F920, "codepoint", 0x015C4A70),
+        (0x01D9F920, "char", 0x015C4C80),
+        (0x01D9F920, "len", 0x015C4900),
+        (0x01D9F920, "codes", 0x015C4F20),
+        (0x01D9FA40, "abs", 0x015C5210),
+        (0x01D9FA40, "acos", 0x015C5340),
+        (0x01D9FA40, "asin", 0x015C5310),
+        (0x01D9FA40, "atan", 0x015C5370),
+        (0x01D9FA40, "ceil", 0x015C54B0),
+        (0x01D9FA40, "cos", 0x015C52B0),
+        (0x01D9FA40, "deg", 0x015C5880),
+        (0x01D9FA40, "exp", 0x015C5850),
+        (0x01D9FA40, "tointeger", 0x015C53D0),
+        (0x01D9FA40, "floor", 0x015C5430),
+        (0x01D9FA40, "fmod", 0x015C5530),
+        (0x01D9FA40, "ult", 0x015C5740),
+        (0x01D9FA40, "log", 0x015C5790),
+        (0x01D9FA40, "max", 0x015C59A0),
+        (0x01D9FA40, "min", 0x015C5900),
+        (0x01D9FA40, "modf", 0x015C5630),
+        (0x01D9FA40, "rad", 0x015C58C0),
+        (0x01D9FA40, "sin", 0x015C5280),
+        (0x01D9FA40, "sqrt", 0x015C5700),
+        (0x01D9FA40, "tan", 0x015C52E0),
+        (0x01D9FA40, "type", 0x015C5A40),
+        (0x01D9FCC0, "debug", 0x015C7090),
+        (0x01D9FCC0, "getuservalue", 0x015C61F0),
+        (0x01D9FCC0, "gethook", 0x015C6F10),
+        (0x01D9FCC0, "getinfo", 0x015C62F0),
+        (0x01D9FCC0, "getlocal", 0x015C6780),
+        (0x01D9FCC0, "getregistry", 0x015C6130),
+        (0x01D9FCC0, "getmetatable", 0x015C6150),
+        (0x01D9FCC0, "getupvalue", 0x015C6A70),
+        (0x01D9FCC0, "upvaluejoin", 0x015C6C00),
+        (0x01D9FCC0, "upvalueid", 0x015C6B80),
+        (0x01D9FCC0, "setuservalue", 0x015C6270),
+        (0x01D9FCC0, "sethook", 0x015C6D20),
+        (0x01D9FCC0, "setlocal", 0x015C6900),
+        (0x01D9FCC0, "setmetatable", 0x015C6190),
+        (0x01D9FCC0, "setupvalue", 0x015C6AF0),
+        (0x01D9FCC0, "traceback", 0x015C7280),
+        (0x01D9FCC0, "setcstacklimit", 0x015C7350),
+        (0x0221A860, "CreateContext", 0x01590650),
+        (0x0221A860, "LoadFontFace", 0x01590770),
+        (0x0221A860, "RegisterTag", 0x015908B0),
+        (0x0221A8A0, "contexts", 0x015909B0),
+        (0x0221A8A0, "key_identifier", 0x015909F0),
+        (0x0221A8A0, "key_modifier", 0x01590A30),
+        (0x0221A8E0, "red", 0x01592740),
+        (0x0221A8E0, "green", 0x01592790),
+        (0x0221A8E0, "blue", 0x015927E0),
+        (0x0221A8E0, "alpha", 0x01592830),
+        (0x0221A8E0, "rgba", 0x01592880),
+        (0x0221A940, "red", 0x01592900),
+        (0x0221A940, "green", 0x01592960),
+        (0x0221A940, "blue", 0x015929C0),
+        (0x0221A940, "alpha", 0x01592A20),
+        (0x0221A940, "rgba", 0x01592A80),
+        (0x0221A9A0, "red", 0x01593150),
+        (0x0221A9A0, "green", 0x015931A0),
+        (0x0221A9A0, "blue", 0x015931F0),
+        (0x0221A9A0, "alpha", 0x01593240),
+        (0x0221A9A0, "rgba", 0x01593290),
+        (0x0221AA00, "red", 0x01593320),
+        (0x0221AA00, "green", 0x01593390),
+        (0x0221AA00, "blue", 0x01593400),
+        (0x0221AA00, "alpha", 0x01593470),
+        (0x0221AA00, "rgba", 0x015934E0),
+        (0x0221AA60, "AddEventListener", 0x01593E30),
+        (0x0221AA60, "CreateDocument", 0x01594340),
+        (0x0221AA60, "LoadDocument", 0x01594450),
+        (0x0221AA60, "Render", 0x01594540),
+        (0x0221AA60, "UnloadAllDocuments", 0x01594570),
+        (0x0221AA60, "UnloadDocument", 0x01594590),
+        (0x0221AA60, "Update", 0x015945D0),
+        (0x0221AA60, "OpenDataModel", 0x015939E0),
+        (0x0221AA60, "ProcessMouseMove", 0x01593A20),
+        (0x0221AA60, "ProcessMouseButtonDown", 0x01593AA0),
+        (0x0221AA60, "ProcessMouseButtonUp", 0x01593B00),
+        (0x0221AA60, "ProcessMouseWheel", 0x01593B60),
+        (0x0221AA60, "ProcessMouseLeave", 0x01593BD0),
+        (0x0221AA60, "IsMouseInteracting", 0x01593C00),
+        (0x0221AA60, "ProcessKeyDown", 0x01593C30),
+        (0x0221AA60, "ProcessKeyUp", 0x01593C90),
+        (0x0221AA60, "ProcessTextInput", 0x01593CF0),
+        (0x0221AB80, "dimensions", 0x01594600),
+        (0x0221AB80, "documents", 0x01594670),
+        (0x0221AB80, "dp_ratio", 0x015946E0),
+        (0x0221AB80, "focus_element", 0x01594720),
+        (0x0221AB80, "hover_element", 0x01594780),
+        (0x0221AB80, "name", 0x015947E0),
+        (0x0221AB80, "root_element", 0x01594840),
+        (0x0221AC50, "PullToFront", 0x01595510),
+        (0x0221AC50, "PushToBack", 0x01595530),
+        (0x0221AC50, "Show", 0x01595550),
+        (0x0221AC50, "Hide", 0x015955D0),
+        (0x0221AC50, "Close", 0x015955F0),
+        (0x0221AC50, "CreateElement", 0x01595610),
+        (0x0221AC50, "CreateTextNode", 0x01595780),
+        (0x0221AD20, "AddEventListener", 0x01596160),
+        (0x0221AD20, "AppendChild", 0x015963C0),
+        (0x0221AD20, "Blur", 0x015964C0),
+        (0x0221AD20, "Click", 0x015964E0),
+        (0x0221AD20, "DispatchEvent", 0x01596500),
+        (0x0221AD20, "Focus", 0x01596A50),
+        (0x0221AD20, "GetAttribute", 0x01596A70),
+        (0x0221AD20, "GetElementById", 0x01596B60),
+        (0x0221AD20, "GetElementsByTagName", 0x01596C50),
+        (0x0221AD20, "QuerySelector", 0x01596F60),
+        (0x0221AD20, "QuerySelectorAll", 0x01597050),
+        (0x0221AD20, "Matches", 0x01597360),
+        (0x0221AD20, "HasAttribute", 0x01597430),
+        (0x0221AD20, "HasChildNodes", 0x01597500),
+        (0x0221AD20, "InsertBefore", 0x01597530),
+        (0x0221AD20, "IsClassSet", 0x01597650),
+        (0x0221AD20, "RemoveAttribute", 0x01597720),
+        (0x0221AD20, "RemoveChild", 0x015977E0),
+        (0x0221AD20, "ReplaceChild", 0x01597850),
+        (0x0221AD20, "ScrollIntoView", 0x01597980),
+        (0x0221AD20, "SetAttribute", 0x015979B0),
+        (0x0221AD20, "SetClass", 0x01597B20),
+        (0x0221AE90, "attributes", 0x01597C10),
+        (0x0221AE90, "child_nodes", 0x01597C80),
+        (0x0221AE90, "class_name", 0x01597CF0),
+        (0x0221AE90, "client_left", 0x01597DB0),
+        (0x0221AE90, "client_height", 0x01597E10),
+        (0x0221AE90, "client_top", 0x01597E70),
+        (0x0221AE90, "client_width", 0x01597ED0),
+        (0x0221AE90, "first_child", 0x01597F30),
+        (0x0221AE90, "id", 0x01597F90),
+        (0x0221AE90, "inner_rml", 0x01597FF0),
+        (0x0221AE90, "last_child", 0x015980A0),
+        (0x0221AE90, "next_sibling", 0x01598100),
+        (0x0221AE90, "offset_height", 0x01598160),
+        (0x0221AE90, "offset_left", 0x015981C0),
+        (0x0221AE90, "offset_parent", 0x01598220),
+        (0x0221AE90, "offset_top", 0x01598280),
+        (0x0221AE90, "offset_width", 0x015982E0),
+        (0x0221AE90, "owner_document", 0x01598340),
+        (0x0221AE90, "parent_node", 0x015983A0),
+        (0x0221AE90, "previous_sibling", 0x01598400),
+        (0x0221AE90, "scroll_height", 0x01598460),
+        (0x0221AE90, "scroll_left", 0x015984C0),
+        (0x0221AE90, "scroll_top", 0x01598520),
+        (0x0221AE90, "scroll_width", 0x01598580),
+        (0x0221AE90, "style", 0x015985E0),
+        (0x0221AE90, "tag_name", 0x01598650),
+        (0x0221B040, "class_name", 0x015986B0),
+        (0x0221B040, "id", 0x015987A0),
+        (0x0221B040, "inner_rml", 0x01598890),
+        (0x0221B040, "scroll_left", 0x01598990),
+        (0x0221B040, "scroll_top", 0x01598A00),
+        (0x0221B170, "current_element", 0x0159A9B0),
+        (0x0221B170, "type", 0x0159AA10),
+        (0x0221B170, "target_element", 0x0159ABF0),
+        (0x0221B170, "parameters", 0x0159AC50),
+        (0x0221B1C0, "DotProduct", 0x0159B9E0),
+        (0x0221B1C0, "Normalise", 0x0159BA50),
+        (0x0221B1C0, "Rotate", 0x0159BB00),
+        (0x0221B200, "x", 0x0159BBD0),
+        (0x0221B200, "y", 0x0159BC20),
+        (0x0221B200, "magnitude", 0x0159BC70),
+        (0x0221B270, "x", 0x0159C4D0),
+        (0x0221B270, "y", 0x0159C520),
+        (0x0221B270, "magnitude", 0x0159C570),
+        (0x0221B300, "disabled", 0x0159D0A0),
+        (0x0221B300, "name", 0x0159D0F0),
+        (0x0221B300, "value", 0x0159D1A0),
+        (0x0221B340, "disabled", 0x0159D260),
+        (0x0221B340, "name", 0x0159D2D0),
+        (0x0221B340, "value", 0x0159D3C0),
+        (0x0221B380, "Select", 0x0159D810),
+        (0x0221B380, "SetSelection", 0x0159D830),
+        (0x0221B380, "GetSelection", 0x0159D880),
+        (0x0221B3C0, "checked", 0x0159D960),
+        (0x0221B3C0, "maxlength", 0x0159DA50),
+        (0x0221B3C0, "size", 0x0159DB50),
+        (0x0221B3C0, "max", 0x0159DC40),
+        (0x0221B3C0, "min", 0x0159DD30),
+        (0x0221B3C0, "step", 0x0159DE20),
+        (0x0221B430, "checked", 0x0159DF10),
+        (0x0221B430, "maxlength", 0x0159E070),
+        (0x0221B430, "size", 0x0159E170),
+        (0x0221B430, "max", 0x0159E260),
+        (0x0221B430, "min", 0x0159E360),
+        (0x0221B430, "step", 0x0159E460),
+        (0x0221B4A0, "Add", 0x0159EA40),
+        (0x0221B4A0, "Remove", 0x0159EBF0),
+        (0x0221B4A0, "RemoveAll", 0x0159ED40),
+        (0x0221B530, "Select", 0x0159F2A0),
+        (0x0221B530, "SetSelection", 0x0159F2C0),
+        (0x0221B530, "GetSelection", 0x0159F310),
+        (0x0221B570, "cols", 0x0159F3F0),
+        (0x0221B570, "maxlength", 0x0159F440),
+        (0x0221B570, "rows", 0x0159F490),
+        (0x0221B570, "wordwrap", 0x0159F4E0),
+        (0x0221B5C0, "cols", 0x0159F530),
+        (0x0221B5C0, "maxlength", 0x0159F590),
+        (0x0221B5C0, "rows", 0x0159F5F0),
+        (0x0221B5C0, "wordwrap", 0x0159F650),
     };
 }
