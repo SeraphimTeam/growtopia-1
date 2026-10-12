@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated": "2026-10-11 11:47:35Z",
+    "generated": "2026-10-12 13:48:13Z",
     "image": "growtopia_dumped.exe",
     "image_base": 5368709120,
-    "sha256": "2e2c0498e37291ee277d50e486aa328d9e69b34760346d11fbeb441c37ed3c31",
+    "sha256": "a8c0971cf082f80115d56965571cb0b5cd8edc7510fa5c153d2048a68db7cf3c",
     "functions_in_pdata": 73930,
     "text": "0x00001000-0x01C21100",
     "game_version": "v5.59",
