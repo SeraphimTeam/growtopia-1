@@ -12,17 +12,17 @@
 |---|---|
 | image base | `0x140000000` |
 | `.text` | `0x00001000-0x01C26800` |
-| SHA-256 | `b2b10a789f0a6b4a1097d34c59ecec834c9cc44a411c9fff54b35c0c7c6065be` |
+| SHA-256 | `747070c82baaa67e01584c436a0539714064b4fbf42fdc40325ce67b09d4f5b5` |
 | functions in `.pdata` | 73963 |
-| generated | 2026-10-25 10:21:00Z |
+| generated | 2026-10-26 11:48:32Z |
 
 | Status | Count | Meaning |
 | ------ | ----: | ------- |
-| VERIFIED | 401 | Address is a `.pdata` function start in the executable `.text` segment |
-| CHECK | 3 | Resolved but did not satisfy every check |
-| UNRESOLVED | 3 | No single owner found for the anchor |
+| VERIFIED | 400 | Address is a `.pdata` function start in the executable `.text` segment |
+| CHECK | 2 | Resolved but did not satisfy every check |
+| UNRESOLVED | 4 | No single owner found for the anchor |
 
-**Total functions/methods documented:** `404`
+**Total functions/methods documented:** `402`
 
 ---
 
@@ -92,12 +92,10 @@
 | pets | `Flying2Pets_RenderPet` | `0x008E4F50` | 1959 | VERIFIED | `Flying2PetsLogics::RenderPet` |
 | pets | `BattlePetConfigLoader` | `0x00BC73C0` | 989 | VERIFIED | `Can't load BattlePet info config: %s, error: %s, offset: %d` |
 | physics | `ItemRendererXmlLoader` | `0x00FC8CD0` | 11502 | VERIFIED | `PhysicsBody %s wasn't loaded correct.` |
-| physics | `ConstsArray` | `0x022E3E80` | 208 | CHECK | `structural: 2A-B == B-C over [A,0,B,C]` |
 | player | `FactionIconLoader` | `0x00ADD9D0` | 13239 | VERIFIED | `Error loading Faction icons` |
 | player | `NetAvatar_OnAvatarBePaintBalled` | `0x00AE33D0` | 582 | VERIFIED | `NetAvatar::OnAvatarBePaintBalled sourceNetID is invalid=%d` |
 | player | `NetAvatarNetIDEmitter` | `0x00B32360` | 248 | VERIFIED | `netID\|` |
 | player | `NetAvatarSpawnHandler` | `0x00B352D0` | 3665 | VERIFIED | `netID\| + mstate\| + smstate\|` |
-| social | `PartyMemberHandler` | `0x00D48F40` | 646 | VERIFIED | `partyMember1` |
 | trade | `TradeOtherPlayerGuard` | `0x00D82F00` | 4432 | VERIFIED | `other player doesn't exist!` |
 | trade | `TradeHandler` | `0x00D84640` | 2294 | VERIFIED | `CancelTrade` |
 | ui | `Controller_Release` | `0x0097DDB0` | 489 | VERIFIED | `Controller::Release` |
