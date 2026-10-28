@@ -1,505 +1,505 @@
-// Growtopia x64 offsets - generated 2026-10-26 11:48:32Z
-// image base 0x140000000  build hash 747070c82baaa67e
+// Growtopia x64 offsets - generated 2026-10-28 11:48:13Z
+// image base 0x140000000  build hash d790241d8d43b6fd
 #pragma once
 namespace gt {
-    constexpr uintptr_t kSendPacket = 0x00C3F8E0; // SendPacket(int type, std::string* text, ENetPeer* peer) - pr
-    constexpr uintptr_t kSendPacketRaw = 0x00C3FA00; // SendPacketRaw(int type, void* data, int len, ENetPeer* peer,
-    constexpr uintptr_t kProcessTankUpdatePacket = 0x00B3A380; // incoming PACKET_* dispatcher
-    constexpr uintptr_t kVariantListSerializeFromMem = 0x0127D3E0; // VariantList::SerializeFromMem
-    constexpr uintptr_t kPacketTypeDispatcher = 0x00A0A730; // 
-    constexpr uintptr_t kPacketLengthValidator = 0x00C3C970; // 
-    constexpr uintptr_t kTrackPacketSender = 0x00B6F930; // 
-    constexpr uintptr_t kENetHostConnectSetup = 0x00A0A310; // 
-    constexpr uintptr_t kPlayerItems_AddItem = 0x00C44840; // 
-    constexpr uintptr_t kPlayerItems_HaveRoomForItem = 0x00C459D0; // 
-    constexpr uintptr_t kPlayerItems_RemoveItem = 0x00C47150; // 
-    constexpr uintptr_t kInventoryIllegalItemPurge = 0x00C472A0; // 
-    constexpr uintptr_t kItemsDatLoader = 0x00C5B760; // 
-    constexpr uintptr_t kItemValidator = 0x00C5B200; // 
-    constexpr uintptr_t kItemHashCheck = 0x00C2CE90; // 
-    constexpr uintptr_t kItemSurfaceRender = 0x00A3BBE0; // 
-    constexpr uintptr_t kChooseVisual = 0x00C7BBC0; // 
-    constexpr uintptr_t kWorld_Load = 0x0143AB90; // 
-    constexpr uintptr_t kWorldVersionCheck = 0x00B3A380; // 
-    constexpr uintptr_t kTileExtraParser = 0x00C6D090; // 
-    constexpr uintptr_t kWhiteDoorLookup = 0x0143A390; // 
-    constexpr uintptr_t kTilesheetLoader = 0x00A2AE20; // 
-    constexpr uintptr_t kBgItemMapValidator = 0x00C5BFA0; // 
-    constexpr uintptr_t kNetAvatar_OnAvatarBePaintBalled = 0x00AE33D0; // 
-    constexpr uintptr_t kPunchHackDetector = 0x00AE7ED0; // 
-    constexpr uintptr_t kPunchNoTileHandler = 0x009A8750; // 
-    constexpr uintptr_t kHarvestInteraction = 0x00A13420; // 
-    constexpr uintptr_t kCameraManager = 0x00A27250; // 
-    constexpr uintptr_t kDialogBuilder = 0x00CF8790; // 
-    constexpr uintptr_t kBannerDialogBuilder = 0x00D752B0; // 
-    constexpr uintptr_t kEnableAllButtonsEntity = 0x011D67B0; // 
-    constexpr uintptr_t kController_PushController = 0x00D89EE0; // 
-    constexpr uintptr_t kController_PopController = 0x00D89CC0; // 
-    constexpr uintptr_t kController_PushChildController = 0x01082530; // 
-    constexpr uintptr_t kController_OnActivate = 0x00DC5320; // 
-    constexpr uintptr_t kController_Deactivate = 0x00DC4F60; // 
-    constexpr uintptr_t kController_Release = 0x0097DDB0; // 
-    constexpr uintptr_t kUIController_OnActivate = 0x010D7550; // 
-    constexpr uintptr_t kUIController_OnDeactivate = 0x010D7B40; // 
-    constexpr uintptr_t kUIController_RemoveScreenView = 0x010D7DC0; // 
-    constexpr uintptr_t kParticleEmitter_GetPaintballColor = 0x00E144A0; // 
-    constexpr uintptr_t kRTFont_GetColorFromString = 0x00D62B80; // 
-    constexpr uintptr_t kResourceManager_GetSurfaceResource = 0x01244490; // 
-    constexpr uintptr_t kVideoModeManager_SetVideoMode = 0x00DB4770; // 
-    constexpr uintptr_t kVideoModeManager_SetFullscreen = 0x00DB4080; // 
-    constexpr uintptr_t kVideoModeManager_AddVideoMode = 0x00DB19B0; // self-naming anchor: AddVideoMode logs its own name once; a 5
-    constexpr uintptr_t kVideoModeManager_GetCustomVideoModes = 0x00DB1F70; // 
-    constexpr uintptr_t kVideoModeManager_OnWMSize = 0x00DB4150; // 
-    constexpr uintptr_t kIAPManager_LoadCurrenciesConfig = 0x0119BEA0; // 
-    constexpr uintptr_t kIAPManager_ctor = 0x011A81C0; // 
-    constexpr uintptr_t kApp_Kill = 0x0097CCF0; // 
-    constexpr uintptr_t kStoreBuyPacketPath = 0x00D71090; // 
-    constexpr uintptr_t kTileCoordinateHandler = 0x009A6D00; // 
-    constexpr uintptr_t kLogDisplayEntityBuilder = 0x011DA3A0; // NOT LogToConsole: the sole owner of this string also refs Ge
-    constexpr uintptr_t kItemRendererXmlLoader = 0x00FC8CD0; // parses GameData/ItemRenderers/*.xml: ItemRenderer/StateMachi
-    constexpr uintptr_t kBattlePetConfigLoader = 0x00BC73C0; // 
-    constexpr uintptr_t kOwlsOfAthenaPets_RenderPet = 0x0076F030; // 
-    constexpr uintptr_t kFlying2Pets_RenderPet = 0x008E4F50; // 
-    constexpr uintptr_t kScepter_RenderPet = 0x00697650; // 
-    constexpr uintptr_t kOwlsOfAthenaPets_OnRespawned = 0x0075A120; // 
-    constexpr uintptr_t kFlying2Pets_OnRespawned = 0x008CFB60; // 
-    constexpr uintptr_t kFactionIconLoader = 0x00ADD9D0; // 
-    constexpr uintptr_t kTextOverlayActionHandler = 0x00B36DE0; // msg|/file|/imageFile|/delayMS| overlay+audio handler
-    constexpr uintptr_t kInventoryTabUI = 0x010A5C80; // growid|/tabblocks|/tabseeds|/taball| inventory tabs
-    constexpr uintptr_t kCaptchaInputDialog = 0x00D07BE0; // 
-    constexpr uintptr_t kWorldTileMap = 0x00C83460; // the tile-map container: dimensions + tile count
-    constexpr uintptr_t kTileLookupGuard = 0x009BE110; // tile lookup / punch target resolution
-    constexpr uintptr_t kTilesheetPageLoader = 0x00D09F90; // tile sheet texture loader
-    constexpr uintptr_t kWorldValidation = 0x010EDFF0; // world validation pass
-    constexpr uintptr_t kWeaponDamageTierText = 0x00C09D00; // weapon damage tier description
-    constexpr uintptr_t kGrowtorialButton = 0x00CBDB50; // 
-    constexpr uintptr_t kWorldLockText = 0x00AEF240; // 
-    constexpr uintptr_t kSeedTreeItemPath = 0x00CE85D0; // 
-    constexpr uintptr_t kTileDefinitionsLoader = 0x00C28360; // 
-    constexpr uintptr_t kWeatherEffectText = 0x00C01450; // 
-    constexpr uintptr_t kItemEffectVariantDispatcher = 0x00AF9CD0; // second On* dispatcher (43 handlers): item/cosmetic effect va
-    constexpr uintptr_t kOnDeathEquipTagHandler = 0x00FCF640; // also OnEquipTag; death + equip-tag handling
-    constexpr uintptr_t kOnDisconnectedHandler = 0x00B2FB50; // 
-    constexpr uintptr_t kOnErrorFinishHandler = 0x00A69930; // also OnFinish
-    constexpr uintptr_t kOnOverMoveHandler = 0x011B2EE0; // also OnOverEnd; hover/drag move
-    constexpr uintptr_t kOnEventHandler = 0x01060AD0; // 
-    constexpr uintptr_t kOnRenderHandler = 0x012235F0; // 
-    constexpr uintptr_t kOnFakeScrollToEntity = 0x01215620; // 
-    constexpr uintptr_t kOnButtonSelectedHandler = 0x00D0D830; // 
-    constexpr uintptr_t kTradeHandler = 0x00D84640; // 
-    constexpr uintptr_t kTradeOtherPlayerGuard = 0x00D82F00; // 
-    constexpr uintptr_t kStateMachineTransitions = 0x01028F70; // item-renderer state-machine transitions
-    constexpr uintptr_t kAnimCurveKeyFrameParser = 0x01004EF0; // animation curve/keyframe parser
-    constexpr uintptr_t kSpriteAnimStateParser = 0x0100BE90; // sprite animation: playOnState/isLoop
-    constexpr uintptr_t kAnimTimeParser = 0x010069E0; // 
-    constexpr uintptr_t kParticleEmitterParser = 0x00E144A0; // particle emitter definitions
-    constexpr uintptr_t kRendererConditionParser = 0x0102B3B0; // state-machine <Condition> evaluation
-    constexpr uintptr_t kSpriteRenderParser = 0x008D5720; // 
-    constexpr uintptr_t kLoginPacketBuilder = 0x00DC7660; // 
-    constexpr uintptr_t kTileActionBuilder = 0x00AEA340; // 
-    constexpr uintptr_t kDialogButtonBuilder = 0x010E6940; // 
-    constexpr uintptr_t kNetAvatarSpawnHandler = 0x00B352D0; // 
-    constexpr uintptr_t kGameUpdatePacketSerializer = 0x00A0C860; // 
-    constexpr uintptr_t kNetAvatarNetIDEmitter = 0x00B32360; // 
-    constexpr uintptr_t kIAPPurchaseValidation = 0x00D1E060; // 
-    constexpr uintptr_t kOnVariantDispatcher = 0x00B294E0; // 
-    constexpr uintptr_t kPunchAction = 0x00DE29B0; // 
-    constexpr uintptr_t kGetApp = 0x009798F0; // leaf without unwind data; not a .pdata entry
-    constexpr uintptr_t kGetClient = 0x00A0A2F0; // kAppClientOffset = 0xAD0 (derived)
-    constexpr uintptr_t kGetPacketProcessor = 0x00B24090; // kAppPacketProcessorOffset = 0x1218 (derived)
-    constexpr uintptr_t kGetLocalAvatar = 0x00B243F0; // kPacketProcessorLocalAvatarOffset = 0x1D0 (derived)
+    constexpr uintptr_t kSendPacket = 0x00C3FDA0; // SendPacket(int type, std::string* text, ENetPeer* peer) - pr
+    constexpr uintptr_t kSendPacketRaw = 0x00C3FEC0; // SendPacketRaw(int type, void* data, int len, ENetPeer* peer,
+    constexpr uintptr_t kProcessTankUpdatePacket = 0x00B3A840; // incoming PACKET_* dispatcher
+    constexpr uintptr_t kVariantListSerializeFromMem = 0x0127D890; // VariantList::SerializeFromMem
+    constexpr uintptr_t kPacketTypeDispatcher = 0x00A0AB70; // 
+    constexpr uintptr_t kPacketLengthValidator = 0x00C3CE30; // 
+    constexpr uintptr_t kTrackPacketSender = 0x00B6FDF0; // 
+    constexpr uintptr_t kENetHostConnectSetup = 0x00A0A750; // 
+    constexpr uintptr_t kPlayerItems_AddItem = 0x00C44D00; // 
+    constexpr uintptr_t kPlayerItems_HaveRoomForItem = 0x00C45E90; // 
+    constexpr uintptr_t kPlayerItems_RemoveItem = 0x00C47610; // 
+    constexpr uintptr_t kInventoryIllegalItemPurge = 0x00C47760; // 
+    constexpr uintptr_t kItemsDatLoader = 0x00C5BC20; // 
+    constexpr uintptr_t kItemValidator = 0x00C5B6C0; // 
+    constexpr uintptr_t kItemHashCheck = 0x00C2D350; // 
+    constexpr uintptr_t kItemSurfaceRender = 0x00A3C020; // 
+    constexpr uintptr_t kChooseVisual = 0x00C7C080; // 
+    constexpr uintptr_t kWorld_Load = 0x0143B040; // 
+    constexpr uintptr_t kWorldVersionCheck = 0x00B3A840; // 
+    constexpr uintptr_t kTileExtraParser = 0x00C6D550; // 
+    constexpr uintptr_t kWhiteDoorLookup = 0x0143A840; // 
+    constexpr uintptr_t kTilesheetLoader = 0x00A2B260; // 
+    constexpr uintptr_t kBgItemMapValidator = 0x00C5C460; // 
+    constexpr uintptr_t kNetAvatar_OnAvatarBePaintBalled = 0x00AE3850; // 
+    constexpr uintptr_t kPunchHackDetector = 0x00AE8350; // 
+    constexpr uintptr_t kPunchNoTileHandler = 0x009A8AE0; // 
+    constexpr uintptr_t kHarvestInteraction = 0x00A13860; // 
+    constexpr uintptr_t kCameraManager = 0x00A27690; // 
+    constexpr uintptr_t kDialogBuilder = 0x00CF8C50; // 
+    constexpr uintptr_t kBannerDialogBuilder = 0x00D75770; // 
+    constexpr uintptr_t kEnableAllButtonsEntity = 0x011D6C60; // 
+    constexpr uintptr_t kController_PushController = 0x00D8A3A0; // 
+    constexpr uintptr_t kController_PopController = 0x00D8A180; // 
+    constexpr uintptr_t kController_PushChildController = 0x010829E0; // 
+    constexpr uintptr_t kController_OnActivate = 0x00DC57E0; // 
+    constexpr uintptr_t kController_Deactivate = 0x00DC5420; // 
+    constexpr uintptr_t kController_Release = 0x0097E140; // 
+    constexpr uintptr_t kUIController_OnActivate = 0x010D7A00; // 
+    constexpr uintptr_t kUIController_OnDeactivate = 0x010D7FF0; // 
+    constexpr uintptr_t kUIController_RemoveScreenView = 0x010D8270; // 
+    constexpr uintptr_t kParticleEmitter_GetPaintballColor = 0x00E14960; // 
+    constexpr uintptr_t kRTFont_GetColorFromString = 0x00D63040; // 
+    constexpr uintptr_t kResourceManager_GetSurfaceResource = 0x01244940; // 
+    constexpr uintptr_t kVideoModeManager_SetVideoMode = 0x00DB4C30; // 
+    constexpr uintptr_t kVideoModeManager_SetFullscreen = 0x00DB4540; // 
+    constexpr uintptr_t kVideoModeManager_AddVideoMode = 0x00DB1E70; // self-naming anchor: AddVideoMode logs its own name once; a 5
+    constexpr uintptr_t kVideoModeManager_GetCustomVideoModes = 0x00DB2430; // 
+    constexpr uintptr_t kVideoModeManager_OnWMSize = 0x00DB4610; // 
+    constexpr uintptr_t kIAPManager_LoadCurrenciesConfig = 0x0119C350; // 
+    constexpr uintptr_t kIAPManager_ctor = 0x011A8670; // 
+    constexpr uintptr_t kApp_Kill = 0x0097D080; // 
+    constexpr uintptr_t kStoreBuyPacketPath = 0x00D71550; // 
+    constexpr uintptr_t kTileCoordinateHandler = 0x009A7090; // 
+    constexpr uintptr_t kLogDisplayEntityBuilder = 0x011DA850; // NOT LogToConsole: the sole owner of this string also refs Ge
+    constexpr uintptr_t kItemRendererXmlLoader = 0x00FC9190; // parses GameData/ItemRenderers/*.xml: ItemRenderer/StateMachi
+    constexpr uintptr_t kBattlePetConfigLoader = 0x00BC7880; // 
+    constexpr uintptr_t kOwlsOfAthenaPets_RenderPet = 0x0076F3C0; // 
+    constexpr uintptr_t kFlying2Pets_RenderPet = 0x008E52E0; // 
+    constexpr uintptr_t kScepter_RenderPet = 0x006979E0; // 
+    constexpr uintptr_t kOwlsOfAthenaPets_OnRespawned = 0x0075A4B0; // 
+    constexpr uintptr_t kFlying2Pets_OnRespawned = 0x008CFEF0; // 
+    constexpr uintptr_t kFactionIconLoader = 0x00ADDE50; // 
+    constexpr uintptr_t kTextOverlayActionHandler = 0x00B372A0; // msg|/file|/imageFile|/delayMS| overlay+audio handler
+    constexpr uintptr_t kInventoryTabUI = 0x010A6130; // growid|/tabblocks|/tabseeds|/taball| inventory tabs
+    constexpr uintptr_t kCaptchaInputDialog = 0x00D080A0; // 
+    constexpr uintptr_t kWorldTileMap = 0x00C83920; // the tile-map container: dimensions + tile count
+    constexpr uintptr_t kTileLookupGuard = 0x009BE4A0; // tile lookup / punch target resolution
+    constexpr uintptr_t kTilesheetPageLoader = 0x00D0A450; // tile sheet texture loader
+    constexpr uintptr_t kWorldValidation = 0x010EE4A0; // world validation pass
+    constexpr uintptr_t kWeaponDamageTierText = 0x00C0A1C0; // weapon damage tier description
+    constexpr uintptr_t kGrowtorialButton = 0x00CBE010; // 
+    constexpr uintptr_t kWorldLockText = 0x00AEF6C0; // 
+    constexpr uintptr_t kSeedTreeItemPath = 0x00CE8A90; // 
+    constexpr uintptr_t kTileDefinitionsLoader = 0x00C28820; // 
+    constexpr uintptr_t kWeatherEffectText = 0x00C01910; // 
+    constexpr uintptr_t kItemEffectVariantDispatcher = 0x00AFA150; // second On* dispatcher (43 handlers): item/cosmetic effect va
+    constexpr uintptr_t kOnDeathEquipTagHandler = 0x00FCFB00; // also OnEquipTag; death + equip-tag handling
+    constexpr uintptr_t kOnDisconnectedHandler = 0x00B30010; // 
+    constexpr uintptr_t kOnErrorFinishHandler = 0x00A69D70; // also OnFinish
+    constexpr uintptr_t kOnOverMoveHandler = 0x011B3390; // also OnOverEnd; hover/drag move
+    constexpr uintptr_t kOnEventHandler = 0x01060F80; // 
+    constexpr uintptr_t kOnRenderHandler = 0x01223AA0; // 
+    constexpr uintptr_t kOnFakeScrollToEntity = 0x01215AD0; // 
+    constexpr uintptr_t kOnButtonSelectedHandler = 0x00D0DCF0; // 
+    constexpr uintptr_t kTradeHandler = 0x00D84B00; // 
+    constexpr uintptr_t kTradeOtherPlayerGuard = 0x00D833C0; // 
+    constexpr uintptr_t kStateMachineTransitions = 0x01029430; // item-renderer state-machine transitions
+    constexpr uintptr_t kAnimCurveKeyFrameParser = 0x010053B0; // animation curve/keyframe parser
+    constexpr uintptr_t kSpriteAnimStateParser = 0x0100C350; // sprite animation: playOnState/isLoop
+    constexpr uintptr_t kAnimTimeParser = 0x01006EA0; // 
+    constexpr uintptr_t kParticleEmitterParser = 0x00E14960; // particle emitter definitions
+    constexpr uintptr_t kRendererConditionParser = 0x0102B870; // state-machine <Condition> evaluation
+    constexpr uintptr_t kSpriteRenderParser = 0x008D5AB0; // 
+    constexpr uintptr_t kLoginPacketBuilder = 0x00DC7B20; // 
+    constexpr uintptr_t kTileActionBuilder = 0x00AEA7C0; // 
+    constexpr uintptr_t kDialogButtonBuilder = 0x010E6DF0; // 
+    constexpr uintptr_t kNetAvatarSpawnHandler = 0x00B35790; // 
+    constexpr uintptr_t kGameUpdatePacketSerializer = 0x00A0CCA0; // 
+    constexpr uintptr_t kNetAvatarNetIDEmitter = 0x00B32820; // 
+    constexpr uintptr_t kIAPPurchaseValidation = 0x00D1E520; // 
+    constexpr uintptr_t kOnVariantDispatcher = 0x00B299A0; // 
+    constexpr uintptr_t kPunchAction = 0x00DE2E70; // 
+    constexpr uintptr_t kGetApp = 0x00979C80; // leaf without unwind data; not a .pdata entry
+    constexpr uintptr_t kGetClient = 0x00A0A730; // kAppClientOffset = 0xAD0 (derived)
+    constexpr uintptr_t kGetPacketProcessor = 0x00B24550; // kAppPacketProcessorOffset = 0x1218 (derived)
+    constexpr uintptr_t kGetLocalAvatar = 0x00B248B0; // kPacketProcessorLocalAvatarOffset = 0x1D0 (derived)
 
     struct Binding { const char* name; unsigned int rva; };
     struct BindingTable { unsigned int rva; const Binding* rows; int count; };
     constexpr Binding kBind0[] = {
-        {"_G", 0x015C1FA0},
-        {"package", 0x015CD360},
-        {"coroutine", 0x015C2610},
-        {"table", 0x015C3580},
-        {"io", 0x015C4D90},
-        {"os", 0x015C5980},
-        {"string", 0x015C9900},
-        {"math", 0x015CB0C0},
-        {"utf8", 0x015CA260},
-        {"debug", 0x015CC500},
+        {"_G", 0x015C2450},
+        {"package", 0x015CD810},
+        {"coroutine", 0x015C2AC0},
+        {"table", 0x015C3A30},
+        {"io", 0x015C5240},
+        {"os", 0x015C5E30},
+        {"string", 0x015C9DB0},
+        {"math", 0x015CB570},
+        {"utf8", 0x015CA710},
+        {"debug", 0x015CC9B0},
     };
     constexpr Binding kBind1[] = {
-        {"assert", 0x015C0F30},
-        {"collectgarbage", 0x015C18E0},
-        {"dofile", 0x015C0EA0},
-        {"error", 0x015C15F0},
-        {"getmetatable", 0x015C1670},
-        {"ipairs", 0x015C1C60},
-        {"loadfile", 0x015C1CB0},
-        {"load", 0x015C0DA0},
-        {"next", 0x015C1B60},
-        {"pairs", 0x015C1BC0},
-        {"pcall", 0x015C10D0},
-        {"print", 0x015C1260},
-        {"warn", 0x015C1350},
-        {"rawequal", 0x015C1780},
-        {"rawlen", 0x015C17D0},
-        {"rawget", 0x015C1830},
-        {"rawset", 0x015C1880},
-        {"select", 0x015C1010},
-        {"setmetatable", 0x015C16D0},
-        {"tonumber", 0x015C1400},
-        {"tostring", 0x015C1230},
-        {"type", 0x015C1B00},
-        {"xpcall", 0x015C1170},
+        {"assert", 0x015C13E0},
+        {"collectgarbage", 0x015C1D90},
+        {"dofile", 0x015C1350},
+        {"error", 0x015C1AA0},
+        {"getmetatable", 0x015C1B20},
+        {"ipairs", 0x015C2110},
+        {"loadfile", 0x015C2160},
+        {"load", 0x015C1250},
+        {"next", 0x015C2010},
+        {"pairs", 0x015C2070},
+        {"pcall", 0x015C1580},
+        {"print", 0x015C1710},
+        {"warn", 0x015C1800},
+        {"rawequal", 0x015C1C30},
+        {"rawlen", 0x015C1C80},
+        {"rawget", 0x015C1CE0},
+        {"rawset", 0x015C1D30},
+        {"select", 0x015C14C0},
+        {"setmetatable", 0x015C1B80},
+        {"tonumber", 0x015C18B0},
+        {"tostring", 0x015C16E0},
+        {"type", 0x015C1FB0},
+        {"xpcall", 0x015C1620},
     };
     constexpr Binding kBind2[] = {
-        {"create", 0x015C20D0},
-        {"resume", 0x015C2020},
-        {"running", 0x015C22B0},
-        {"status", 0x015C21D0},
-        {"wrap", 0x015C2130},
-        {"yield", 0x015C21A0},
-        {"isyieldable", 0x015C2240},
-        {"close", 0x015C22E0},
+        {"create", 0x015C2580},
+        {"resume", 0x015C24D0},
+        {"running", 0x015C2760},
+        {"status", 0x015C2680},
+        {"wrap", 0x015C25E0},
+        {"yield", 0x015C2650},
+        {"isyieldable", 0x015C26F0},
+        {"close", 0x015C2790},
     };
     constexpr Binding kBind3[] = {
-        {"concat", 0x015C2BC0},
-        {"insert", 0x015C2660},
-        {"pack", 0x015C2DF0},
-        {"unpack", 0x015C2EA0},
-        {"remove", 0x015C27F0},
-        {"move", 0x015C2970},
-        {"sort", 0x015C2F90},
+        {"concat", 0x015C3070},
+        {"insert", 0x015C2B10},
+        {"pack", 0x015C32A0},
+        {"unpack", 0x015C3350},
+        {"remove", 0x015C2CA0},
+        {"move", 0x015C2E20},
+        {"sort", 0x015C3440},
     };
     constexpr Binding kBind4[] = {
-        {"close", 0x015C3E20},
-        {"flush", 0x015C3BD0},
-        {"input", 0x015C35D0},
-        {"lines", 0x015C3740},
-        {"open", 0x015C3F10},
-        {"output", 0x015C3660},
-        {"popen", 0x015C4050},
-        {"read", 0x015C3860},
-        {"tmpfile", 0x015C4130},
-        {"type", 0x015C3CE0},
-        {"write", 0x015C3930},
+        {"close", 0x015C42D0},
+        {"flush", 0x015C4080},
+        {"input", 0x015C3A80},
+        {"lines", 0x015C3BF0},
+        {"open", 0x015C43C0},
+        {"output", 0x015C3B10},
+        {"popen", 0x015C4500},
+        {"read", 0x015C3D10},
+        {"tmpfile", 0x015C45E0},
+        {"type", 0x015C4190},
+        {"write", 0x015C3DE0},
     };
     constexpr Binding kBind5[] = {
-        {"read", 0x015C38D0},
-        {"write", 0x015C39A0},
-        {"lines", 0x015C36F0},
-        {"flush", 0x015C3C60},
-        {"seek", 0x015C3A10},
-        {"close", 0x015C3DB0},
-        {"setvbuf", 0x015C3B00},
+        {"read", 0x015C3D80},
+        {"write", 0x015C3E50},
+        {"lines", 0x015C3BA0},
+        {"flush", 0x015C4110},
+        {"seek", 0x015C3EC0},
+        {"close", 0x015C4260},
+        {"setvbuf", 0x015C3FB0},
     };
     constexpr Binding kBind6[] = {
-        {"__gc", 0x015C3EB0},
-        {"__close", 0x015C3EB0},
-        {"__tostring", 0x015C3D50},
+        {"__gc", 0x015C4360},
+        {"__close", 0x015C4360},
+        {"__tostring", 0x015C4200},
     };
     constexpr Binding kBind7[] = {
-        {"clock", 0x015C56F0},
-        {"date", 0x015C4FA0},
-        {"difftime", 0x015C53B0},
-        {"execute", 0x015C54F0},
-        {"exit", 0x015C5470},
-        {"getenv", 0x015C56B0},
-        {"remove", 0x015C5560},
-        {"rename", 0x015C55C0},
-        {"setlocale", 0x015C5400},
-        {"time", 0x015C5220},
-        {"tmpname", 0x015C5640},
+        {"clock", 0x015C5BA0},
+        {"date", 0x015C5450},
+        {"difftime", 0x015C5860},
+        {"execute", 0x015C59A0},
+        {"exit", 0x015C5920},
+        {"getenv", 0x015C5B60},
+        {"remove", 0x015C5A10},
+        {"rename", 0x015C5A70},
+        {"setlocale", 0x015C58B0},
+        {"time", 0x015C56D0},
+        {"tmpname", 0x015C5AF0},
     };
     constexpr Binding kBind8[] = {
-        {"byte", 0x015C5EA0},
-        {"char", 0x015C5FC0},
-        {"dump", 0x015C60A0},
+        {"byte", 0x015C6350},
+        {"char", 0x015C6470},
+        {"dump", 0x015C6550},
     };
     constexpr Binding kBind9[] = {
-        {"format", 0x015C65D0},
-        {"gmatch", 0x015C6270},
-        {"gsub", 0x015C6380},
-        {"len", 0x015C59D0},
-        {"lower", 0x015C5B90},
+        {"format", 0x015C6A80},
+        {"gmatch", 0x015C6720},
+        {"gsub", 0x015C6830},
+        {"len", 0x015C5E80},
+        {"lower", 0x015C6040},
     };
     constexpr Binding kBind10[] = {
-        {"rep", 0x015C5D10},
-        {"reverse", 0x015C5AF0},
-        {"sub", 0x015C5A00},
-        {"upper", 0x015C5C50},
-        {"pack", 0x015C6E10},
-        {"packsize", 0x015C74E0},
-        {"unpack", 0x015C7680},
+        {"rep", 0x015C61C0},
+        {"reverse", 0x015C5FA0},
+        {"sub", 0x015C5EB0},
+        {"upper", 0x015C6100},
+        {"pack", 0x015C72C0},
+        {"packsize", 0x015C7990},
+        {"unpack", 0x015C7B30},
     };
     constexpr Binding kBind11[] = {
-        {"offset", 0x015C9E70},
-        {"codepoint", 0x015C9B40},
-        {"char", 0x015C9D50},
-        {"len", 0x015C99D0},
-        {"codes", 0x015C9FF0},
+        {"offset", 0x015CA320},
+        {"codepoint", 0x015C9FF0},
+        {"char", 0x015CA200},
+        {"len", 0x015C9E80},
+        {"codes", 0x015CA4A0},
     };
     constexpr Binding kBind12[] = {
-        {"abs", 0x015CA2E0},
-        {"acos", 0x015CA410},
-        {"asin", 0x015CA3E0},
-        {"atan", 0x015CA440},
-        {"ceil", 0x015CA580},
-        {"cos", 0x015CA380},
-        {"deg", 0x015CA950},
-        {"exp", 0x015CA920},
-        {"tointeger", 0x015CA4A0},
-        {"floor", 0x015CA500},
-        {"fmod", 0x015CA600},
-        {"ult", 0x015CA810},
-        {"log", 0x015CA860},
-        {"max", 0x015CAA70},
-        {"min", 0x015CA9D0},
-        {"modf", 0x015CA700},
-        {"rad", 0x015CA990},
-        {"sin", 0x015CA350},
-        {"sqrt", 0x015CA7D0},
-        {"tan", 0x015CA3B0},
-        {"type", 0x015CAB10},
+        {"abs", 0x015CA790},
+        {"acos", 0x015CA8C0},
+        {"asin", 0x015CA890},
+        {"atan", 0x015CA8F0},
+        {"ceil", 0x015CAA30},
+        {"cos", 0x015CA830},
+        {"deg", 0x015CAE00},
+        {"exp", 0x015CADD0},
+        {"tointeger", 0x015CA950},
+        {"floor", 0x015CA9B0},
+        {"fmod", 0x015CAAB0},
+        {"ult", 0x015CACC0},
+        {"log", 0x015CAD10},
+        {"max", 0x015CAF20},
+        {"min", 0x015CAE80},
+        {"modf", 0x015CABB0},
+        {"rad", 0x015CAE40},
+        {"sin", 0x015CA800},
+        {"sqrt", 0x015CAC80},
+        {"tan", 0x015CA860},
+        {"type", 0x015CAFC0},
     };
     constexpr Binding kBind13[] = {
-        {"debug", 0x015CC160},
-        {"getuservalue", 0x015CB2C0},
-        {"gethook", 0x015CBFE0},
-        {"getinfo", 0x015CB3C0},
-        {"getlocal", 0x015CB850},
-        {"getregistry", 0x015CB200},
-        {"getmetatable", 0x015CB220},
-        {"getupvalue", 0x015CBB40},
-        {"upvaluejoin", 0x015CBCD0},
-        {"upvalueid", 0x015CBC50},
-        {"setuservalue", 0x015CB340},
-        {"sethook", 0x015CBDF0},
-        {"setlocal", 0x015CB9D0},
-        {"setmetatable", 0x015CB260},
-        {"setupvalue", 0x015CBBC0},
-        {"traceback", 0x015CC350},
-        {"setcstacklimit", 0x015CC420},
+        {"debug", 0x015CC610},
+        {"getuservalue", 0x015CB770},
+        {"gethook", 0x015CC490},
+        {"getinfo", 0x015CB870},
+        {"getlocal", 0x015CBD00},
+        {"getregistry", 0x015CB6B0},
+        {"getmetatable", 0x015CB6D0},
+        {"getupvalue", 0x015CBFF0},
+        {"upvaluejoin", 0x015CC180},
+        {"upvalueid", 0x015CC100},
+        {"setuservalue", 0x015CB7F0},
+        {"sethook", 0x015CC2A0},
+        {"setlocal", 0x015CBE80},
+        {"setmetatable", 0x015CB710},
+        {"setupvalue", 0x015CC070},
+        {"traceback", 0x015CC800},
+        {"setcstacklimit", 0x015CC8D0},
     };
     constexpr Binding kBind14[] = {
-        {"CreateContext", 0x01595720},
-        {"LoadFontFace", 0x01595840},
-        {"RegisterTag", 0x01595980},
+        {"CreateContext", 0x01595BD0},
+        {"LoadFontFace", 0x01595CF0},
+        {"RegisterTag", 0x01595E30},
     };
     constexpr Binding kBind15[] = {
-        {"contexts", 0x01595A80},
-        {"key_identifier", 0x01595AC0},
-        {"key_modifier", 0x01595B00},
+        {"contexts", 0x01595F30},
+        {"key_identifier", 0x01595F70},
+        {"key_modifier", 0x01595FB0},
     };
     constexpr Binding kBind16[] = {
-        {"red", 0x01597810},
-        {"green", 0x01597860},
-        {"blue", 0x015978B0},
-        {"alpha", 0x01597900},
-        {"rgba", 0x01597950},
+        {"red", 0x01597CC0},
+        {"green", 0x01597D10},
+        {"blue", 0x01597D60},
+        {"alpha", 0x01597DB0},
+        {"rgba", 0x01597E00},
     };
     constexpr Binding kBind17[] = {
-        {"red", 0x015979D0},
-        {"green", 0x01597A30},
-        {"blue", 0x01597A90},
-        {"alpha", 0x01597AF0},
-        {"rgba", 0x01597B50},
+        {"red", 0x01597E80},
+        {"green", 0x01597EE0},
+        {"blue", 0x01597F40},
+        {"alpha", 0x01597FA0},
+        {"rgba", 0x01598000},
     };
     constexpr Binding kBind18[] = {
-        {"red", 0x01598220},
-        {"green", 0x01598270},
-        {"blue", 0x015982C0},
-        {"alpha", 0x01598310},
-        {"rgba", 0x01598360},
+        {"red", 0x015986D0},
+        {"green", 0x01598720},
+        {"blue", 0x01598770},
+        {"alpha", 0x015987C0},
+        {"rgba", 0x01598810},
     };
     constexpr Binding kBind19[] = {
-        {"red", 0x015983F0},
-        {"green", 0x01598460},
-        {"blue", 0x015984D0},
-        {"alpha", 0x01598540},
-        {"rgba", 0x015985B0},
+        {"red", 0x015988A0},
+        {"green", 0x01598910},
+        {"blue", 0x01598980},
+        {"alpha", 0x015989F0},
+        {"rgba", 0x01598A60},
     };
     constexpr Binding kBind20[] = {
-        {"AddEventListener", 0x01598F00},
-        {"CreateDocument", 0x01599410},
-        {"LoadDocument", 0x01599520},
-        {"Render", 0x01599610},
-        {"UnloadAllDocuments", 0x01599640},
-        {"UnloadDocument", 0x01599660},
-        {"Update", 0x015996A0},
-        {"OpenDataModel", 0x01598AB0},
-        {"ProcessMouseMove", 0x01598AF0},
-        {"ProcessMouseButtonDown", 0x01598B70},
-        {"ProcessMouseButtonUp", 0x01598BD0},
-        {"ProcessMouseWheel", 0x01598C30},
-        {"ProcessMouseLeave", 0x01598CA0},
-        {"IsMouseInteracting", 0x01598CD0},
-        {"ProcessKeyDown", 0x01598D00},
-        {"ProcessKeyUp", 0x01598D60},
-        {"ProcessTextInput", 0x01598DC0},
+        {"AddEventListener", 0x015993B0},
+        {"CreateDocument", 0x015998C0},
+        {"LoadDocument", 0x015999D0},
+        {"Render", 0x01599AC0},
+        {"UnloadAllDocuments", 0x01599AF0},
+        {"UnloadDocument", 0x01599B10},
+        {"Update", 0x01599B50},
+        {"OpenDataModel", 0x01598F60},
+        {"ProcessMouseMove", 0x01598FA0},
+        {"ProcessMouseButtonDown", 0x01599020},
+        {"ProcessMouseButtonUp", 0x01599080},
+        {"ProcessMouseWheel", 0x015990E0},
+        {"ProcessMouseLeave", 0x01599150},
+        {"IsMouseInteracting", 0x01599180},
+        {"ProcessKeyDown", 0x015991B0},
+        {"ProcessKeyUp", 0x01599210},
+        {"ProcessTextInput", 0x01599270},
     };
     constexpr Binding kBind21[] = {
-        {"dimensions", 0x015996D0},
-        {"documents", 0x01599740},
-        {"dp_ratio", 0x015997B0},
-        {"focus_element", 0x015997F0},
-        {"hover_element", 0x01599850},
-        {"name", 0x015998B0},
-        {"root_element", 0x01599910},
+        {"dimensions", 0x01599B80},
+        {"documents", 0x01599BF0},
+        {"dp_ratio", 0x01599C60},
+        {"focus_element", 0x01599CA0},
+        {"hover_element", 0x01599D00},
+        {"name", 0x01599D60},
+        {"root_element", 0x01599DC0},
     };
     constexpr Binding kBind22[] = {
-        {"PullToFront", 0x0159A5E0},
-        {"PushToBack", 0x0159A600},
-        {"Show", 0x0159A620},
-        {"Hide", 0x0159A6A0},
-        {"Close", 0x0159A6C0},
-        {"CreateElement", 0x0159A6E0},
-        {"CreateTextNode", 0x0159A850},
+        {"PullToFront", 0x0159AA90},
+        {"PushToBack", 0x0159AAB0},
+        {"Show", 0x0159AAD0},
+        {"Hide", 0x0159AB50},
+        {"Close", 0x0159AB70},
+        {"CreateElement", 0x0159AB90},
+        {"CreateTextNode", 0x0159AD00},
     };
     constexpr Binding kBind23[] = {
-        {"AddEventListener", 0x0159B230},
-        {"AppendChild", 0x0159B490},
-        {"Blur", 0x0159B590},
-        {"Click", 0x0159B5B0},
-        {"DispatchEvent", 0x0159B5D0},
-        {"Focus", 0x0159BB20},
-        {"GetAttribute", 0x0159BB40},
-        {"GetElementById", 0x0159BC30},
-        {"GetElementsByTagName", 0x0159BD20},
-        {"QuerySelector", 0x0159C030},
-        {"QuerySelectorAll", 0x0159C120},
-        {"Matches", 0x0159C430},
-        {"HasAttribute", 0x0159C500},
-        {"HasChildNodes", 0x0159C5D0},
-        {"InsertBefore", 0x0159C600},
-        {"IsClassSet", 0x0159C720},
-        {"RemoveAttribute", 0x0159C7F0},
-        {"RemoveChild", 0x0159C8B0},
-        {"ReplaceChild", 0x0159C920},
-        {"ScrollIntoView", 0x0159CA50},
-        {"SetAttribute", 0x0159CA80},
-        {"SetClass", 0x0159CBF0},
+        {"AddEventListener", 0x0159B6E0},
+        {"AppendChild", 0x0159B940},
+        {"Blur", 0x0159BA40},
+        {"Click", 0x0159BA60},
+        {"DispatchEvent", 0x0159BA80},
+        {"Focus", 0x0159BFD0},
+        {"GetAttribute", 0x0159BFF0},
+        {"GetElementById", 0x0159C0E0},
+        {"GetElementsByTagName", 0x0159C1D0},
+        {"QuerySelector", 0x0159C4E0},
+        {"QuerySelectorAll", 0x0159C5D0},
+        {"Matches", 0x0159C8E0},
+        {"HasAttribute", 0x0159C9B0},
+        {"HasChildNodes", 0x0159CA80},
+        {"InsertBefore", 0x0159CAB0},
+        {"IsClassSet", 0x0159CBD0},
+        {"RemoveAttribute", 0x0159CCA0},
+        {"RemoveChild", 0x0159CD60},
+        {"ReplaceChild", 0x0159CDD0},
+        {"ScrollIntoView", 0x0159CF00},
+        {"SetAttribute", 0x0159CF30},
+        {"SetClass", 0x0159D0A0},
     };
     constexpr Binding kBind24[] = {
-        {"attributes", 0x0159CCE0},
-        {"child_nodes", 0x0159CD50},
-        {"class_name", 0x0159CDC0},
-        {"client_left", 0x0159CE80},
-        {"client_height", 0x0159CEE0},
-        {"client_top", 0x0159CF40},
-        {"client_width", 0x0159CFA0},
-        {"first_child", 0x0159D000},
-        {"id", 0x0159D060},
-        {"inner_rml", 0x0159D0C0},
-        {"last_child", 0x0159D170},
-        {"next_sibling", 0x0159D1D0},
-        {"offset_height", 0x0159D230},
-        {"offset_left", 0x0159D290},
-        {"offset_parent", 0x0159D2F0},
-        {"offset_top", 0x0159D350},
-        {"offset_width", 0x0159D3B0},
-        {"owner_document", 0x0159D410},
-        {"parent_node", 0x0159D470},
-        {"previous_sibling", 0x0159D4D0},
-        {"scroll_height", 0x0159D530},
-        {"scroll_left", 0x0159D590},
-        {"scroll_top", 0x0159D5F0},
-        {"scroll_width", 0x0159D650},
-        {"style", 0x0159D6B0},
-        {"tag_name", 0x0159D720},
+        {"attributes", 0x0159D190},
+        {"child_nodes", 0x0159D200},
+        {"class_name", 0x0159D270},
+        {"client_left", 0x0159D330},
+        {"client_height", 0x0159D390},
+        {"client_top", 0x0159D3F0},
+        {"client_width", 0x0159D450},
+        {"first_child", 0x0159D4B0},
+        {"id", 0x0159D510},
+        {"inner_rml", 0x0159D570},
+        {"last_child", 0x0159D620},
+        {"next_sibling", 0x0159D680},
+        {"offset_height", 0x0159D6E0},
+        {"offset_left", 0x0159D740},
+        {"offset_parent", 0x0159D7A0},
+        {"offset_top", 0x0159D800},
+        {"offset_width", 0x0159D860},
+        {"owner_document", 0x0159D8C0},
+        {"parent_node", 0x0159D920},
+        {"previous_sibling", 0x0159D980},
+        {"scroll_height", 0x0159D9E0},
+        {"scroll_left", 0x0159DA40},
+        {"scroll_top", 0x0159DAA0},
+        {"scroll_width", 0x0159DB00},
+        {"style", 0x0159DB60},
+        {"tag_name", 0x0159DBD0},
     };
     constexpr Binding kBind25[] = {
-        {"class_name", 0x0159D780},
-        {"id", 0x0159D870},
-        {"inner_rml", 0x0159D960},
-        {"scroll_left", 0x0159DA60},
-        {"scroll_top", 0x0159DAD0},
+        {"class_name", 0x0159DC30},
+        {"id", 0x0159DD20},
+        {"inner_rml", 0x0159DE10},
+        {"scroll_left", 0x0159DF10},
+        {"scroll_top", 0x0159DF80},
     };
     constexpr Binding kBind26[] = {
-        {"current_element", 0x0159FA80},
-        {"type", 0x0159FAE0},
-        {"target_element", 0x0159FCC0},
-        {"parameters", 0x0159FD20},
+        {"current_element", 0x0159FF30},
+        {"type", 0x0159FF90},
+        {"target_element", 0x015A0170},
+        {"parameters", 0x015A01D0},
     };
     constexpr Binding kBind27[] = {
-        {"DotProduct", 0x015A0AB0},
-        {"Normalise", 0x015A0B20},
-        {"Rotate", 0x015A0BD0},
+        {"DotProduct", 0x015A0F60},
+        {"Normalise", 0x015A0FD0},
+        {"Rotate", 0x015A1080},
     };
     constexpr Binding kBind28[] = {
-        {"x", 0x015A0CA0},
-        {"y", 0x015A0CF0},
-        {"magnitude", 0x015A0D40},
+        {"x", 0x015A1150},
+        {"y", 0x015A11A0},
+        {"magnitude", 0x015A11F0},
     };
     constexpr Binding kBind29[] = {
-        {"x", 0x015A15A0},
-        {"y", 0x015A15F0},
-        {"magnitude", 0x015A1640},
+        {"x", 0x015A1A50},
+        {"y", 0x015A1AA0},
+        {"magnitude", 0x015A1AF0},
     };
     constexpr Binding kBind30[] = {
-        {"disabled", 0x015A2170},
-        {"name", 0x015A21C0},
-        {"value", 0x015A2270},
+        {"disabled", 0x015A2620},
+        {"name", 0x015A2670},
+        {"value", 0x015A2720},
     };
     constexpr Binding kBind31[] = {
-        {"disabled", 0x015A2330},
-        {"name", 0x015A23A0},
-        {"value", 0x015A2490},
+        {"disabled", 0x015A27E0},
+        {"name", 0x015A2850},
+        {"value", 0x015A2940},
     };
     constexpr Binding kBind32[] = {
-        {"Select", 0x015A28E0},
-        {"SetSelection", 0x015A2900},
-        {"GetSelection", 0x015A2950},
+        {"Select", 0x015A2D90},
+        {"SetSelection", 0x015A2DB0},
+        {"GetSelection", 0x015A2E00},
     };
     constexpr Binding kBind33[] = {
-        {"checked", 0x015A2A30},
-        {"maxlength", 0x015A2B20},
-        {"size", 0x015A2C20},
-        {"max", 0x015A2D10},
-        {"min", 0x015A2E00},
-        {"step", 0x015A2EF0},
+        {"checked", 0x015A2EE0},
+        {"maxlength", 0x015A2FD0},
+        {"size", 0x015A30D0},
+        {"max", 0x015A31C0},
+        {"min", 0x015A32B0},
+        {"step", 0x015A33A0},
     };
     constexpr Binding kBind34[] = {
-        {"checked", 0x015A2FE0},
-        {"maxlength", 0x015A3140},
-        {"size", 0x015A3240},
-        {"max", 0x015A3330},
-        {"min", 0x015A3430},
-        {"step", 0x015A3530},
+        {"checked", 0x015A3490},
+        {"maxlength", 0x015A35F0},
+        {"size", 0x015A36F0},
+        {"max", 0x015A37E0},
+        {"min", 0x015A38E0},
+        {"step", 0x015A39E0},
     };
     constexpr Binding kBind35[] = {
-        {"Add", 0x015A3B10},
-        {"Remove", 0x015A3CC0},
-        {"RemoveAll", 0x015A3E10},
+        {"Add", 0x015A3FC0},
+        {"Remove", 0x015A4170},
+        {"RemoveAll", 0x015A42C0},
     };
     constexpr Binding kBind36[] = {
-        {"Select", 0x015A4370},
-        {"SetSelection", 0x015A4390},
-        {"GetSelection", 0x015A43E0},
+        {"Select", 0x015A4820},
+        {"SetSelection", 0x015A4840},
+        {"GetSelection", 0x015A4890},
     };
     constexpr Binding kBind37[] = {
-        {"cols", 0x015A44C0},
-        {"maxlength", 0x015A4510},
-        {"rows", 0x015A4560},
-        {"wordwrap", 0x015A45B0},
+        {"cols", 0x015A4970},
+        {"maxlength", 0x015A49C0},
+        {"rows", 0x015A4A10},
+        {"wordwrap", 0x015A4A60},
     };
     constexpr Binding kBind38[] = {
-        {"cols", 0x015A4600},
-        {"maxlength", 0x015A4660},
-        {"rows", 0x015A46C0},
-        {"wordwrap", 0x015A4720},
+        {"cols", 0x015A4AB0},
+        {"maxlength", 0x015A4B10},
+        {"rows", 0x015A4B70},
+        {"wordwrap", 0x015A4BD0},
     };
     constexpr BindingTable kBindingTables[] = {
-        {0x01DA26C0, kBind0, 10},
-        {0x01DA3360, kBind1, 23},
-        {0x01DA3790, kBind2, 8},
-        {0x01DA3990, kBind3, 7},
-        {0x01DA3B20, kBind4, 11},
-        {0x01DA3BE0, kBind5, 7},
-        {0x01DA3C70, kBind6, 3},
-        {0x01DA3FE0, kBind7, 11},
-        {0x01DA4270, kBind8, 3},
-        {0x01DA42B0, kBind9, 5},
-        {0x01DA4310, kBind10, 7},
-        {0x01DA4960, kBind11, 5},
-        {0x01DA4A80, kBind12, 21},
-        {0x01DA4D00, kBind13, 17},
+        {0x01DA2940, kBind0, 10},
+        {0x01DA35E0, kBind1, 23},
+        {0x01DA3A10, kBind2, 8},
+        {0x01DA3C10, kBind3, 7},
+        {0x01DA3DA0, kBind4, 11},
+        {0x01DA3E60, kBind5, 7},
+        {0x01DA3EF0, kBind6, 3},
+        {0x01DA4260, kBind7, 11},
+        {0x01DA44F0, kBind8, 3},
+        {0x01DA4530, kBind9, 5},
+        {0x01DA4590, kBind10, 7},
+        {0x01DA4BE0, kBind11, 5},
+        {0x01DA4D00, kBind12, 21},
+        {0x01DA4F80, kBind13, 17},
         {0x02220860, kBind14, 3},
         {0x022208A0, kBind15, 3},
         {0x022208E0, kBind16, 5},
