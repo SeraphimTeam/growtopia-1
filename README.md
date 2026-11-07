@@ -12,9 +12,9 @@
 |---|---|
 | image base | `0x140000000` |
 | `.text` | `0x00001000-0x01C26FA0` |
-| SHA-256 | `efb7d8fa1364327b52a5dd9f866b28233fd9f126344a5aba2e12058e1bf20a54` |
+| SHA-256 | `111cec6c41f7c9295813d0728ece57e964173fab358e1947c06b267b775f192d` |
 | functions in `.pdata` | 73986 |
-| generated | 2026-11-04 13:27:25Z |
+| generated | 2026-11-07 12:04:12Z |
 
 | Status | Count | Meaning |
 | ------ | ----: | ------- |
@@ -92,7 +92,7 @@
 | pets | `Flying2Pets_RenderPet` | `0x008E52E0` | 1959 | VERIFIED | `Flying2PetsLogics::RenderPet` |
 | pets | `BattlePetConfigLoader` | `0x00BC7880` | 989 | VERIFIED | `Can't load BattlePet info config: %s, error: %s, offset: %d` |
 | physics | `ItemRendererXmlLoader` | `0x00FC9190` | 11502 | VERIFIED | `PhysicsBody %s wasn't loaded correct.` |
-| physics | `ConstsArray` | `0x022E3E80` | 224 | CHECK | `structural: 2A-B == B-C over [A,0,B,C]` |
+| physics | `ConstsArray` | `0x022E3E80` | 208 | CHECK | `structural: 2A-B == B-C over [A,0,B,C]` |
 | player | `FactionIconLoader` | `0x00ADDE50` | 13239 | VERIFIED | `Error loading Faction icons` |
 | player | `NetAvatar_OnAvatarBePaintBalled` | `0x00AE3850` | 582 | VERIFIED | `NetAvatar::OnAvatarBePaintBalled sourceNetID is invalid=%d` |
 | player | `NetAvatarNetIDEmitter` | `0x00B32820` | 248 | VERIFIED | `netID\|` |
