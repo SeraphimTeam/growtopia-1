@@ -1,5 +1,5 @@
-// Growtopia x64 offsets - generated 2026-11-07 12:04:12Z
-// image base 0x140000000  build hash 111cec6c41f7c929
+// Growtopia x64 offsets - generated 2026-11-08 12:23:48Z
+// image base 0x140000000  build hash 1f4fe9968f58a78d
 #pragma once
 namespace gt {
     constexpr uintptr_t kSendPacket = 0x00C3FDA0; // SendPacket(int type, std::string* text, ENetPeer* peer) - pr
