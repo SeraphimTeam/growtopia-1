@@ -1,4 +1,4 @@
--- Growtopia x64 offsets - generated 2026-11-11 13:08:57Z
+-- Growtopia x64 offsets - generated 2026-11-12 14:11:49Z
 return {
   image_base = 0x140000000,
   SendPacket                         = 0x00C3FDA0,
