@@ -1,4 +1,4 @@
--- Growtopia x64 offsets - generated 2026-11-15 13:07:51Z
+-- Growtopia x64 offsets - generated 2026-11-16 14:13:48Z
 return {
   image_base = 0x140000000,
   SendPacket                         = 0x00C3FDA0,
@@ -87,7 +87,6 @@ return {
   OnButtonSelectedHandler            = 0x00D0DCF0,
   TradeHandler                       = 0x00D84B00,
   TradeOtherPlayerGuard              = 0x00D833C0,
-  PartyMemberHandler                 = 0x00D49400,
   StateMachineTransitions            = 0x01029430,
   AnimCurveKeyFrameParser            = 0x010053B0,
   SpriteAnimStateParser              = 0x0100C350,
@@ -108,7 +107,6 @@ return {
   GetClient                          = 0x00A0A730,
   GetPacketProcessor                 = 0x00B24550,
   GetLocalAvatar                     = 0x00B248B0,
-  ConstsArray                        = 0x022E3E80,
   bindings = {
     { table = 0x01DA2940, methods = {
       ["_G"] = 0x015C2450,
